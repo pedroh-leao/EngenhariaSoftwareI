@@ -12,7 +12,7 @@ class System{
 public:
     System(const string = "", const double = 0.0);
     System(const System&); //constructor for copy
-    ~System();
+    virtual ~System();
 
     void setName(const string);
     string getName() const;

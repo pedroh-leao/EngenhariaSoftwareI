@@ -11,14 +11,22 @@ Model :: Model(const Model& m){
 Model :: ~Model(){}
 
 bool Model :: add(System* s){
-    //!conferir como fazer a verificacao para retornar true or false
+    int lenBefore = systems.size();
+
     systems.push_back(s);
+
+    if(lenBefore == systems.size()) return false;
+
     return true;
 }
 
 bool Model :: add(Flow* f){
-    //!conferir como fazer a verificacao para retornar true or false
+    int lenBefore = flows.size();
+
     flows.push_back(f);
+
+    if(lenBefore == flows.size()) return false;
+
     return true;
 }
 
@@ -45,7 +53,8 @@ bool Model :: remove(Flow* f){
 }
 
 bool Model :: run(int tempoInicial, int tempoFinal){
-    //!conferir como fazer a verificacao para retornar true or false
+    if(tempoInicial > tempoFinal || tempoInicial < 0) return false;
+
     System *source, *target;
 
     vector<double> results;

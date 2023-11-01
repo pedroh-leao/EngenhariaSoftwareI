@@ -17,7 +17,7 @@ class Model{
 public:
     Model();
     Model(const Model&); //constructor for copy
-    ~Model();
+    virtual ~Model();
 
     bool add(System *);
     bool add(Flow*);
