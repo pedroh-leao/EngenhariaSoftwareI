@@ -15,7 +15,7 @@ class Model{
     vector<Flow*> flows;
     
 public:
-    Model();
+    Model(const string& = "");
     Model(const Model&); //constructor for copy
     virtual ~Model();
 
@@ -29,7 +29,7 @@ public:
 
     void reportStatus();
 
-    void setName(string);
+    void setName(const string&);
     string getName() const;
 
     Model& operator=(const Model&);

@@ -15,19 +15,19 @@ Flow :: Flow(const Flow& f){
 Flow :: ~Flow() {}
 
 void Flow :: setSource(System *s){
-    this->source = s;
+    source = s;
 }
 
 System* Flow :: getSource() const{
-    return this->source;
+    return source;
 }
 
 void Flow :: setTarget(System *s){
-    this->target = s;
+    target = s;
 }
 
 System* Flow :: getTarget() const{
-    return this->target;
+    return target;
 }
 
 Flow& Flow :: operator=(const Flow& f){

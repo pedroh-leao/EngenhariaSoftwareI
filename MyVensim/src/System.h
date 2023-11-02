@@ -10,14 +10,14 @@ class System{
     double value = 0.0;
 
 public:
-    System(const string = "", const double = 0.0);
+    System(const string& = "", const double& = 0.0);
     System(const System&); //constructor for copy
     virtual ~System();
 
-    void setName(const string);
+    void setName(const string&);
     string getName() const;
 
-    void setValue(const double);
+    void setValue(const double&);
     double getValue() const;
 
     System& operator=(const System&);

@@ -1,11 +1,13 @@
 #include "Model.h"
 
-Model :: Model(){}
+Model :: Model(const string& name){
+    this->name = name;
+}
 
 Model :: Model(const Model& m){
-    this->name = m.getName();
-    this->systems.insert(this->systems.begin(), m.systems.begin(), m.systems.end());
-    this->flows.insert(this->flows.begin(), m.flows.begin(), m.flows.end());
+    this->name = m.name;
+    systems.insert(systems.begin(), m.systems.begin(), m.systems.end());
+    flows.insert(flows.begin(), m.flows.begin(), m.flows.end());
 }
 
 Model :: ~Model(){}
@@ -96,12 +98,12 @@ void Model :: reportStatus(){
         cout << (*it)->getName() << ": " << (*it)->getValue() << endl;
 }
 
-void Model :: setName(string name){
+void Model :: setName(const string& name){
     this->name = name;
 }
 
 string Model :: getName() const{
-    return this->name;
+    return name;
 }
 
 Model& Model:: operator= (const Model& m){
@@ -109,11 +111,11 @@ Model& Model:: operator= (const Model& m){
 
     this->name = m.name;
 
-    this->systems.clear();
-    this->systems.insert(this->systems.begin(), m.systems.begin(), m.systems.end());
+    systems.clear();
+    systems.insert(systems.begin(), m.systems.begin(), m.systems.end());
     
-    this->flows.clear();
-    this->flows.insert(this->flows.begin(), m.flows.begin(), m.flows.end());
+    flows.clear();
+    flows.insert(flows.begin(), m.flows.begin(), m.flows.end());
     
     return *this;
 }
