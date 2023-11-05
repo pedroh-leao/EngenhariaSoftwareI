@@ -92,7 +92,7 @@ bool Model :: run(int tempoInicial, int tempoFinal){
 }
 
 void Model :: reportStatus(){
-    cout << "\nEstado Atual do Modelo:\n" << endl;
+    cout << "\nCurrent Model Status:" << endl;
 
     for(systemsIterator it = systems.begin(); it < systems.end(); it++)
         cout << (*it)->getName() << ": " << (*it)->getValue() << endl;

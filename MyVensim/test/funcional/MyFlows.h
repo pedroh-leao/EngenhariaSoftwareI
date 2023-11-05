@@ -1,7 +1,7 @@
 #ifndef MYFLOWS_H
 #define MYFLOWS_H
 
-#include "Flow.h"
+#include "../../src/Flow.h"
 
 class Exponential : public Flow{
 public:
@@ -28,12 +28,12 @@ public:
     }
 };
 
-class MyFlow : public Flow{
+class Complex : public Flow{
 public:
-    MyFlow() {}
-    MyFlow(System* source, System* target) : Flow(source, target){}
-    MyFlow(const MyFlow& mf) : Flow(mf){}
-    virtual ~MyFlow() {}
+    Complex() {}
+    Complex(System* source, System* target) : Flow(source, target){}
+    Complex(const Complex& mf) : Flow(mf){}
+    virtual ~Complex() {}
 
     double executeEquation(){
         return getSource()->getValue() * 0.01;

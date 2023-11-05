@@ -4,7 +4,7 @@
 #include <assert.h>
 #include <cmath>
 #include "../../src/Model.h"
-#include "../../src/MyFlows.h"
+#include "MyFlows.h"
 
 void exponentialFuncionalTest();
 void logisticalFuncionalTest();
