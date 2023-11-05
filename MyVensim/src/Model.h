@@ -36,6 +36,12 @@ public:
 
     typedef vector<System*>::iterator systemsIterator;
     typedef vector<Flow *>::iterator flowsIterator;
+
+    systemsIterator systemsBegin();
+    systemsIterator systemsEnd();
+
+    flowsIterator flowsBegin();
+    flowsIterator flowsEnd();
 };
 
 #endif

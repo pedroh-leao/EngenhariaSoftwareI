@@ -6,8 +6,8 @@ Model :: Model(const string& name){
 
 Model :: Model(const Model& m){
     this->name = m.name;
-    systems.insert(systems.begin(), m.systems.begin(), m.systems.end());
-    flows.insert(flows.begin(), m.flows.begin(), m.flows.end());
+    systems.insert(systemsBegin(), m.systems.begin(), m.systems.end());
+    flows.insert(flowsBegin(), m.flows.begin(), m.flows.end());
 }
 
 Model :: ~Model(){}
@@ -33,7 +33,7 @@ bool Model :: add(Flow* f){
 }
 
 bool Model :: remove(System* s){
-    for(systemsIterator it = systems.begin(); it < systems.end(); it++){
+    for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++){
         if(*it == s){
             systems.erase(it);
             return true;
@@ -44,7 +44,7 @@ bool Model :: remove(System* s){
 }
 
 bool Model :: remove(Flow* f){
-    for(flowsIterator it = flows.begin(); it < flows.end(); it++){
+    for(flowsIterator it = flowsBegin(); it < flowsEnd(); it++){
         if(*it == f){
             flows.erase(it);
             return true;
@@ -70,14 +70,14 @@ bool Model :: run(int tempoInicial, int tempoFinal){
         itResults = results.begin();
 
         //execute the equations of the flows
-        for(flowsIterator itFlows = flows.begin(); itFlows < flows.end(); itFlows++){
+        for(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++){
             (*itResults) = (*itFlows)->executeEquation();
             itResults++;
         }
 
         itResults = results.begin();
 
-        for(flowsIterator itFlows = flows.begin(); itFlows < flows.end(); itFlows++){            
+        for(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++){            
             source = (*itFlows)->getSource();
             source->setValue(source->getValue() - (*itResults));
 
@@ -94,7 +94,7 @@ bool Model :: run(int tempoInicial, int tempoFinal){
 void Model :: reportStatus(){
     cout << "\nCurrent Model Status:" << endl;
 
-    for(systemsIterator it = systems.begin(); it < systems.end(); it++)
+    for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
         cout << (*it)->getName() << ": " << (*it)->getValue() << endl;
 }
 
@@ -112,10 +112,26 @@ Model& Model:: operator= (const Model& m){
     this->name = m.name;
 
     systems.clear();
-    systems.insert(systems.begin(), m.systems.begin(), m.systems.end());
+    systems.insert(systemsBegin(), m.systems.begin(), m.systems.end());
     
     flows.clear();
-    flows.insert(flows.begin(), m.flows.begin(), m.flows.end());
+    flows.insert(flowsBegin(), m.flows.begin(), m.flows.end());
     
     return *this;
+}
+
+Model::systemsIterator Model :: systemsBegin(){
+    return systems.begin();
+}
+
+Model::systemsIterator Model :: systemsEnd(){
+    return systems.end();
+}
+
+Model::flowsIterator Model :: flowsBegin(){
+    return flows.begin();
+}
+
+Model::flowsIterator Model :: flowsEnd(){
+    return flows.end();
 }
