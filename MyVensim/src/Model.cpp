@@ -66,7 +66,7 @@ bool Model :: run(int tempoInicial, int tempoFinal){
     for(int i = 0; i < len; i++)
         results.push_back(0.0);
     
-    for(int i = tempoInicial; i <= tempoFinal; i++){
+    for(int i = tempoInicial; i < tempoFinal; i++){
         itResults = results.begin();
 
         //execute the equations of the flows

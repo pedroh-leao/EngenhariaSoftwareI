@@ -10,13 +10,19 @@
 using namespace std;
 
 class Model{
+protected:
     string name;
     vector<System*> systems;
     vector<Flow*> flows;
+
+private:
+    //prohibiting the copying of models
+    Model(const Model&); //constructor for copy
+    Model& operator=(const Model&);
     
 public:
     Model(const string& = "");
-    Model(const Model&); //constructor for copy
+    
     virtual ~Model();
 
     bool add(System *);
@@ -31,8 +37,6 @@ public:
 
     void setName(const string&);
     string getName() const;
-
-    Model& operator=(const Model&);
 
     typedef vector<System*>::iterator systemsIterator;
     typedef vector<Flow *>::iterator flowsIterator;

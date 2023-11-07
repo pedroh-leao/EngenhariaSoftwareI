@@ -4,6 +4,7 @@
 #include "System.h"
 
 class Flow{
+protected:
     System *source, *target;
 
 public:

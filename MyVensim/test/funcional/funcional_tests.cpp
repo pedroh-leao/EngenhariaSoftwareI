@@ -9,12 +9,12 @@ void exponentialFuncionalTest(){
     m.add(&pop2);
     m.add(&f1);
 
-    m.run(1, 100);
+    m.run(0, 100);
     
     m.reportStatus();
 
-    assert(fabs(round(pop1.getValue() * 10000) - 10000 * 36.6032) < 0.0001);
-    assert(fabs(round(pop2.getValue() * 10000) - 10000 * 63.3968) < 0.0001);
+    assert(round(fabs(pop1.getValue() * 10000 - 10000 * 36.6032) < 1));
+    assert(round(fabs(pop2.getValue() * 10000 - 10000 * 63.3968) < 1));
 
     cout << "\nExponencial Test Aproved." << endl;
 }
@@ -28,12 +28,12 @@ void logisticalFuncionalTest(){
     m.add(&p2);
     m.add(&f1);
 
-    m.run(1, 100);
+    m.run(0, 100);
 
     m.reportStatus();
 
-    assert(fabs(round(p1.getValue() * 10000) - 10000 * 88.2167) < 0.0001);
-    assert(fabs(round(p2.getValue() * 10000) - 10000 * 21.7833) < 0.0001);
+    assert(round(fabs(p1.getValue() * 10000 - 10000 * 88.2167) < 1));
+    assert(round(fabs(p2.getValue() * 10000 - 10000 * 21.7833) < 1));
 
     cout << "\nLogistical Test Aproved." << endl;
 }
@@ -55,15 +55,15 @@ void complexFuncionalTest(){
     m.add(&u);
     m.add(&v);
 
-    m.run(1, 100);
+    m.run(0, 100);
     
     m.reportStatus();
 
-    assert(fabs(round(q1.getValue() * 10000) - 31.8513 * 10000) < 1);
-    assert(fabs(round(q2.getValue() * 10000) - 18.4003 * 10000) < 1);
-    assert(fabs(round(q3.getValue() * 10000) - 77.1143 * 10000) < 1);
-    assert(fabs(round(q4.getValue() * 10000) - 56.1728 * 10000) < 1);
-    assert(fabs(round(q5.getValue() * 10000) - 16.4612 * 10000) < 1);
+    assert(round(fabs(q1.getValue() * 10000 - 31.8513 * 10000)) < 1);
+    assert(round(fabs(q2.getValue() * 10000 - 18.4003 * 10000)) < 1);
+    assert(round(fabs(q3.getValue() * 10000 - 77.1143 * 10000)) < 1);
+    assert(round(fabs(q4.getValue() * 10000 - 56.1728 * 10000)) < 1);
+    assert(round(fabs(q5.getValue() * 10000 - 16.4612 * 10000)) < 1);
 
     cout << "\nComplex Test Aproved." << endl;
 }
