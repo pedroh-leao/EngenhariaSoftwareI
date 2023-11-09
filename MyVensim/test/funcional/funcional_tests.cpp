@@ -13,8 +13,8 @@ void exponentialFuncionalTest(){
     
     m.reportStatus();
 
-    assert(round(fabs(pop1.getValue() * 10000 - 10000 * 36.6032) < 1));
-    assert(round(fabs(pop2.getValue() * 10000 - 10000 * 63.3968) < 1));
+    assert(round(fabs(pop1.getValue() * 10000 - 10000 * 36.6032)) < 1);
+    assert(round(fabs(pop2.getValue() * 10000 - 10000 * 63.3968)) < 1);
 
     cout << "\nExponencial Test Aproved." << endl;
 }
@@ -32,8 +32,8 @@ void logisticalFuncionalTest(){
 
     m.reportStatus();
 
-    assert(round(fabs(p1.getValue() * 10000 - 10000 * 88.2167) < 1));
-    assert(round(fabs(p2.getValue() * 10000 - 10000 * 21.7833) < 1));
+    assert(round(fabs(p1.getValue() * 10000 - 10000 * 88.2167)) < 1);
+    assert(round(fabs(p2.getValue() * 10000 - 10000 * 21.7833)) < 1);
 
     cout << "\nLogistical Test Aproved." << endl;
 }
