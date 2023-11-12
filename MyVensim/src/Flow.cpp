@@ -14,7 +14,7 @@ Flow :: Flow(const Flow& f){
 
 Flow :: ~Flow() {}
 
-void Flow :: setSource(System *s){
+void Flow :: setSource(System* s){
     source = s;
 }
 
@@ -22,7 +22,7 @@ System* Flow :: getSource() const{
     return source;
 }
 
-void Flow :: setTarget(System *s){
+void Flow :: setTarget(System* s){
     target = s;
 }
 
