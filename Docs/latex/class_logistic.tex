@@ -1,0 +1,141 @@
+\doxysection{Logistic Class Reference}
+\hypertarget{class_logistic}{}\label{class_logistic}\index{Logistic@{Logistic}}
+
+
+Class that defines a flow with a logistic equation.  
+
+
+
+
+{\ttfamily \#include $<$My\+Flows.\+h$>$}
+
+
+
+Inheritance diagram for Logistic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_logistic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logistic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_logistic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logistic_a53626dcf51081a67e02a6bc6540815d7}{Logistic}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_flow_ab07547facf9a8e49f6adb140843a1992}{target}})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_logistic}{Logistic} flow constructor that receives pointers to the source and target systems. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_logistic_af5c1d2f9a0982f4e605e6c4fd1b2e6ef}{execute\+Equation}} ()
+\begin{DoxyCompactList}\small\item\em Executes the logistic equation that must be performed by the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_flow}{Flow} default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_ae2fdffd0f4836deced45fb73a2874479}{Flow}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_flow_ab07547facf9a8e49f6adb140843a1992}{target}})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_flow}{Flow} constructor that receives pointers to the source and target systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_af559e47422fbdeeff9b65a0756632cf9}{Flow}} (const \mbox{\hyperlink{class_flow}{Flow}} \&f)
+\begin{DoxyCompactList}\small\item\em Constructor for copy of flow. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Virtual class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_a4da8089ed4e652c414180252d22c8516}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Sets the pointer to the source system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the source system of the flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_a9efed9cf09dd73afc0fe6c1bdc3662a8}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Sets the pointer to the target system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the target system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow}{Flow}} \& \mbox{\hyperlink{class_flow_ac5fae2ad1c3bf3c518240fe85bc2d4b2}{operator=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&f)
+\begin{DoxyCompactList}\small\item\em Defines how the \textquotesingle{}=\textquotesingle{} operator works for flows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}
+\begin{DoxyCompactList}\small\item\em Pointers to the source and target systems of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_ab07547facf9a8e49f6adb140843a1992}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that defines a flow with a logistic equation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_logistic_a53626dcf51081a67e02a6bc6540815d7}\label{class_logistic_a53626dcf51081a67e02a6bc6540815d7} 
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}}
+{\footnotesize\ttfamily Logistic\+::\+Logistic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{class_logistic}{Logistic} flow constructor that receives pointers to the source and target systems. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & pointer to the source system of the flow \\
+\hline
+{\em target} & pointer to the target system of the flow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ :\ \mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \mbox{\hyperlink{class_flow_ab07547facf9a8e49f6adb140843a1992}{target}})\{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_logistic_af5c1d2f9a0982f4e605e6c4fd1b2e6ef}\label{class_logistic_af5c1d2f9a0982f4e605e6c4fd1b2e6ef} 
+\index{Logistic@{Logistic}!executeEquation@{executeEquation}}
+\index{executeEquation@{executeEquation}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{executeEquation()}{executeEquation()}}
+{\footnotesize\ttfamily double Logistic\+::execute\+Equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Executes the logistic equation that must be performed by the flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+return double containing the result of the equation 
+
+Implements \mbox{\hyperlink{class_flow_aa72cd33b5f91e59e84afbf2800b8e71d}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{class_flow_ab07547facf9a8e49f6adb140843a1992}{target}}-\/>\mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value\ *\ (1\ -\/\ value/70);}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_logistic_af5c1d2f9a0982f4e605e6c4fd1b2e6ef_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/test/funcional/\mbox{\hyperlink{_my_flows_8h}{My\+Flows.\+h}}\end{DoxyCompactItemize}

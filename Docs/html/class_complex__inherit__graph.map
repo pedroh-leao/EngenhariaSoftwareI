@@ -1,0 +1,5 @@
+<map id="Complex" name="Complex">
+<area shape="rect" id="Node000001" title="Class that defines a flow with a complex equation." alt="" coords="29,400,205,507"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Class that defines a flow, which is a connection between two systems." alt="" coords="5,5,228,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,367,119,400,114,400,114,367"/>
+</map>
