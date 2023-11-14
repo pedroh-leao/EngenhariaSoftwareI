@@ -1,0 +1,178 @@
+\doxysection{test/funcional/funcional\+\_\+tests.cpp File Reference}
+\hypertarget{funcional__tests_8cpp}{}\label{funcional__tests_8cpp}\index{test/funcional/funcional\_tests.cpp@{test/funcional/funcional\_tests.cpp}}
+{\ttfamily \#include "{}funcional\+\_\+tests.\+h"{}}\newline
+Include dependency graph for funcional\+\_\+tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponential\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Performs the exponencial funcional test of a model with 2 systems and 1 flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{logistical\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Performs the logistical funcional test of a model with 2 systems and 1 flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{complex\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Performs the complex funcional test of a model with 5 systems and 6 flows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}\label{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527} 
+\index{funcional\_tests.cpp@{funcional\_tests.cpp}!complexFuncionalTest@{complexFuncionalTest}}
+\index{complexFuncionalTest@{complexFuncionalTest}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{complexFuncionalTest()}{complexFuncionalTest()}}
+{\footnotesize\ttfamily void complex\+Funcional\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Performs the complex funcional test of a model with 5 systems and 6 flows. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ m;}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ q1(\textcolor{stringliteral}{"{}Q1"{}},\ 100),\ q2(\textcolor{stringliteral}{"{}Q2"{}},\ 0),\ q3(\textcolor{stringliteral}{"{}Q3"{}},\ 100),\ q4(\textcolor{stringliteral}{"{}Q4"{}},\ 0),\ q5(\textcolor{stringliteral}{"{}Q5"{}},\ 0);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_complex}{Complex}}\ f(\&q1,\ \&q2),\ g(\&q1,\ \&q3),\ r(\&q2,\ \&q5),\ t(\&q2,\ \&q3),\ u(\&q3,\ \&q4),\ v(\&q4,\ \&q1);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&q1);}
+\DoxyCodeLine{00047\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&q2);}
+\DoxyCodeLine{00048\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&q3);}
+\DoxyCodeLine{00049\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&q4);}
+\DoxyCodeLine{00050\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&q5);}
+\DoxyCodeLine{00051\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&f);}
+\DoxyCodeLine{00052\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&g);}
+\DoxyCodeLine{00053\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&r);}
+\DoxyCodeLine{00054\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&t);}
+\DoxyCodeLine{00055\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&u);}
+\DoxyCodeLine{00056\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&v);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ m.\mbox{\hyperlink{class_model_a62db6c98deb4641fcc53fa3493316e4d}{run}}(0,\ 100);}
+\DoxyCodeLine{00059\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ m.\mbox{\hyperlink{class_model_a666755c86bc0b9509176bda6a1d8ba57}{reportStatus}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ assert(round(fabs(q1.getValue()\ *\ 10000\ -\/\ 31.8513\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00063\ \ \ \ \ assert(round(fabs(q2.getValue()\ *\ 10000\ -\/\ 18.4003\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00064\ \ \ \ \ assert(round(fabs(q3.getValue()\ *\ 10000\ -\/\ 77.1143\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00065\ \ \ \ \ assert(round(fabs(q4.getValue()\ *\ 10000\ -\/\ 56.1728\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00066\ \ \ \ \ assert(round(fabs(q5.getValue()\ *\ 10000\ -\/\ 16.4612\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nComplex\ Test\ Aproved."{}}\ <<\ endl;}
+\DoxyCodeLine{00069\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}\label{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27} 
+\index{funcional\_tests.cpp@{funcional\_tests.cpp}!exponentialFuncionalTest@{exponentialFuncionalTest}}
+\index{exponentialFuncionalTest@{exponentialFuncionalTest}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{exponentialFuncionalTest()}{exponentialFuncionalTest()}}
+{\footnotesize\ttfamily void exponential\+Funcional\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Performs the exponencial funcional test of a model with 2 systems and 1 flow. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ m;}
+\DoxyCodeLine{00005\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ pop1(\textcolor{stringliteral}{"{}Pop1"{}},\ 100),\ pop2(\textcolor{stringliteral}{"{}Pop2"{}},\ 0);}
+\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{class_exponential}{Exponential}}\ f1(\&pop1,\ \&pop2);}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&pop1);}
+\DoxyCodeLine{00009\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&pop2);}
+\DoxyCodeLine{00010\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&f1);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ m.\mbox{\hyperlink{class_model_a62db6c98deb4641fcc53fa3493316e4d}{run}}(0,\ 100);}
+\DoxyCodeLine{00013\ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ m.\mbox{\hyperlink{class_model_a666755c86bc0b9509176bda6a1d8ba57}{reportStatus}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ assert(round(fabs(pop1.getValue()\ *\ 10000\ -\/\ 10000\ *\ 36.6032))\ <\ 1);}
+\DoxyCodeLine{00017\ \ \ \ \ assert(round(fabs(pop2.getValue()\ *\ 10000\ -\/\ 10000\ *\ 63.3968))\ <\ 1);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nExponencial\ Test\ Aproved."{}}\ <<\ endl;}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}\label{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29} 
+\index{funcional\_tests.cpp@{funcional\_tests.cpp}!logisticalFuncionalTest@{logisticalFuncionalTest}}
+\index{logisticalFuncionalTest@{logisticalFuncionalTest}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{logisticalFuncionalTest()}{logisticalFuncionalTest()}}
+{\footnotesize\ttfamily void logistical\+Funcional\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Performs the logistical funcional test of a model with 2 systems and 1 flow. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ m;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ p1(\textcolor{stringliteral}{"{}P1"{}},\ 100),\ p2(\textcolor{stringliteral}{"{}P2"{}},\ 10);}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_logistic}{Logistic}}\ f1(\&p1,\ \&p2);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&p1);}
+\DoxyCodeLine{00028\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&p2);}
+\DoxyCodeLine{00029\ \ \ \ \ m.\mbox{\hyperlink{class_model_a2a340ed8a558aedcfbf7c1bdaff90c56}{add}}(\&f1);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ m.\mbox{\hyperlink{class_model_a62db6c98deb4641fcc53fa3493316e4d}{run}}(0,\ 100);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ m.\mbox{\hyperlink{class_model_a666755c86bc0b9509176bda6a1d8ba57}{reportStatus}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ assert(round(fabs(p1.getValue()\ *\ 10000\ -\/\ 10000\ *\ 88.2167))\ <\ 1);}
+\DoxyCodeLine{00036\ \ \ \ \ assert(round(fabs(p2.getValue()\ *\ 10000\ -\/\ 10000\ *\ 21.7833))\ <\ 1);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nLogistical\ Test\ Aproved."{}}\ <<\ endl;}
+\DoxyCodeLine{00039\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29_icgraph}
+\end{center}
+\end{figure}
