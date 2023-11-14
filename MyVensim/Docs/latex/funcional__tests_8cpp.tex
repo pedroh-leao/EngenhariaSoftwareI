@@ -1,5 +1,5 @@
-\doxysection{test/funcional/funcional\+\_\+tests.cpp File Reference}
-\hypertarget{funcional__tests_8cpp}{}\label{funcional__tests_8cpp}\index{test/funcional/funcional\_tests.cpp@{test/funcional/funcional\_tests.cpp}}
+\doxysection{My\+Vensim/test/funcional/funcional\+\_\+tests.cpp File Reference}
+\hypertarget{funcional__tests_8cpp}{}\label{funcional__tests_8cpp}\index{MyVensim/test/funcional/funcional\_tests.cpp@{MyVensim/test/funcional/funcional\_tests.cpp}}
 {\ttfamily \#include "{}funcional\+\_\+tests.\+h"{}}\newline
 Include dependency graph for funcional\+\_\+tests.\+cpp\+:
 \nopagebreak
@@ -13,11 +13,11 @@ Include dependency graph for funcional\+\_\+tests.\+cpp\+:
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponential\+Funcional\+Test}} ()
-\begin{DoxyCompactList}\small\item\em Performs the exponencial funcional test of a model with 2 systems and 1 flow. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation When the model runs, the equation is executed from time 0 to 100 and the system values are updated Then checks if the system 1 value is 36.\+6032 and system 2 value is 63.\+3968. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{logistical\+Funcional\+Test}} ()
-\begin{DoxyCompactList}\small\item\em Performs the logistical funcional test of a model with 2 systems and 1 flow. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation When the model runs, the equation is executed from time 0 to 100 and the system values are updated Then checks if the system 1 value is 88.\+2167 and system 2 value is 21.\+7833. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{complex\+Funcional\+Test}} ()
-\begin{DoxyCompactList}\small\item\em Performs the complex funcional test of a model with 5 systems and 6 flows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0, and 6 flows, connecting q1-\/q2, q1-\/q3, q2-\/q5, q2-\/q3, q4-\/q1, that perform a complex equation When the model runs, the equations flows are executed from time 0 to 100 and the system values are updated Then checks if q1 value is 31.\+8513, q2 value is 18.\+4003, q3 value is 77.\+1143, q4 value is 56.\+1728 and q5 value is 16.\+4612. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -29,7 +29,7 @@ void \mbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{c
 
 
 
-Performs the complex funcional test of a model with 5 systems and 6 flows. 
+Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0, and 6 flows, connecting q1-\/q2, q1-\/q3, q2-\/q5, q2-\/q3, q4-\/q1, that perform a complex equation When the model runs, the equations flows are executed from time 0 to 100 and the system values are updated Then checks if q1 value is 31.\+8513, q2 value is 18.\+4003, q3 value is 77.\+1143, q4 value is 56.\+1728 and q5 value is 16.\+4612. 
 
 
 \begin{DoxyCode}{0}
@@ -88,7 +88,7 @@ Here is the caller graph for this function\+:
 
 
 
-Performs the exponencial funcional test of a model with 2 systems and 1 flow. 
+Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation When the model runs, the equation is executed from time 0 to 100 and the system values are updated Then checks if the system 1 value is 36.\+6032 and system 2 value is 63.\+3968. 
 
 
 \begin{DoxyCode}{0}
@@ -136,7 +136,7 @@ Here is the caller graph for this function\+:
 
 
 
-Performs the logistical funcional test of a model with 2 systems and 1 flow. 
+Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation When the model runs, the equation is executed from time 0 to 100 and the system values are updated Then checks if the system 1 value is 88.\+2167 and system 2 value is 21.\+7833. 
 
 
 \begin{DoxyCode}{0}

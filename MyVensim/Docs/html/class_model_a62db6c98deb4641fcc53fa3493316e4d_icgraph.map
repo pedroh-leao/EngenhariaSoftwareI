@@ -1,10 +1,10 @@
 <map id="Model::run" name="Model::run">
 <area shape="rect" id="Node000001" title="Executes the model, performing flow operations and updating system values." alt="" coords="319,56,401,83"/>
-<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Performs the complex funcional test of a model with 5 systems and 6 flows." alt="" coords="111,5,263,32"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="111,5,263,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="304,56,234,35,236,30,305,51"/>
-<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Performs the exponencial funcional test of a model with 2 systems and 1 flow." alt="" coords="103,56,271,83"/>
+<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="103,56,271,83"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,72,272,72,272,67,303,67"/>
-<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Performs the logistical funcional test of a model with 2 systems and 1 flow." alt="" coords="110,107,264,133"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="110,107,264,133"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="305,88,236,109,234,104,304,83"/>
 <area shape="rect" id="Node000003" href="$test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>

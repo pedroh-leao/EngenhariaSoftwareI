@@ -1,5 +1,5 @@
 <map id="complexFuncionalTest" name="complexFuncionalTest">
-<area shape="rect" id="Node000001" title="Performs the complex funcional test of a model with 5 systems and 6 flows." alt="" coords="5,81,157,108"/>
+<area shape="rect" id="Node000001" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="5,81,157,108"/>
 <area shape="rect" id="Node000002" href="$class_model.html#a2a340ed8a558aedcfbf7c1bdaff90c56" title="Adds a pointer to a system in the systems vector." alt="" coords="230,5,315,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,78,222,36,224,41,118,83"/>
 <area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title="Returns the system value." alt="" coords="388,81,513,108"/>

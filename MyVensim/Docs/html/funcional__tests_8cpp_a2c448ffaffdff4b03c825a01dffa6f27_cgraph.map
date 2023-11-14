@@ -1,5 +1,5 @@
 <map id="exponentialFuncionalTest" name="exponentialFuncionalTest">
-<area shape="rect" id="Node000001" title="Performs the exponencial funcional test of a model with 2 systems and 1 flow." alt="" coords="5,81,174,108"/>
+<area shape="rect" id="Node000001" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="5,81,174,108"/>
 <area shape="rect" id="Node000002" href="$class_model.html#a2a340ed8a558aedcfbf7c1bdaff90c56" title="Adds a pointer to a system in the systems vector." alt="" coords="247,5,332,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,78,237,36,239,41,128,83"/>
 <area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title="Returns the system value." alt="" coords="405,81,530,108"/>

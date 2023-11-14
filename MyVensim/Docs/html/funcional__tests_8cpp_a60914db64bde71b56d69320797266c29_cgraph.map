@@ -1,5 +1,5 @@
 <map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
-<area shape="rect" id="Node000001" title="Performs the logistical funcional test of a model with 2 systems and 1 flow." alt="" coords="5,81,159,108"/>
+<area shape="rect" id="Node000001" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="5,81,159,108"/>
 <area shape="rect" id="Node000002" href="$class_model.html#a2a340ed8a558aedcfbf7c1bdaff90c56" title="Adds a pointer to a system in the systems vector." alt="" coords="232,5,317,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,78,223,36,225,41,119,83"/>
 <area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title="Returns the system value." alt="" coords="390,81,515,108"/>
