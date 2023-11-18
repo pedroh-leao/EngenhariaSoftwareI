@@ -1,12 +1,12 @@
 #ifndef MYFLOWS_H
 #define MYFLOWS_H
 
-#include "../../src/Flow.h"
+#include "../../src/FlowImpl.h"
 
 /**
  * @brief Class that defines a flow with an exponential equation
 */
-class Exponential : public Flow{
+class Exponential : public FlowImpl{
 public:
     /**
      * @brief Exponential flow constructor that receives pointers to the source and target systems
@@ -14,7 +14,7 @@ public:
      * @param target pointer to the target system of the flow
      * @return
     */
-    Exponential(System* source, System* target) : Flow(source, target){}
+    Exponential(System* source, System* target) : FlowImpl(source, target){}
 
     /**
      * @brief Executes the exponential equation that must be performed by the flow
@@ -29,7 +29,7 @@ public:
 /**
  * @brief Class that defines a flow with a logistic equation
 */
-class Logistic : public Flow{
+class Logistic : public FlowImpl{
 public:
     /**
      * @brief Logistic flow constructor that receives pointers to the source and target systems
@@ -37,7 +37,7 @@ public:
      * @param target pointer to the target system of the flow
      * @return
     */
-    Logistic(System* source, System* target) : Flow(source, target){}
+    Logistic(System* source, System* target) : FlowImpl(source, target){}
 
     /**
      * @brief Executes the logistic equation that must be performed by the flow
@@ -53,7 +53,7 @@ public:
 /**
  * @brief Class that defines a flow with a complex equation
 */
-class Complex : public Flow{
+class Complex : public FlowImpl{
 public:
     /**
      * @brief Complex flow constructor that receives pointers to the source and target systems
@@ -61,7 +61,7 @@ public:
      * @param target pointer to the target system of the flow
      * @return
     */
-    Complex(System* source, System* target) : Flow(source, target){}
+    Complex(System* source, System* target) : FlowImpl(source, target){}
 
     /**
      * @brief Executes the complex equation that must be performed by the flow

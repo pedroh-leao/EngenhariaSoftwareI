@@ -3,7 +3,9 @@
 
 #include <assert.h>
 #include <cmath>
-#include "../../src/Model.h"
+#include "../../src/ModelImpl.h"
+#include "../../src/SystemImpl.h"
+#include "../../src/FlowImpl.h"
 #include "MyFlows.h"
 
 /**

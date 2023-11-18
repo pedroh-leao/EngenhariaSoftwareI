@@ -1,18 +1,21 @@
-#include "Model.h"
+#include "ModelImpl.h"
 
-Model :: Model(const string& name){
+ModelImpl :: ModelImpl(const string& name){
     this->name = name;
 }
 
-Model :: Model(const Model& m){
+ModelImpl :: ModelImpl(const ModelImpl& m){
     this->name = m.name;
     systems.insert(systemsBegin(), m.systems.begin(), m.systems.end());
     flows.insert(flowsBegin(), m.flows.begin(), m.flows.end());
 }
 
-Model :: ~Model(){}
+ModelImpl :: ~ModelImpl(){
+    systems.clear();
+    flows.clear();
+}
 
-bool Model :: add(System* s){
+bool ModelImpl :: add(System* s){
     int lenBefore = systems.size();
 
     systems.push_back(s);
@@ -22,7 +25,7 @@ bool Model :: add(System* s){
     return true;
 }
 
-bool Model :: add(Flow* f){
+bool ModelImpl :: add(Flow* f){
     int lenBefore = flows.size();
 
     flows.push_back(f);
@@ -32,7 +35,7 @@ bool Model :: add(Flow* f){
     return true;
 }
 
-bool Model :: remove(System* s){
+bool ModelImpl :: remove(System* s){
     for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++){
         if(*it == s){
             systems.erase(it);
@@ -43,7 +46,7 @@ bool Model :: remove(System* s){
     return false;
 }
 
-bool Model :: remove(Flow* f){
+bool ModelImpl :: remove(Flow* f){
     for(flowsIterator it = flowsBegin(); it < flowsEnd(); it++){
         if(*it == f){
             flows.erase(it);
@@ -54,7 +57,7 @@ bool Model :: remove(Flow* f){
     return false;
 }
 
-bool Model :: run(int startTime, int finalTime){
+bool ModelImpl :: run(int startTime, int finalTime){
     if(startTime > finalTime || startTime < 0) return false;
 
     System *source, *target;
@@ -91,22 +94,22 @@ bool Model :: run(int startTime, int finalTime){
     return true;
 }
 
-void Model :: reportStatus(){
-    cout << "\nCurrent Model Status:" << endl;
+void ModelImpl :: reportStatus(){
+    cout << "\nCurrent ModelImpl Status:" << endl;
 
     for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
         cout << (*it)->getName() << ": " << (*it)->getValue() << endl;
 }
 
-void Model :: setName(const string& name){
+void ModelImpl :: setName(const string& name){
     this->name = name;
 }
 
-string Model :: getName() const{
+string ModelImpl :: getName() const{
     return name;
 }
 
-Model& Model:: operator= (const Model& m){
+ModelImpl& ModelImpl:: operator= (const ModelImpl& m){
     if(this == &m) return *this;
 
     this->name = m.name;
@@ -120,18 +123,18 @@ Model& Model:: operator= (const Model& m){
     return *this;
 }
 
-Model::systemsIterator Model :: systemsBegin(){
+ModelImpl::systemsIterator ModelImpl :: systemsBegin(){
     return systems.begin();
 }
 
-Model::systemsIterator Model :: systemsEnd(){
+ModelImpl::systemsIterator ModelImpl :: systemsEnd(){
     return systems.end();
 }
 
-Model::flowsIterator Model :: flowsBegin(){
+ModelImpl::flowsIterator ModelImpl :: flowsBegin(){
     return flows.begin();
 }
 
-Model::flowsIterator Model :: flowsEnd(){
+ModelImpl::flowsIterator ModelImpl :: flowsEnd(){
     return flows.end();
 }

@@ -6,77 +6,45 @@
 using namespace std;
 
 /**
- * @brief Class that defines a system
-*/
-class System{
-protected:
-    /**
-     * @brief System name
-    */
-    string name;
-
-    /**
-     * @brief System value
-    */
-    double value = 0.0;
-
+ * @brief Interface class for systems
+ */
+class System {
 public:
     /**
-     * @brief System constructor that works as default as well
+     * @brief Virtual destructor for the interface
+     */
+    virtual ~System() {}
+
+    /**
+     * @brief Pure virtual method to set the system name
      * @param name system name
-     * @param value system initial value
-     * @return
-    */
-    System(const string& name= "", const double& value= 0.0);
+     */
+    virtual void setName(const string& name) = 0;
 
     /**
-     * @brief Constructor for copy of system
-     * @param s system object that will be copied
-     * @return
-    */
-    System(const System& s);
-
-    /**
-     * @brief Virtual class destructor
-     * @param
-     * @return
-    */
-    virtual ~System();
-
-    /**
-     * @brief Sets the system name
-     * @param name system name
-     * @return
-    */
-    void setName(const string& name);
-
-    /**
-     * @brief Returns the system name
-     * @param
+     * @brief Pure virtual method to get the system name
      * @return a string containing the system name
-    */
-    string getName() const;
+     */
+    virtual string getName() const = 0;
 
     /**
-     * @brief Sets the system value
+     * @brief Pure virtual method to set the system value
      * @param value system value
-     * @return
-    */
-    void setValue(const double& value);
+     */
+    virtual void setValue(const double& value) = 0;
 
     /**
-     * @brief Returns the system value
-     * @param
+     * @brief Pure virtual method to get the system value
      * @return a double containing the system value
-    */
-    double getValue() const;
+     */
+    virtual double getValue() const = 0;
 
     /**
-     * @brief Defines how the '=' operator works for systems
+     * @brief Pure virtual method to define how the '=' operator works for systems
      * @param s system object that will be copied
      * @return a reference to the copied system
-    */
-    System& operator=(const System& s);
+     */
+    virtual System& operator=(const System& s) = 0;
 };
 
 #endif
