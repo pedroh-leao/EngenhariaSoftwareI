@@ -42,6 +42,13 @@ public:
      * @return system pointer that points to the target system of the flow
      */
     virtual System* getTarget() const = 0;
+
+    /**
+     * @brief Pure virtual method to define how the '=' operator works for flows
+     * @param f flow object that will be copied
+     * @return a reference to the copied flow
+     */
+    virtual Flow& operator=(const Flow& f) = 0;
 };
 
 #endif

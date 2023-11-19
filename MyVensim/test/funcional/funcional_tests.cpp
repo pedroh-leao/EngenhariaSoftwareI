@@ -16,8 +16,6 @@ void exponentialFuncionalTest(){
     assert(round(fabs(pop1->getValue() * 10000 - 10000 * 36.6032)) < 1);
     assert(round(fabs(pop2->getValue() * 10000 - 10000 * 63.3968)) < 1);
 
-    cout << "\nExponencial Test Aproved." << endl;
-
     delete m;
     delete pop1;
     delete pop2;
@@ -39,8 +37,6 @@ void logisticalFuncionalTest(){
 
     assert(round(fabs(p1->getValue() * 10000 - 10000 * 88.2167)) < 1);
     assert(round(fabs(p2->getValue() * 10000 - 10000 * 21.7833)) < 1);
-
-    cout << "\nLogistical Test Aproved." << endl;
 
     delete m;
     delete p1;
@@ -85,8 +81,6 @@ void complexFuncionalTest(){
     assert(round(fabs(q3->getValue() * 10000 - 77.1143 * 10000)) < 1);
     assert(round(fabs(q4->getValue() * 10000 - 56.1728 * 10000)) < 1);
     assert(round(fabs(q5->getValue() * 10000 - 16.4612 * 10000)) < 1);
-
-    cout << "\nComplex Test Aproved." << endl;
 
     delete m;
     delete q1;

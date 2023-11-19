@@ -5,9 +5,9 @@ SystemImpl :: SystemImpl(const string& name, const double& value){
     this->value = value;
 }
 
-SystemImpl :: SystemImpl(const SystemImpl& s){
-    this->name = s.name;
-    this->value = s.value;
+SystemImpl :: SystemImpl(const System& s){
+    this->name = s.getName();
+    this->value = s.getValue();
 }
 
 SystemImpl :: ~SystemImpl(){}

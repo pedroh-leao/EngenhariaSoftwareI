@@ -30,7 +30,7 @@ public:
      * @brief Constructor for copy of flow
      * @param f flow object that will be copied
     */
-    FlowImpl(const FlowImpl& f);
+    FlowImpl(const Flow& f);
 
     /**
      * @brief Virtual class destructor

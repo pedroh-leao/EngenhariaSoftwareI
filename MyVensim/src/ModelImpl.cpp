@@ -95,7 +95,7 @@ bool ModelImpl :: run(int startTime, int finalTime){
 }
 
 void ModelImpl :: reportStatus(){
-    cout << "\nCurrent ModelImpl Status:" << endl;
+    cout << "\nCurrent Model Status:" << endl;
 
     for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
         cout << (*it)->getName() << ": " << (*it)->getValue() << endl;

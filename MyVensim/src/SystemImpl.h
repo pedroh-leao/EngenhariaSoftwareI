@@ -30,7 +30,7 @@ public:
      * @brief Constructor for copy of system
      * @param s system object that will be copied
     */
-    SystemImpl(const SystemImpl& s);
+    SystemImpl(const System& s);
 
     /**
      * @brief Virtual class destructor

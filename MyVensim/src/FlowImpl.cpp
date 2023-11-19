@@ -1,15 +1,18 @@
 #include "FlowImpl.h"
 
-FlowImpl :: FlowImpl() {}
+FlowImpl :: FlowImpl() {
+    source = NULL;
+    target = NULL;
+}
 
 FlowImpl :: FlowImpl(System* source, System* target){
     this->source = source;
     this->target = target;
 }
 
-FlowImpl :: FlowImpl(const FlowImpl& f){
-    this->source = f.source;
-    this->target = f.target;
+FlowImpl :: FlowImpl(const Flow& f){
+    this->source = f.getSource();
+    this->target = f.getTarget();
 }
 
 FlowImpl :: ~FlowImpl() {}
