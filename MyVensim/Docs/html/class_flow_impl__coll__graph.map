@@ -1,0 +1,7 @@
+<map id="FlowImpl" name="FlowImpl">
+<area shape="rect" id="Node000001" title="Class that defines a flow, which is a connection between two systems." alt="" coords="115,363,337,688"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Interface class for flows." alt="" coords="5,5,228,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,296,182,362,177,364,158,297"/>
+<area shape="rect" id="Node000003" href="$class_system.html" title="Interface class for systems." alt="" coords="252,16,421,272"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="302,273,280,347,275,346,297,271"/>
+</map>

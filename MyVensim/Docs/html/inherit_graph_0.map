@@ -1,9 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_flow.html" title="Class that defines a flow, which is a connection between two systems." alt="" coords="5,56,54,83"/>
-<area shape="rect" id="Node000001" href="$class_complex.html" title="Class that defines a flow with a complex equation." alt="" coords="110,5,183,32"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="67,50,113,30,115,35,69,55"/>
-<area shape="rect" id="Node000002" href="$class_exponential.html" title="Class that defines a flow with an exponential equation." alt="" coords="102,56,191,83"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="69,67,101,67,101,72,69,72"/>
-<area shape="rect" id="Node000003" href="$class_logistic.html" title="Class that defines a flow with a logistic equation." alt="" coords="113,107,180,133"/>
-<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="69,83,115,104,113,109,67,88"/>
+<area shape="rect" id="Node000000" href="$class_flow.html" title="Interface class for flows." alt="" coords="5,56,54,83"/>
+<area shape="rect" id="Node000001" href="$class_flow_impl.html" title="Class that defines a flow, which is a connection between two systems." alt="" coords="102,56,174,83"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="70,67,101,67,101,72,70,72"/>
+<area shape="rect" id="Node000002" href="$class_complex.html" title="Class that defines a flow with a complex equation." alt="" coords="231,5,303,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="187,47,230,30,232,35,189,52"/>
+<area shape="rect" id="Node000003" href="$class_exponential.html" title="Class that defines a flow with an exponential equation." alt="" coords="222,56,311,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="190,67,222,67,222,72,190,72"/>
+<area shape="rect" id="Node000004" href="$class_logistic.html" title="Class that defines a flow with a logistic equation." alt="" coords="234,107,300,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="189,86,234,105,232,110,187,91"/>
 </map>

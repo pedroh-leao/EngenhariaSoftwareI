@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['setname_0',['setname',['../class_model.html#a25343b1abe09522368a068202c3917df',1,'Model::setName()'],['../class_system.html#aecfa79ded6c6a08f69ebaf55e758e5b4',1,'System::setName()']]],
-  ['setsource_1',['setSource',['../class_flow.html#a4da8089ed4e652c414180252d22c8516',1,'Flow']]],
-  ['settarget_2',['setTarget',['../class_flow.html#a9efed9cf09dd73afc0fe6c1bdc3662a8',1,'Flow']]],
-  ['setvalue_3',['setValue',['../class_system.html#a08e97e86cf4a48883cd03a34c9bcebac',1,'System']]],
-  ['source_4',['source',['../class_flow.html#a963ca162995d112f0f30322e2bb9de63',1,'Flow']]],
-  ['system_5',['system',['../class_system.html',1,'System'],['../class_system.html#a82ef74b47a879388a9bcb96d826f3580',1,'System::System(const string &amp;name=&quot;&quot;, const double &amp;value=0.0)'],['../class_system.html#afcca7801ee0cc7901b6871c0e916a0a2',1,'System::System(const System &amp;s)']]],
-  ['system_2ecpp_6',['System.cpp',['../_system_8cpp.html',1,'']]],
-  ['system_2eh_7',['System.h',['../_system_8h.html',1,'']]],
-  ['systems_8',['systems',['../class_model.html#ac7dea8829149e597d2671dbc0a538bf7',1,'Model']]],
-  ['systemsbegin_9',['systemsBegin',['../class_model.html#a26b1f0cfdbefbab8a2bd3ae250a523fe',1,'Model']]],
-  ['systemsend_10',['systemsEnd',['../class_model.html#afa88cd3157f134e4f2c2e5d1c4ab587c',1,'Model']]],
-  ['systemsiterator_11',['systemsIterator',['../class_model.html#ae2987d24c6adff4b124fb758dcc6bb83',1,'Model']]]
+  ['setname_0',['setname',['../class_model.html#aa17012307c37e6527ae6b1d3fff540e0',1,'Model::setName()'],['../class_model_impl.html#a0122a51ecc35cf4cf3d28a0366d9527c',1,'ModelImpl::setName()'],['../class_system.html#afc362e8275b428a94c214826c60a01bc',1,'System::setName()'],['../class_system_impl.html#a6f1abee03e95201f0e2d36cddbeaccad',1,'SystemImpl::setName()']]],
+  ['setsource_1',['setsource',['../class_flow.html#a4d756236982858350e7bf80a465926a7',1,'Flow::setSource()'],['../class_flow_impl.html#ac761ce3fc1b097b3086a2618f645a2a2',1,'FlowImpl::setSource()']]],
+  ['settarget_2',['settarget',['../class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe',1,'Flow::setTarget()'],['../class_flow_impl.html#a9c9d09746b4fb2fae14041beafcba9dc',1,'FlowImpl::setTarget()']]],
+  ['setvalue_3',['setvalue',['../class_system.html#a4ade48b75793a48021cdb634a86ff988',1,'System::setValue()'],['../class_system_impl.html#ab8682deb13b158ee77e23e2d048c70a7',1,'SystemImpl::setValue()']]],
+  ['source_4',['source',['../class_flow_impl.html#a950987351656a518a1057b64c5f85af8',1,'FlowImpl']]],
+  ['system_5',['System',['../class_system.html',1,'']]],
+  ['system_2eh_6',['System.h',['../_system_8h.html',1,'']]],
+  ['systemimpl_7',['systemimpl',['../class_system_impl.html',1,'SystemImpl'],['../class_system_impl.html#a7ba1a978df3b5cdf008be1abbf745d82',1,'SystemImpl::SystemImpl(const string &amp;name=&quot;&quot;, const double &amp;value=0.0)'],['../class_system_impl.html#a5ea2f9b0b82bf06466fea4fe5513aa90',1,'SystemImpl::SystemImpl(const System &amp;s)']]],
+  ['systemimpl_2ecpp_8',['SystemImpl.cpp',['../_system_impl_8cpp.html',1,'']]],
+  ['systemimpl_2eh_9',['SystemImpl.h',['../_system_impl_8h.html',1,'']]],
+  ['systems_10',['systems',['../class_model_impl.html#a767e2054ecaaa8d1401ef2c962adc3e2',1,'ModelImpl']]],
+  ['systemsbegin_11',['systemsbegin',['../class_model.html#a5cf4d533a7ac8752b9f6cab20e7d6f41',1,'Model::systemsBegin()'],['../class_model_impl.html#a43e37d70bc3c50579187a749d94e2ae8',1,'ModelImpl::systemsBegin()']]],
+  ['systemsend_12',['systemsend',['../class_model.html#aed9cb3a0a968b2fe62323916715fbceb',1,'Model::systemsEnd()'],['../class_model_impl.html#a9c43899645ff8112b6470cf6f72f3775',1,'ModelImpl::systemsEnd()']]],
+  ['systemsiterator_13',['systemsIterator',['../class_model.html#ae2987d24c6adff4b124fb758dcc6bb83',1,'Model']]]
 ];

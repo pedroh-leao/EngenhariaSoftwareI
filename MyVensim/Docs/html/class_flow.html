@@ -72,13 +72,12 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_flow-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Flow Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class that defines a flow, which is a connection between two systems.  
+<p>Interface class for flows.  
  <a href="class_flow.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_flow_8h_source.html">Flow.h</a>&gt;</code></p>
@@ -87,13 +86,15 @@ Inheritance diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__inherit__graph.png" border="0" usemap="#a_flow_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_flow_inherit__map" id="a_flow_inherit__map">
-<area shape="rect" title="Class that defines a flow, which is a connection between two systems." alt="" coords="179,5,402,352"/>
-<area shape="rect" href="class_complex.html" title="Class that defines a flow with a complex equation." alt="" coords="5,400,181,507"/>
-<area shape="poly" title=" " alt="" coords="173,347,133,402,129,399,168,344"/>
-<area shape="rect" href="class_exponential.html" title="Class that defines a flow with an exponential equation." alt="" coords="205,400,376,507"/>
-<area shape="poly" title=" " alt="" coords="293,367,293,400,288,400,288,367"/>
-<area shape="rect" href="class_logistic.html" title="Class that defines a flow with a logistic equation." alt="" coords="400,400,571,507"/>
-<area shape="poly" title=" " alt="" coords="413,346,450,399,446,402,409,349"/>
+<area shape="rect" title="Interface class for flows." alt="" coords="179,5,402,283"/>
+<area shape="rect" href="class_flow_impl.html" title="Class that defines a flow, which is a connection between two systems." alt="" coords="179,331,402,677"/>
+<area shape="poly" title=" " alt="" coords="293,298,293,331,288,331,288,298"/>
+<area shape="rect" href="class_complex.html" title="Class that defines a flow with a complex equation." alt="" coords="5,733,181,883"/>
+<area shape="poly" title=" " alt="" coords="174,689,144,735,139,732,169,686"/>
+<area shape="rect" href="class_exponential.html" title="Class that defines a flow with an exponential equation." alt="" coords="205,725,376,891"/>
+<area shape="poly" title=" " alt="" coords="293,692,293,726,288,726,288,692"/>
+<area shape="rect" href="class_logistic.html" title="Class that defines a flow with a logistic equation." alt="" coords="400,733,571,883"/>
+<area shape="poly" title=" " alt="" coords="412,689,440,732,436,735,408,691"/>
 </map>
 </div>
 <div class="dynheader">
@@ -101,160 +102,39 @@ Collaboration diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__coll__graph.png" border="0" usemap="#a_flow_coll__map" alt="Collaboration graph"/></div>
 <map name="a_flow_coll__map" id="a_flow_coll__map">
-<area shape="rect" title="Class that defines a flow, which is a connection between two systems." alt="" coords="5,405,228,731"/>
-<area shape="rect" href="class_system.html" title="Class that defines a system." alt="" coords="28,5,205,325"/>
-<area shape="poly" title=" " alt="" coords="119,325,119,389,114,389,114,325"/>
+<area shape="rect" title="Interface class for flows." alt="" coords="5,5,228,283"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac9975e144e606242748197798e87dd32" id="r_ac9975e144e606242748197798e87dd32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ac9975e144e606242748197798e87dd32">Flow</a> ()</td></tr>
-<tr class="memdesc:ac9975e144e606242748197798e87dd32"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_flow.html" title="Class that defines a flow, which is a connection between two systems.">Flow</a> default constructor.  <br /></td></tr>
-<tr class="separator:ac9975e144e606242748197798e87dd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2fdffd0f4836deced45fb73a2874479" id="r_ae2fdffd0f4836deced45fb73a2874479"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ae2fdffd0f4836deced45fb73a2874479">Flow</a> (<a class="el" href="class_system.html">System</a> *<a class="el" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a>, <a class="el" href="class_system.html">System</a> *<a class="el" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a>)</td></tr>
-<tr class="memdesc:ae2fdffd0f4836deced45fb73a2874479"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_flow.html" title="Class that defines a flow, which is a connection between two systems.">Flow</a> constructor that receives pointers to the source and target systems.  <br /></td></tr>
-<tr class="separator:ae2fdffd0f4836deced45fb73a2874479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af559e47422fbdeeff9b65a0756632cf9" id="r_af559e47422fbdeeff9b65a0756632cf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#af559e47422fbdeeff9b65a0756632cf9">Flow</a> (const <a class="el" href="class_flow.html">Flow</a> &amp;f)</td></tr>
-<tr class="memdesc:af559e47422fbdeeff9b65a0756632cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for copy of flow.  <br /></td></tr>
-<tr class="separator:af559e47422fbdeeff9b65a0756632cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5991efa6e8cf88c4ef2125cc727db333" id="r_a5991efa6e8cf88c4ef2125cc727db333"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a5991efa6e8cf88c4ef2125cc727db333">~Flow</a> ()</td></tr>
-<tr class="memdesc:a5991efa6e8cf88c4ef2125cc727db333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual class destructor.  <br /></td></tr>
-<tr class="separator:a5991efa6e8cf88c4ef2125cc727db333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4da8089ed4e652c414180252d22c8516" id="r_a4da8089ed4e652c414180252d22c8516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a4da8089ed4e652c414180252d22c8516">setSource</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
-<tr class="memdesc:a4da8089ed4e652c414180252d22c8516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pointer to the source system of the flow.  <br /></td></tr>
-<tr class="separator:a4da8089ed4e652c414180252d22c8516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3858f90d141807377c2640fb5dd0fc" id="r_a1f3858f90d141807377c2640fb5dd0fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a1f3858f90d141807377c2640fb5dd0fc">getSource</a> () const</td></tr>
-<tr class="memdesc:a1f3858f90d141807377c2640fb5dd0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pointer to the source system of the flow.  <br /></td></tr>
-<tr class="separator:a1f3858f90d141807377c2640fb5dd0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9efed9cf09dd73afc0fe6c1bdc3662a8" id="r_a9efed9cf09dd73afc0fe6c1bdc3662a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a9efed9cf09dd73afc0fe6c1bdc3662a8">setTarget</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
-<tr class="memdesc:a9efed9cf09dd73afc0fe6c1bdc3662a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pointer to the target system of the flow.  <br /></td></tr>
-<tr class="separator:a9efed9cf09dd73afc0fe6c1bdc3662a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8a0f8ca8dc50d37c92ab7556e172b5" id="r_aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a> () const</td></tr>
-<tr class="memdesc:aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pointer to the target system of the flow.  <br /></td></tr>
-<tr class="separator:aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for the interface.  <br /></td></tr>
+<tr class="separator:a325d284a50ca3274b126b21f5c39b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72cd33b5f91e59e84afbf2800b8e71d" id="r_aa72cd33b5f91e59e84afbf2800b8e71d"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aa72cd33b5f91e59e84afbf2800b8e71d">executeEquation</a> ()=0</td></tr>
-<tr class="memdesc:aa72cd33b5f91e59e84afbf2800b8e71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the equation that must be performed by the flow.  <br /></td></tr>
+<tr class="memdesc:aa72cd33b5f91e59e84afbf2800b8e71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to execute the equation for the flow.  <br /></td></tr>
 <tr class="separator:aa72cd33b5f91e59e84afbf2800b8e71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5fae2ad1c3bf3c518240fe85bc2d4b2" id="r_ac5fae2ad1c3bf3c518240fe85bc2d4b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ac5fae2ad1c3bf3c518240fe85bc2d4b2">operator=</a> (const <a class="el" href="class_flow.html">Flow</a> &amp;f)</td></tr>
-<tr class="memdesc:ac5fae2ad1c3bf3c518240fe85bc2d4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how the '=' operator works for flows.  <br /></td></tr>
-<tr class="separator:ac5fae2ad1c3bf3c518240fe85bc2d4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a963ca162995d112f0f30322e2bb9de63" id="r_a963ca162995d112f0f30322e2bb9de63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a></td></tr>
-<tr class="memdesc:a963ca162995d112f0f30322e2bb9de63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to the source and target systems of the flow.  <br /></td></tr>
-<tr class="separator:a963ca162995d112f0f30322e2bb9de63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07547facf9a8e49f6adb140843a1992" id="r_ab07547facf9a8e49f6adb140843a1992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a></td></tr>
-<tr class="separator:ab07547facf9a8e49f6adb140843a1992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d756236982858350e7bf80a465926a7" id="r_a4d756236982858350e7bf80a465926a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a4d756236982858350e7bf80a465926a7">setSource</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
+<tr class="memdesc:a4d756236982858350e7bf80a465926a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to set the source system of the flow.  <br /></td></tr>
+<tr class="separator:a4d756236982858350e7bf80a465926a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8" id="r_abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a> () const =0</td></tr>
+<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to get the source system of the flow.  <br /></td></tr>
+<tr class="separator:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1361d85c69c6c897d0409c8b8ae72fe" id="r_ab1361d85c69c6c897d0409c8b8ae72fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe">setTarget</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
+<tr class="memdesc:ab1361d85c69c6c897d0409c8b8ae72fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to set the target system of the flow.  <br /></td></tr>
+<tr class="separator:ab1361d85c69c6c897d0409c8b8ae72fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787" id="r_afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a> () const =0</td></tr>
+<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to get the target system of the flow.  <br /></td></tr>
+<tr class="separator:afb9b8d93ea0fc81868b8e02dd382a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd744856f301102110c1129bcdd92fe" id="r_a0dd744856f301102110c1129bcdd92fe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a0dd744856f301102110c1129bcdd92fe">operator=</a> (const <a class="el" href="class_flow.html">Flow</a> &amp;f)=0</td></tr>
+<tr class="memdesc:a0dd744856f301102110c1129bcdd92fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to define how the '=' operator works for flows.  <br /></td></tr>
+<tr class="separator:a0dd744856f301102110c1129bcdd92fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class that defines a flow, which is a connection between two systems. </p>
+<div class="textblock"><p>Interface class for flows. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac9975e144e606242748197798e87dd32" name="ac9975e144e606242748197798e87dd32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9975e144e606242748197798e87dd32">&#9670;&#160;</a></span>Flow() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_flow.html" title="Class that defines a flow, which is a connection between two systems.">Flow</a> default constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>return </p>
-<div class="fragment"><div class="line"><span class="lineno">    3</span>{}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae2fdffd0f4836deced45fb73a2874479" name="ae2fdffd0f4836deced45fb73a2874479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2fdffd0f4836deced45fb73a2874479">&#9670;&#160;</a></span>Flow() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_flow.html" title="Class that defines a flow, which is a connection between two systems.">Flow</a> constructor that receives pointers to the source and target systems. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>pointer to the source system of the flow </td></tr>
-    <tr><td class="paramname">target</td><td>pointer to the target system of the flow </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">    5</span>                                          {</div>
-<div class="line"><span class="lineno">    6</span>    this-&gt;source = <a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a>;</div>
-<div class="line"><span class="lineno">    7</span>    this-&gt;target = <a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a>;</div>
-<div class="line"><span class="lineno">    8</span>}</div>
-<div class="ttc" id="aclass_flow_html_a963ca162995d112f0f30322e2bb9de63"><div class="ttname"><a href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">Flow::source</a></div><div class="ttdeci">System * source</div><div class="ttdoc">Pointers to the source and target systems of the flow.</div><div class="ttdef"><b>Definition</b> Flow.h:14</div></div>
-<div class="ttc" id="aclass_flow_html_ab07547facf9a8e49f6adb140843a1992"><div class="ttname"><a href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">Flow::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition</b> Flow.h:14</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="af559e47422fbdeeff9b65a0756632cf9" name="af559e47422fbdeeff9b65a0756632cf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af559e47422fbdeeff9b65a0756632cf9">&#9670;&#160;</a></span>Flow() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor for copy of flow. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>flow object that will be copied </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                         {</div>
-<div class="line"><span class="lineno">   11</span>    this-&gt;<a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a> = f.<a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a>;</div>
-<div class="line"><span class="lineno">   12</span>    this-&gt;<a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a> = f.<a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a>;</div>
-<div class="line"><span class="lineno">   13</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5991efa6e8cf88c4ef2125cc727db333" name="a5991efa6e8cf88c4ef2125cc727db333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5991efa6e8cf88c4ef2125cc727db333">&#9670;&#160;</a></span>~Flow()</h2>
+<a id="a325d284a50ca3274b126b21f5c39b9af" name="a325d284a50ca3274b126b21f5c39b9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325d284a50ca3274b126b21f5c39b9af">&#9670;&#160;</a></span>~Flow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +143,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Flow::~Flow </td>
+          <td class="memname">virtual Flow::~Flow </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -271,20 +151,13 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual class destructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>return </p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>{}</div>
+<p>Virtual destructor for the interface. </p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,94 +185,178 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Executes the equation that must be performed by the flow. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>return double containing the result of the equation </p>
+<p>Pure virtual method to execute the equation for the flow. </p>
+<dl class="section return"><dt>Returns</dt><dd>double containing the result of the equation </dd></dl>
 
-<p>Implemented in <a class="el" href="class_exponential.html#a0f745ae43423151cf778893afff97937">Exponential</a>, <a class="el" href="class_logistic.html#af5c1d2f9a0982f4e605e6c4fd1b2e6ef">Logistic</a>, and <a class="el" href="class_complex.html#a6287071e2a32944893e6c0b2c41a1622">Complex</a>.</p>
+<p>Implemented in <a class="el" href="class_exponential.html#a0f745ae43423151cf778893afff97937">Exponential</a>, <a class="el" href="class_logistic.html#af5c1d2f9a0982f4e605e6c4fd1b2e6ef">Logistic</a>, <a class="el" href="class_complex.html#a6287071e2a32944893e6c0b2c41a1622">Complex</a>, and <a class="el" href="class_flow_impl.html#af12366d33b55f6038063d7b7119ef2a2">FlowImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_aa72cd33b5f91e59e84afbf2800b8e71d_icgraph.png" border="0" usemap="#aclass_flow_aa72cd33b5f91e59e84afbf2800b8e71d_icgraph" alt=""/></div>
+<map name="aclass_flow_aa72cd33b5f91e59e84afbf2800b8e71d_icgraph" id="aclass_flow_aa72cd33b5f91e59e84afbf2800b8e71d_icgraph">
+<area shape="rect" title="Pure virtual method to execute the equation for the flow." alt="" coords="516,5,670,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a1c9a53fba9246d1754484a59ed8fc4d2" title="Unit test for Flow executeEquation function." alt="" coords="288,5,468,32"/>
+<area shape="poly" title=" " alt="" coords="500,21,469,21,469,16,500,16"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Call all the unit tests." alt="" coords="103,5,240,32"/>
+<area shape="poly" title=" " alt="" coords="273,21,240,21,240,16,273,16"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a1f3858f90d141807377c2640fb5dd0fc" name="a1f3858f90d141807377c2640fb5dd0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3858f90d141807377c2640fb5dd0fc">&#9670;&#160;</a></span>getSource()</h2>
+<a id="abf0f3dbb285fe82e5ba6449de06b97c8" name="abf0f3dbb285fe82e5ba6449de06b97c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0f3dbb285fe82e5ba6449de06b97c8">&#9670;&#160;</a></span>getSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::getSource </td>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Flow::getSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the pointer to the source system of the flow. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>return system pointer that points to the source system of the flow </p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                               {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a>;</div>
-<div class="line"><span class="lineno">   23</span>}</div>
-</div><!-- fragment -->
+<p>Pure virtual method to get the source system of the flow. </p>
+<dl class="section return"><dt>Returns</dt><dd>system pointer that points to the source system of the flow </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#a54940323059d2c4158f4146080841f32">FlowImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph.png" border="0" usemap="#aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" alt=""/></div>
+<map name="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" id="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph">
+<area shape="rect" title="Pure virtual method to get the source system of the flow." alt="" coords="514,195,630,221"/>
+<area shape="rect" href="class_flow_impl.html#a5ff1349e0d66e13a4e4f7a4026ad1374" title="Constructor for copy of flow." alt="" coords="312,5,443,32"/>
+<area shape="poly" title=" " alt="" coords="558,182,523,113,497,77,465,46,442,34,445,29,468,42,501,73,528,110,563,179"/>
+<area shape="rect" href="class_flow_impl.html#a23221e146d1d53efcab2aa74aa5a94bf" title="Defines how the &#39;=&#39; operator works for flows." alt="" coords="310,56,445,83"/>
+<area shape="poly" title=" " alt="" coords="551,183,514,139,491,116,465,97,441,86,443,81,468,92,494,112,518,135,555,180"/>
+<area shape="rect" href="unit___flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title="Unit test for Flow default constructor." alt="" coords="303,107,451,133"/>
+<area shape="poly" title=" " alt="" coords="537,188,503,167,465,148,434,136,436,131,467,143,506,162,540,183"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0b23a5869ee89ba30e9bb1e703dcf50e" title="Unit test for Flow constructor with pointers to source and target systems." alt="" coords="290,157,465,200"/>
+<area shape="poly" title=" " alt="" coords="499,200,465,195,466,189,499,194"/>
+<area shape="rect" href="unit___flow_8cpp.html#a1c8c397dfd75aaa0bd9b04c522dd0ec2" title="Unit test for Flow copy constructor." alt="" coords="288,224,466,251"/>
+<area shape="poly" title=" " alt="" coords="499,222,467,226,466,221,499,216"/>
+<area shape="rect" href="unit___flow_8cpp.html#a1464336f3eff3d23ac4ca4a0fac38343" title="Unit test for Flow &#39;=&#39; operator." alt="" coords="292,275,463,301"/>
+<area shape="poly" title=" " alt="" coords="536,232,467,265,434,277,433,271,465,260,533,227"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Unit test for Flow getSource function." alt="" coords="306,325,448,352"/>
+<area shape="poly" title=" " alt="" coords="553,236,517,277,493,298,468,316,443,327,440,322,465,311,490,293,513,273,550,232"/>
+<area shape="rect" href="unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Unit test for Flow setSource function." alt="" coords="306,376,448,403"/>
+<area shape="poly" title=" " alt="" coords="562,237,527,302,500,336,468,366,447,378,444,373,465,362,496,333,522,299,557,234"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Call all the unit tests." alt="" coords="103,249,240,276"/>
+<area shape="poly" title=" " alt="" coords="300,142,289,148,256,172,226,200,184,251,180,247,223,196,253,168,287,143,298,137"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,249,55,276"/>
+<area shape="poly" title=" " alt="" coords="87,265,55,265,55,260,87,260"/>
+<area shape="poly" title=" " alt="" coords="304,209,289,214,204,251,202,246,287,210,302,204"/>
+<area shape="poly" title=" " alt="" coords="273,253,241,257,240,252,273,248"/>
+<area shape="poly" title=" " alt="" coords="275,278,240,274,241,268,276,273"/>
+<area shape="poly" title=" " alt="" coords="308,323,287,316,200,279,202,274,289,311,310,318"/>
+<area shape="poly" title=" " alt="" coords="299,372,287,366,255,346,226,322,183,278,187,275,229,318,258,341,289,362,302,368"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="aff8a0f8ca8dc50d37c92ab7556e172b5" name="aff8a0f8ca8dc50d37c92ab7556e172b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff8a0f8ca8dc50d37c92ab7556e172b5">&#9670;&#160;</a></span>getTarget()</h2>
+<a id="afb9b8d93ea0fc81868b8e02dd382a787" name="afb9b8d93ea0fc81868b8e02dd382a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9b8d93ea0fc81868b8e02dd382a787">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::getTarget </td>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Flow::getTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the pointer to the target system of the flow. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>return system pointer that points to the target system of the flow </p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>                               {</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a>;</div>
-<div class="line"><span class="lineno">   31</span>}</div>
-</div><!-- fragment -->
+<p>Pure virtual method to get the target system of the flow. </p>
+<dl class="section return"><dt>Returns</dt><dd>system pointer that points to the target system of the flow </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#ab07923bc230308cd949f627a92901bca">FlowImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph.png" border="0" usemap="#aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" alt=""/></div>
+<map name="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" id="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph">
+<area shape="rect" title="Pure virtual method to get the target system of the flow." alt="" coords="514,195,625,221"/>
+<area shape="rect" href="class_flow_impl.html#a5ff1349e0d66e13a4e4f7a4026ad1374" title="Constructor for copy of flow." alt="" coords="312,5,443,32"/>
+<area shape="poly" title=" " alt="" coords="556,181,522,113,496,77,465,46,442,34,445,29,468,42,500,73,527,110,560,179"/>
+<area shape="rect" href="class_flow_impl.html#a23221e146d1d53efcab2aa74aa5a94bf" title="Defines how the &#39;=&#39; operator works for flows." alt="" coords="310,56,445,83"/>
+<area shape="poly" title=" " alt="" coords="549,183,513,139,490,116,465,97,442,86,444,81,468,92,494,112,517,135,553,180"/>
+<area shape="rect" href="unit___flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title="Unit test for Flow default constructor." alt="" coords="303,107,451,133"/>
+<area shape="poly" title=" " alt="" coords="535,188,502,167,465,148,434,136,436,131,467,143,505,162,538,183"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0b23a5869ee89ba30e9bb1e703dcf50e" title="Unit test for Flow constructor with pointers to source and target systems." alt="" coords="290,157,465,200"/>
+<area shape="poly" title=" " alt="" coords="498,200,465,195,466,189,499,195"/>
+<area shape="rect" href="unit___flow_8cpp.html#a1c8c397dfd75aaa0bd9b04c522dd0ec2" title="Unit test for Flow copy constructor." alt="" coords="288,224,466,251"/>
+<area shape="poly" title=" " alt="" coords="499,221,467,226,466,221,499,216"/>
+<area shape="rect" href="unit___flow_8cpp.html#a1464336f3eff3d23ac4ca4a0fac38343" title="Unit test for Flow &#39;=&#39; operator." alt="" coords="292,275,463,301"/>
+<area shape="poly" title=" " alt="" coords="534,232,467,265,434,277,433,272,465,260,532,227"/>
+<area shape="rect" href="unit___flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Unit test for Flow getTarget function." alt="" coords="309,325,446,352"/>
+<area shape="poly" title=" " alt="" coords="552,236,516,277,493,298,468,316,443,327,440,322,465,311,489,294,512,273,548,232"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for Flow setTarget function." alt="" coords="309,376,446,403"/>
+<area shape="poly" title=" " alt="" coords="560,237,526,302,500,336,468,366,447,378,444,373,465,362,496,333,521,299,555,234"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Call all the unit tests." alt="" coords="103,249,240,276"/>
+<area shape="poly" title=" " alt="" coords="300,142,289,148,256,172,226,200,184,251,180,247,223,196,253,168,287,143,298,137"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,249,55,276"/>
+<area shape="poly" title=" " alt="" coords="87,265,55,265,55,260,87,260"/>
+<area shape="poly" title=" " alt="" coords="304,209,289,214,204,251,202,246,287,210,302,204"/>
+<area shape="poly" title=" " alt="" coords="273,253,241,257,240,252,273,248"/>
+<area shape="poly" title=" " alt="" coords="275,278,240,274,241,268,276,273"/>
+<area shape="poly" title=" " alt="" coords="308,323,287,316,200,279,202,274,289,311,310,318"/>
+<area shape="poly" title=" " alt="" coords="299,372,287,366,255,346,226,322,183,278,187,275,229,318,258,341,289,362,302,368"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="ac5fae2ad1c3bf3c518240fe85bc2d4b2" name="ac5fae2ad1c3bf3c518240fe85bc2d4b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5fae2ad1c3bf3c518240fe85bc2d4b2">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a0dd744856f301102110c1129bcdd92fe" name="a0dd744856f301102110c1129bcdd92fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd744856f301102110c1129bcdd92fe">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_flow.html">Flow</a> &amp; Flow::operator= </td>
+          <td class="memname">virtual <a class="el" href="class_flow.html">Flow</a> &amp; Flow::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Defines how the '=' operator works for flows. </p>
+<p>Pure virtual method to define how the '=' operator works for flows. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>flow object that will be copied </td></tr>
@@ -407,127 +364,113 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the copied flow </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                    {</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span>(<span class="keyword">this</span> == &amp;f) <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    this-&gt;<a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a> = f.<a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a>;</div>
-<div class="line"><span class="lineno">   37</span>    this-&gt;<a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a> = f.<a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a>;</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   40</span>}</div>
-</div><!-- fragment -->
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#a23221e146d1d53efcab2aa74aa5a94bf">FlowImpl</a>.</p>
+
 </div>
 </div>
-<a id="a4da8089ed4e652c414180252d22c8516" name="a4da8089ed4e652c414180252d22c8516"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4da8089ed4e652c414180252d22c8516">&#9670;&#160;</a></span>setSource()</h2>
+<a id="a4d756236982858350e7bf80a465926a7" name="a4d756236982858350e7bf80a465926a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d756236982858350e7bf80a465926a7">&#9670;&#160;</a></span>setSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setSource </td>
+          <td class="memname">virtual void Flow::setSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Sets the pointer to the source system of the flow. </p>
+<p>Pure virtual method to set the source system of the flow. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>pointer to the source system of the flow </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>                               {</div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="class_flow.html#a963ca162995d112f0f30322e2bb9de63">source</a> = s;</div>
-<div class="line"><span class="lineno">   19</span>}</div>
-</div><!-- fragment -->
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#ac761ce3fc1b097b3086a2618f645a2a2">FlowImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_a4d756236982858350e7bf80a465926a7_icgraph.png" border="0" usemap="#aclass_flow_a4d756236982858350e7bf80a465926a7_icgraph" alt=""/></div>
+<map name="aclass_flow_a4d756236982858350e7bf80a465926a7_icgraph" id="aclass_flow_a4d756236982858350e7bf80a465926a7_icgraph">
+<area shape="rect" title="Pure virtual method to set the source system of the flow." alt="" coords="478,5,594,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Unit test for Flow setSource function." alt="" coords="288,5,430,32"/>
+<area shape="poly" title=" " alt="" coords="463,21,431,21,431,16,463,16"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Call all the unit tests." alt="" coords="103,5,240,32"/>
+<area shape="poly" title=" " alt="" coords="273,21,240,21,240,16,273,16"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="a9efed9cf09dd73afc0fe6c1bdc3662a8" name="a9efed9cf09dd73afc0fe6c1bdc3662a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9efed9cf09dd73afc0fe6c1bdc3662a8">&#9670;&#160;</a></span>setTarget()</h2>
+<a id="ab1361d85c69c6c897d0409c8b8ae72fe" name="ab1361d85c69c6c897d0409c8b8ae72fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1361d85c69c6c897d0409c8b8ae72fe">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setTarget </td>
+          <td class="memname">virtual void Flow::setTarget </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Sets the pointer to the target system of the flow. </p>
+<p>Pure virtual method to set the target system of the flow. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>pointer to the target system of the flow </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                               {</div>
-<div class="line"><span class="lineno">   26</span>    <a class="code hl_variable" href="class_flow.html#ab07547facf9a8e49f6adb140843a1992">target</a> = s;</div>
-<div class="line"><span class="lineno">   27</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a963ca162995d112f0f30322e2bb9de63" name="a963ca162995d112f0f30322e2bb9de63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a963ca162995d112f0f30322e2bb9de63">&#9670;&#160;</a></span>source</h2>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a>* Flow::source</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pointers to the source and target systems of the flow. </p>
+<p>Implemented in <a class="el" href="class_flow_impl.html#a9c9d09746b4fb2fae14041beafcba9dc">FlowImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph.png" border="0" usemap="#aclass_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph" alt=""/></div>
+<map name="aclass_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph" id="aclass_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph">
+<area shape="rect" title="Pure virtual method to set the target system of the flow." alt="" coords="473,5,584,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for Flow setTarget function." alt="" coords="288,5,425,32"/>
+<area shape="poly" title=" " alt="" coords="457,21,425,21,425,16,457,16"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Call all the unit tests." alt="" coords="103,5,240,32"/>
+<area shape="poly" title=" " alt="" coords="273,21,240,21,240,16,273,16"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ab07547facf9a8e49f6adb140843a1992" name="ab07547facf9a8e49f6adb140843a1992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab07547facf9a8e49f6adb140843a1992">&#9670;&#160;</a></span>target</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::target</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>MyVensim/src/<a class="el" href="_flow_8h_source.html">Flow.h</a></li>
-<li>MyVensim/src/<a class="el" href="_flow_8cpp.html">Flow.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/<a class="el" href="_flow_8h_source.html">Flow.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

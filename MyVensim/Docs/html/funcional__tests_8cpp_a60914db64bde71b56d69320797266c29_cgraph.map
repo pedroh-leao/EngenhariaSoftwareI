@@ -1,14 +1,11 @@
 <map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
 <area shape="rect" id="Node000001" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="5,81,159,108"/>
-<area shape="rect" id="Node000002" href="$class_model.html#a2a340ed8a558aedcfbf7c1bdaff90c56" title="Adds a pointer to a system in the systems vector." alt="" coords="232,5,317,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,78,223,36,225,41,119,83"/>
-<area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title="Returns the system value." alt="" coords="390,81,515,108"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,92,375,92,375,97,159,97"/>
-<area shape="rect" id="Node000004" href="$class_model.html#a666755c86bc0b9509176bda6a1d8ba57" title="Shows the current model status, the systems values." alt="" coords="207,107,342,133"/>
+<area shape="rect" id="Node000002" href="$class_model.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Pure virtual method to add a system to the model." alt="" coords="232,5,317,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,78,206,42,221,36,223,41,208,46,118,83"/>
+<area shape="rect" id="Node000003" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual method to get the system value." alt="" coords="212,56,337,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,82,196,77,197,82,159,87"/>
+<area shape="rect" id="Node000004" href="$class_model.html#aa14a031649a1dc8bd529691fd3cfd900" title="Pure virtual method to show the current model status." alt="" coords="207,107,342,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,102,192,106,191,112,158,107"/>
-<area shape="rect" id="Node000005" href="$class_model.html#a62db6c98deb4641fcc53fa3493316e4d" title="Executes the model, performing flow operations and updating system values." alt="" coords="233,157,316,184"/>
+<area shape="rect" id="Node000005" href="$class_model.html#a1f6d177ba1a07431fc52a1ba07d4fd73" title="Pure virtual method to execute the model." alt="" coords="233,157,316,184"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,106,208,143,223,149,221,154,206,148,116,111"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="312,154,341,143,408,113,410,118,343,148,314,159"/>
-<area shape="rect" id="Node000006" href="$class_system.html#a08e97e86cf4a48883cd03a34c9bcebac" title="Sets the system value." alt="" coords="390,157,515,184"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="316,168,374,168,374,173,316,173"/>
 </map>

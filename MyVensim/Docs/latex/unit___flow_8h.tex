@@ -1,0 +1,581 @@
+\doxysection{test/unit/unit\+\_\+\+Flow.h File Reference}
+\hypertarget{unit___flow_8h}{}\label{unit___flow_8h}\index{test/unit/unit\_Flow.h@{test/unit/unit\_Flow.h}}
+{\ttfamily \#include "{}assert.\+h"{}}\newline
+{\ttfamily \#include "{}cmath"{}}\newline
+{\ttfamily \#include "{}../../src/\+Flow\+Impl.\+h"{}}\newline
+{\ttfamily \#include "{}../../src/\+System\+Impl.\+h"{}}\newline
+{\ttfamily \#include "{}../funcional/\+My\+Flows.\+h"{}}\newline
+Include dependency graph for unit\+\_\+\+Flow.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{unit___flow_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unit___flow_8h_abae010d669044ac8e9f87914b6cbeafe}{unit\+\_\+\+Flow\+\_\+constructor}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a0b23a5869ee89ba30e9bb1e703dcf50e}{unit\+\_\+\+Flow\+\_\+constructor\+With\+Systems}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} constructor with pointers to source and target systems. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a1c8c397dfd75aaa0bd9b04c522dd0ec2}{unit\+\_\+\+Flow\+\_\+copy\+Constructor}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} copy constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a5d5063d01336bb21034b1c46dbdb740a}{unit\+\_\+\+Flow\+\_\+destructor}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a213cf3a2bd094e466707a33416124ce4}{unit\+\_\+\+Flow\+\_\+set\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} set\+Source function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a0dc76658e06597697628386d69327367}{unit\+\_\+\+Flow\+\_\+get\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} get\+Source function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a0b2a81b6dbbc3c5b1b25874640705654}{unit\+\_\+\+Flow\+\_\+set\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} set\+Target function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a89661cef89f6beb434f6097691c03538}{unit\+\_\+\+Flow\+\_\+get\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} get\+Target function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a1c9a53fba9246d1754484a59ed8fc4d2}{unit\+\_\+\+Flow\+\_\+execute\+Equation}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} execute\+Equation function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a1464336f3eff3d23ac4ca4a0fac38343}{unit\+\_\+\+Flow\+\_\+equals\+Operator}} ()
+\begin{DoxyCompactList}\small\item\em Unit test for \doxylink{class_flow}{Flow} \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit___flow_8h_a31fe372f712944be1d93f7c5b01fbb3e}{run\+\_\+unit\+\_\+tests\+\_\+\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Call all the unit tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{unit___flow_8h_a31fe372f712944be1d93f7c5b01fbb3e}\label{unit___flow_8h_a31fe372f712944be1d93f7c5b01fbb3e} 
+\index{unit\_Flow.h@{unit\_Flow.h}!run\_unit\_tests\_Flow@{run\_unit\_tests\_Flow}}
+\index{run\_unit\_tests\_Flow@{run\_unit\_tests\_Flow}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{run\_unit\_tests\_Flow()}{run\_unit\_tests\_Flow()}}
+{\footnotesize\ttfamily void run\+\_\+unit\+\_\+tests\+\_\+\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Call all the unit tests. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_abae010d669044ac8e9f87914b6cbeafe}{unit\_Flow\_constructor}}();}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a0b23a5869ee89ba30e9bb1e703dcf50e}{unit\_Flow\_constructorWithSystems}}();}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a1c8c397dfd75aaa0bd9b04c522dd0ec2}{unit\_Flow\_copyConstructor}}();}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a5d5063d01336bb21034b1c46dbdb740a}{unit\_Flow\_destructor}}();}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a213cf3a2bd094e466707a33416124ce4}{unit\_Flow\_setSource}}();}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a0dc76658e06597697628386d69327367}{unit\_Flow\_getSource}}();}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654}{unit\_Flow\_setTarget}}();}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a89661cef89f6beb434f6097691c03538}{unit\_Flow\_getTarget}}();}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a1c9a53fba9246d1754484a59ed8fc4d2}{unit\_Flow\_executeEquation}}();}
+\DoxyCodeLine{00239\ \ \ \ \ }
+\DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a1464336f3eff3d23ac4ca4a0fac38343}{unit\_Flow\_equalsOperator}}();}
+\DoxyCodeLine{00241\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a31fe372f712944be1d93f7c5b01fbb3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{unit___flow_8h_a31fe372f712944be1d93f7c5b01fbb3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_abae010d669044ac8e9f87914b6cbeafe}\label{unit___flow_8h_abae010d669044ac8e9f87914b6cbeafe} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_constructor@{unit\_Flow\_constructor}}
+\index{unit\_Flow\_constructor@{unit\_Flow\_constructor}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_constructor()}{unit\_Flow\_constructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} default constructor. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}();}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ NULL);}
+\DoxyCodeLine{00007\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ NULL);}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}();}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ NULL);}
+\DoxyCodeLine{00012\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ NULL);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ NULL);}
+\DoxyCodeLine{00017\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ NULL);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00022\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{unit___flow_8h_abae010d669044ac8e9f87914b6cbeafe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_abae010d669044ac8e9f87914b6cbeafe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a0b23a5869ee89ba30e9bb1e703dcf50e}\label{unit___flow_8h_a0b23a5869ee89ba30e9bb1e703dcf50e} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_constructorWithSystems@{unit\_Flow\_constructorWithSystems}}
+\index{unit\_Flow\_constructorWithSystems@{unit\_Flow\_constructorWithSystems}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_constructorWithSystems()}{unit\_Flow\_constructorWithSystems()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+constructor\+With\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} constructor with pointers to source and target systems. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(s1,\ s2);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00031\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(s1,\ s2);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00036\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(s1,\ s2);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00041\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00048\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{unit___flow_8h_a0b23a5869ee89ba30e9bb1e703dcf50e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a0b23a5869ee89ba30e9bb1e703dcf50e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a1c8c397dfd75aaa0bd9b04c522dd0ec2}\label{unit___flow_8h_a1c8c397dfd75aaa0bd9b04c522dd0ec2} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_copyConstructor@{unit\_Flow\_copyConstructor}}
+\index{unit\_Flow\_copyConstructor@{unit\_Flow\_copyConstructor}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_copyConstructor()}{unit\_Flow\_copyConstructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+copy\+Constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} copy constructor. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(s1,\ s2);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(*flowExp1);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ assert(flowExp2-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00058\ \ \ \ \ assert(flowExp2-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(s1,\ s2);}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(*flowLog1);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ assert(flowLog2-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00064\ \ \ \ \ assert(flowLog2-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(s1,\ s2);}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(*flowComplex1);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ assert(flowComplex2-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00070\ \ \ \ \ assert(flowComplex2-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp1;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp2;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog1;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog2;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex1;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex2;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{unit___flow_8h_a1c8c397dfd75aaa0bd9b04c522dd0ec2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a1c8c397dfd75aaa0bd9b04c522dd0ec2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a5d5063d01336bb21034b1c46dbdb740a}\label{unit___flow_8h_a5d5063d01336bb21034b1c46dbdb740a} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_destructor@{unit\_Flow\_destructor}}
+\index{unit\_Flow\_destructor@{unit\_Flow\_destructor}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_destructor()}{unit\_Flow\_destructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+destructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} destructor. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00082\ \{\}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a5d5063d01336bb21034b1c46dbdb740a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a1464336f3eff3d23ac4ca4a0fac38343}\label{unit___flow_8h_a1464336f3eff3d23ac4ca4a0fac38343} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_equalsOperator@{unit\_Flow\_equalsOperator}}
+\index{unit\_Flow\_equalsOperator@{unit\_Flow\_equalsOperator}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_equalsOperator()}{unit\_Flow\_equalsOperator()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+equals\+Operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(s1,\ s2);}
+\DoxyCodeLine{00191\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}();}
+\DoxyCodeLine{00192\ \ \ \ \ *flowExp2\ =\ *flowExp1;}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \ \ \ \ assert(flowExp2-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00195\ \ \ \ \ assert(flowExp2-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00196\ \ \ \ \ }
+\DoxyCodeLine{00197\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(s1,\ s2);}
+\DoxyCodeLine{00198\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}();}
+\DoxyCodeLine{00199\ \ \ \ \ *flowLog2\ =\ *flowLog1;}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ \ \ \ \ assert(flowLog2-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00202\ \ \ \ \ assert(flowLog2-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(s1,\ s2);}
+\DoxyCodeLine{00205\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}();}
+\DoxyCodeLine{00206\ \ \ \ \ *flowComplex2\ =\ *flowComplex1;}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \ \ assert(flowComplex2-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00209\ \ \ \ \ assert(flowComplex2-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp1;}
+\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp2;}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog1;}
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog2;}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex1;}
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex2;}
+\DoxyCodeLine{00217\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00219\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{unit___flow_8h_a1464336f3eff3d23ac4ca4a0fac38343_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a1464336f3eff3d23ac4ca4a0fac38343_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a1c9a53fba9246d1754484a59ed8fc4d2}\label{unit___flow_8h_a1c9a53fba9246d1754484a59ed8fc4d2} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_executeEquation@{unit\_Flow\_executeEquation}}
+\index{unit\_Flow\_executeEquation@{unit\_Flow\_executeEquation}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_executeEquation()}{unit\_Flow\_executeEquation()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+execute\+Equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} execute\+Equation function. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}s1"{}},\ 10);}
+\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}s2"{}},\ 20);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(s1,\ s2);}
+\DoxyCodeLine{00171\ \ \ \ \ assert(round(fabs(flowExp-\/>\mbox{\hyperlink{class_flow_aa72cd33b5f91e59e84afbf2800b8e71d}{executeEquation}}()\ *\ 10000\ -\/\ 0.1\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(s1,\ s2);}
+\DoxyCodeLine{00174\ \ \ \ \ assert(round(fabs(flowLog-\/>\mbox{\hyperlink{class_flow_aa72cd33b5f91e59e84afbf2800b8e71d}{executeEquation}}()\ *\ 10000\ -\/\ 0.1429\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(s1,\ s2);}
+\DoxyCodeLine{00177\ \ \ \ \ assert(round(fabs(flowComplex-\/>\mbox{\hyperlink{class_flow_aa72cd33b5f91e59e84afbf2800b8e71d}{executeEquation}}()\ *\ 10000\ -\/\ 0.1\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00184\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a1c9a53fba9246d1754484a59ed8fc4d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a1c9a53fba9246d1754484a59ed8fc4d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a0dc76658e06597697628386d69327367}\label{unit___flow_8h_a0dc76658e06597697628386d69327367} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_getSource@{unit\_Flow\_getSource}}
+\index{unit\_Flow\_getSource@{unit\_Flow\_getSource}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_getSource()}{unit\_Flow\_getSource()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} get\+Source function. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(s1,\ s2);}
+\DoxyCodeLine{00110\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(s1,\ s2);}
+\DoxyCodeLine{00113\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(s1,\ s2);}
+\DoxyCodeLine{00116\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00123\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{unit___flow_8h_a0dc76658e06597697628386d69327367_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a0dc76658e06597697628386d69327367_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a89661cef89f6beb434f6097691c03538}\label{unit___flow_8h_a89661cef89f6beb434f6097691c03538} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_getTarget@{unit\_Flow\_getTarget}}
+\index{unit\_Flow\_getTarget@{unit\_Flow\_getTarget}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_getTarget()}{unit\_Flow\_getTarget()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} get\+Target function. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(s1,\ s2);}
+\DoxyCodeLine{00151\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(s1,\ s2);}
+\DoxyCodeLine{00154\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(s1,\ s2);}
+\DoxyCodeLine{00157\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s2);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00164\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{unit___flow_8h_a89661cef89f6beb434f6097691c03538_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a89661cef89f6beb434f6097691c03538_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a213cf3a2bd094e466707a33416124ce4}\label{unit___flow_8h_a213cf3a2bd094e466707a33416124ce4} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_setSource@{unit\_Flow\_setSource}}
+\index{unit\_Flow\_setSource@{unit\_Flow\_setSource}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_setSource()}{unit\_Flow\_setSource()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+set\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} set\+Source function. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}();}
+\DoxyCodeLine{00088\ \ \ \ \ flowExp-\/>\mbox{\hyperlink{class_flow_a4d756236982858350e7bf80a465926a7}{setSource}}(s1);}
+\DoxyCodeLine{00089\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}();}
+\DoxyCodeLine{00092\ \ \ \ \ flowLog-\/>\mbox{\hyperlink{class_flow_a4d756236982858350e7bf80a465926a7}{setSource}}(s1);}
+\DoxyCodeLine{00093\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}();}
+\DoxyCodeLine{00096\ \ \ \ \ flowComplex-\/>\mbox{\hyperlink{class_flow_a4d756236982858350e7bf80a465926a7}{setSource}}(s1);}
+\DoxyCodeLine{00097\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}()\ ==\ s1);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00103\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{unit___flow_8h_a213cf3a2bd094e466707a33416124ce4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a213cf3a2bd094e466707a33416124ce4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit___flow_8h_a0b2a81b6dbbc3c5b1b25874640705654}\label{unit___flow_8h_a0b2a81b6dbbc3c5b1b25874640705654} 
+\index{unit\_Flow.h@{unit\_Flow.h}!unit\_Flow\_setTarget@{unit\_Flow\_setTarget}}
+\index{unit\_Flow\_setTarget@{unit\_Flow\_setTarget}!unit\_Flow.h@{unit\_Flow.h}}
+\doxysubsubsection{\texorpdfstring{unit\_Flow\_setTarget()}{unit\_Flow\_setTarget()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+set\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit test for \doxylink{class_flow}{Flow} set\+Target function. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowExp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}();}
+\DoxyCodeLine{00129\ \ \ \ \ flowExp-\/>\mbox{\hyperlink{class_flow_ab1361d85c69c6c897d0409c8b8ae72fe}{setTarget}}(s1);}
+\DoxyCodeLine{00130\ \ \ \ \ assert(flowExp-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s1);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowLog\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}();}
+\DoxyCodeLine{00133\ \ \ \ \ flowLog-\/>\mbox{\hyperlink{class_flow_ab1361d85c69c6c897d0409c8b8ae72fe}{setTarget}}(s1);}
+\DoxyCodeLine{00134\ \ \ \ \ assert(flowLog-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s1);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *flowComplex\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}();}
+\DoxyCodeLine{00137\ \ \ \ \ flowComplex-\/>\mbox{\hyperlink{class_flow_ab1361d85c69c6c897d0409c8b8ae72fe}{setTarget}}(s1);}
+\DoxyCodeLine{00138\ \ \ \ \ assert(flowComplex-\/>\mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{getTarget}}()\ ==\ s1);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{delete}\ flowExp;}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{delete}\ flowLog;}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{delete}\ flowComplex;}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00144\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{unit___flow_8h_a0b2a81b6dbbc3c5b1b25874640705654_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___flow_8h_a0b2a81b6dbbc3c5b1b25874640705654_icgraph}
+\end{center}
+\end{figure}

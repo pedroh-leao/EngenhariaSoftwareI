@@ -1,0 +1,25 @@
+<map id="System::getName" name="System::getName">
+<area shape="rect" id="Node000001" title="Pure virtual method to get the system name." alt="" coords="550,157,677,184"/>
+<area shape="rect" id="Node000002" href="$class_system_impl.html#a9a7668e85fc1be7903f410973c28f32a" title="Defines how the &#39;=&#39; operator works for systems." alt="" coords="328,5,481,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="594,146,556,94,530,68,501,46,477,35,480,30,504,42,533,64,560,91,598,142"/>
+<area shape="rect" id="Node000003" href="$class_system_impl.html#a5ea2f9b0b82bf06466fea4fe5513aa90" title="Constructor for copy of system." alt="" coords="321,56,488,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="583,150,546,122,501,97,470,86,472,81,503,92,548,118,586,146"/>
+<area shape="rect" id="Node000004" href="$unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title="Unit test for System constructor." alt="" coords="321,107,487,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="540,156,462,137,463,131,541,151"/>
+<area shape="rect" id="Node000007" href="$unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37" title="Unit test for System copy constructor." alt="" coords="306,157,502,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="535,173,503,173,503,168,535,168"/>
+<area shape="rect" id="Node000008" href="$unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3" title="Unit test for System &#39;=&#39; operator." alt="" coords="310,208,499,235"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="541,191,463,210,462,205,540,186"/>
+<area shape="rect" id="Node000009" href="$unit___system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Unit test for System getName function." alt="" coords="328,259,481,285"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="586,196,548,223,503,249,472,261,470,256,501,244,546,219,583,191"/>
+<area shape="rect" id="Node000010" href="$unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit test for System setName function." alt="" coords="328,309,481,336"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="598,199,560,250,533,277,504,300,480,311,477,306,501,295,530,273,556,247,594,196"/>
+<area shape="rect" id="Node000005" href="$unit___system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Call all the unit tests." alt="" coords="103,208,258,235"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="326,141,307,148,249,179,202,210,199,205,246,174,305,143,324,136"/>
+<area shape="rect" id="Node000006" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,208,55,235"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,224,55,224,55,219,87,219"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="327,191,243,210,242,205,326,185"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="294,224,259,224,259,219,294,219"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="326,257,242,238,243,233,327,252"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="324,307,305,300,246,269,199,238,202,233,249,264,307,295,326,302"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="unit_Model_add" name="unit_Model_add">
+<area shape="rect" id="Node000001" title="Unit test for Model add functions." alt="" coords="5,107,118,133"/>
+<area shape="rect" id="Node000002" href="$class_model.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Pure virtual method to add a system to the model." alt="" coords="197,5,282,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,104,115,73,164,42,181,34,183,39,167,46,118,78,80,108"/>
+<area shape="rect" id="Node000003" href="$class_model.html#a12d4767f5fe89090a58c1d1091dfa1f1" title="Pure virtual method to get the iterator of the beginning of the flows vector." alt="" coords="176,56,303,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,103,175,85,176,90,112,109"/>
+<area shape="rect" id="Node000004" href="$class_model.html#a865a19570378a396e1751c8ce4e6590b" title="Pure virtual method to get the iterator of the end of the flows vector." alt="" coords="181,107,298,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,117,166,117,166,123,118,123"/>
+<area shape="rect" id="Node000005" href="$class_model.html#a5cf4d533a7ac8752b9f6cab20e7d6f41" title="Pure virtual method to get the iterator of the beginning of the systems vector." alt="" coords="166,157,313,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="112,131,176,150,175,155,110,137"/>
+<area shape="rect" id="Node000006" href="$class_model.html#aed9cb3a0a968b2fe62323916715fbceb" title="Pure virtual method to get the iterator of the end of the systems vector." alt="" coords="171,208,308,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="80,132,118,162,167,194,179,199,176,204,164,198,115,167,77,136"/>
+</map>

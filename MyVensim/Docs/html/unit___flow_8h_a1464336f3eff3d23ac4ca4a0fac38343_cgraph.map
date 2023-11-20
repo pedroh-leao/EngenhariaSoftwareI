@@ -1,0 +1,7 @@
+<map id="unit_Flow_equalsOperator" name="unit_Flow_equalsOperator">
+<area shape="rect" id="Node000001" title="Unit test for Flow &#39;=&#39; operator." alt="" coords="5,31,177,57"/>
+<area shape="rect" id="Node000002" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Pure virtual method to get the source system of the flow." alt="" coords="225,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,30,209,26,210,31,178,35"/>
+<area shape="rect" id="Node000003" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Pure virtual method to get the target system of the flow." alt="" coords="227,56,338,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,53,212,57,211,63,177,58"/>
+</map>

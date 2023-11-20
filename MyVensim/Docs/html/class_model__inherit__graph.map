@@ -1,0 +1,5 @@
+<map id="Model" name="Model">
+<area shape="rect" id="Node000001" title="Interface class for models." alt="" coords="19,5,199,507"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html" title="Class that defines a model, which is composed of systems and flows." alt="" coords="5,555,213,1008"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,522,112,555,107,555,107,522"/>
+</map>
