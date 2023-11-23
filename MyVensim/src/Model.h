@@ -73,6 +73,18 @@ public:
     virtual string getName() const = 0;
 
     /**
+     * @brief Pure virtual method to set the model clock
+     * @param clock model clock
+    */
+    virtual void setClock(const int& clock) = 0;
+
+    /**
+     * @brief Pure virtual method to get the model clock
+     * @return int containing the value of model clock
+    */
+   virtual int getClock() const = 0;
+
+    /**
      * @brief Sets a typedef for a iterator of vector<System*>
     */
     typedef vector<System*>::iterator systemsIterator;

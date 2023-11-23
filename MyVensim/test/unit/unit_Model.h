@@ -45,6 +45,16 @@ void unit_Model_setName();
 void unit_Model_getName();
 
 /**
+ * @brief Unit test for Model setClock function
+ */
+void unit_Model_setClock();
+
+/**
+ * @brief Unit test for Model getClock function
+ */
+void unit_Model_getClock();
+
+/**
  * @brief Unit test for Model systemsBegin function
  */
 void unit_Model_systemsBegin();

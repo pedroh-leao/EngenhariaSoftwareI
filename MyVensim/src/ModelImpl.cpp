@@ -1,7 +1,8 @@
 #include "ModelImpl.h"
 
-ModelImpl :: ModelImpl(const string& name){
+ModelImpl :: ModelImpl(const string& name, const int& clock){
     this->name = name;
+    this->clock = clock;
 }
 
 ModelImpl :: ModelImpl(const ModelImpl& m){
@@ -60,6 +61,8 @@ bool ModelImpl :: remove(Flow* f){
 bool ModelImpl :: run(int startTime, int finalTime){
     if(startTime > finalTime || startTime < 0) return false;
 
+    clock = startTime;
+
     System *source, *target;
 
     vector<double> results;
@@ -89,7 +92,11 @@ bool ModelImpl :: run(int startTime, int finalTime){
 
             itResults++;
         }
+
+        clock = i;
     }
+
+    clock += 1;
 
     return true;
 }
@@ -107,6 +114,14 @@ void ModelImpl :: setName(const string& name){
 
 string ModelImpl :: getName() const{
     return name;
+}
+
+void ModelImpl :: setClock(const int& clock){
+    this->clock = clock;
+}
+
+int ModelImpl :: getClock() const{
+    return clock;
 }
 
 ModelImpl& ModelImpl:: operator= (const ModelImpl& m){

@@ -11,8 +11,15 @@ void unit_Model_constructor(){
     assert(m1->systemsBegin() == m1->systemsEnd());
     assert(m1->flowsBegin() == m1->flowsEnd());
 
+    Model *m2 = new ModelImpl("Model 2", 10);
+    assert(m2->getName() == "Model 2");
+    assert(m2->getClock() == 10);
+    assert(m2->systemsBegin() == m2->systemsEnd());
+    assert(m2->flowsBegin() == m2->flowsEnd());
+
     delete m;
     delete m1;
+    delete m2;
 }
 
 void unit_Model_destructor(){}
@@ -65,7 +72,9 @@ void unit_Model_run(){
     m->add(s2);
     m->add(f);
 
-    assert(m->run(0, 100));
+    m->run(0, 100);
+
+    assert(m->getClock() == 100);
 
     delete m;
     delete s1;
@@ -86,6 +95,23 @@ void unit_Model_getName(){
     Model *m = new ModelImpl("Model 1");
 
     assert(m->getName() == "Model 1");
+
+    delete m;
+}
+
+void unit_Model_setClock(){
+    Model *m = new ModelImpl();
+    m->setClock(5);
+
+    assert(m->getClock() == 5);
+
+    delete m;
+}
+
+void unit_Model_getClock(){
+    Model *m = new ModelImpl("Model 1", 5);
+
+    assert(m->getClock() == 5);
 
     delete m;
 }

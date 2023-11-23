@@ -24,6 +24,11 @@ protected:
     */
     vector<Flow*> flows;
 
+    /**
+     * @brief Model clock that saves the time the model is in
+    */
+    int clock;
+
 private:
     //prohibiting the copying of models
 
@@ -45,14 +50,12 @@ public:
     /**
      * @brief Model constructor that works as default as well
      * @param name model name
-     * @return
+     * @param clock model clock value
     */
-    ModelImpl(const string& name= "");
+    ModelImpl(const string& name= "", const int& clock= 0);
     
     /**
      * @brief Virtual class destructor
-     * @param
-     * @return
     */
     virtual ~ModelImpl();
 
@@ -94,49 +97,53 @@ public:
 
     /**
      * @brief Shows the current model status, the systems values
-     * @param
-     * @return
     */
     void reportStatus();
 
     /**
      * @brief Sets the model name
      * @param name model name
-     * @return
     */
     void setName(const string& name);
 
     /**
      * @brief Returns the model name
-     * @param 
      * @return string containing the model name
     */
     string getName() const;
 
     /**
+     * @brief Sets the model clock
+     * @param clock model clock
+    */
+    void setClock(const int& clock);
+
+    /**
+     * @brief Returns the model clock
+     * @return int containing the value of model clock
+    */
+   int getClock() const;
+
+    /**
      * @brief Returns the iterator of the beginning of the systems vector
-     * @param
      * @return systemsIterator being the iterator of the beginning of the vector
     */
     systemsIterator systemsBegin();
 
     /**
      * @brief Returns the iterator of the end of the systems vector
-     * @param
      * @return systemsIterator being the iterator of the end of the vector
     */
     systemsIterator systemsEnd();
 
     /**
      * @brief Returns the iterator of the beginning of the flows vector
-     * @param
      * @return flowsIterator being the iterator of the beginning of the vector
     */
     flowsIterator flowsBegin();
 
     /**
      * @brief Returns the iterator of the end of the flows vector
-     * @param
      * @return flowsIterator being the iterator of the end of the vector
     */
     flowsIterator flowsEnd();
