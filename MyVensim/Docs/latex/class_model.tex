@@ -11,7 +11,8 @@ Interface class for models.
 
 
 
-Inheritance diagram for Model\+:\nopagebreak
+Inheritance diagram for Model\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Inheritance diagram for Model\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Model\+:\nopagebreak
+Collaboration diagram for Model\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -55,6 +57,10 @@ virtual void \mbox{\hyperlink{class_model_aa17012307c37e6527ae6b1d3fff540e0}{set
 \begin{DoxyCompactList}\small\item\em Pure virtual method to set the model name. \end{DoxyCompactList}\item 
 virtual string \mbox{\hyperlink{class_model_aa5365ab557ae47efffdf14ba7a46dac8}{get\+Name}} () const =0
 \begin{DoxyCompactList}\small\item\em Pure virtual method to get the model name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_model_ad0be58c51fab66e8e036745a27aed04f}{set\+Clock}} (const int \&clock)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to set the model clock. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_model_a7a045ebb69213ab666550edaac1f207c}{get\+Clock}} () const =0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to get the model clock. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{systems\+Iterator}} \mbox{\hyperlink{class_model_a5cf4d533a7ac8752b9f6cab20e7d6f41}{systems\+Begin}} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual method to get the iterator of the beginning of the systems vector. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{systems\+Iterator}} \mbox{\hyperlink{class_model_aed9cb3a0a968b2fe62323916715fbceb}{systems\+End}} ()=0
@@ -209,6 +215,31 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_model_a865a19570378a396e1751c8ce4e6590b_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_model_a7a045ebb69213ab666550edaac1f207c}\label{class_model_a7a045ebb69213ab666550edaac1f207c} 
+\index{Model@{Model}!getClock@{getClock}}
+\index{getClock@{getClock}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getClock()}{getClock()}}
+{\footnotesize\ttfamily virtual int Model\+::get\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to get the model clock. 
+
+\begin{DoxyReturn}{Returns}
+int containing the value of model clock 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_impl_a3dd234a91f63cd4cb090f983cf951dd7}{Model\+Impl}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a7a045ebb69213ab666550edaac1f207c_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_model_aa5365ab557ae47efffdf14ba7a46dac8}\label{class_model_aa5365ab557ae47efffdf14ba7a46dac8} 
 \index{Model@{Model}!getName@{getName}}
 \index{getName@{getName}!Model@{Model}}
@@ -334,6 +365,33 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_ad0be58c51fab66e8e036745a27aed04f}\label{class_model_ad0be58c51fab66e8e036745a27aed04f} 
+\index{Model@{Model}!setClock@{setClock}}
+\index{setClock@{setClock}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setClock()}{setClock()}}
+{\footnotesize\ttfamily virtual void Model\+::set\+Clock (\begin{DoxyParamCaption}\item[{const int \&}]{clock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to set the model clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock} & model clock \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_model_impl_a7116b86b62895bccce3141ccc4571437}{Model\+Impl}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_model_ad0be58c51fab66e8e036745a27aed04f_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_model_aa17012307c37e6527ae6b1d3fff540e0}\label{class_model_aa17012307c37e6527ae6b1d3fff540e0} 

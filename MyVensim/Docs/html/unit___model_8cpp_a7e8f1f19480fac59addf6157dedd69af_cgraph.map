@@ -1,0 +1,7 @@
+<map id="unit_Model_setClock" name="unit_Model_setClock">
+<area shape="rect" id="Node000001" title="Unit test for Model setClock function." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a7a045ebb69213ab666550edaac1f207c" title="Pure virtual method to get the model clock." alt="" coords="196,5,311,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,180,26,181,32,149,36"/>
+<area shape="rect" id="Node000003" href="$class_model.html#ad0be58c51fab66e8e036745a27aed04f" title="Pure virtual method to set the model clock." alt="" coords="196,56,311,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,52,181,56,180,62,148,57"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Model::setClock" name="Model::setClock">
+<area shape="rect" id="Node000001" title="Pure virtual method to set the model clock." alt="" coords="196,5,311,32"/>
+<area shape="rect" id="Node000002" href="$unit___model_8cpp.html#a7e8f1f19480fac59addf6157dedd69af" title="Unit test for Model setClock function." alt="" coords="5,5,148,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,21,148,21,148,16,180,16"/>
+</map>
