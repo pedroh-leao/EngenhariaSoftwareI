@@ -1,9 +1,9 @@
 <map id="run_unit_tests_Model" name="run_unit_tests_Model">
 <area shape="rect" id="Node000001" title="Call all the unit tests." alt="" coords="5,259,151,285"/>
-<area shape="rect" id="Node000002" href="$unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="230,157,342,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,256,141,225,198,194,214,187,216,192,200,198,144,230,99,260"/>
-<area shape="rect" id="Node000008" href="$unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="208,360,364,387"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="99,284,144,314,200,346,215,352,213,357,198,350,141,319,96,288"/>
+<area shape="rect" id="Node000002" href="$unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="230,208,342,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,255,214,236,215,241,137,261"/>
+<area shape="rect" id="Node000008" href="$unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="208,309,364,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="137,283,214,303,213,308,135,289"/>
 <area shape="rect" id="Node000011" href="$unit___model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for Model destructor." alt="" coords="211,512,361,539"/>
 <area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="85,285,97,327,119,384,154,445,175,474,200,498,206,502,203,506,197,502,171,477,149,448,115,386,92,328,80,286"/>
 <area shape="rect" id="Node000012" href="$unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="209,107,363,133"/>
@@ -14,32 +14,32 @@
 <area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="91,284,134,339,165,370,200,396,210,402,208,407,197,401,161,374,130,342,86,287"/>
 <area shape="rect" id="Node000015" href="$unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="220,259,352,285"/>
 <area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="151,269,204,269,204,275,151,275"/>
-<area shape="rect" id="Node000017" href="$unit___model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for Model run function." alt="" coords="231,309,341,336"/>
-<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="137,283,216,303,215,308,135,289"/>
+<area shape="rect" id="Node000017" href="$unit___model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for Model run function." alt="" coords="231,360,341,387"/>
+<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="99,284,144,314,200,346,217,353,215,358,198,350,141,319,96,288"/>
 <area shape="rect" id="Node000019" href="$unit___model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for Model setName function." alt="" coords="214,461,358,488"/>
-<area shape="poly" id="edge34_Node000001_Node000019" title=" " alt="" coords="87,285,102,318,126,362,159,408,200,447,207,452,205,456,197,451,155,411,122,365,97,320,82,287"/>
+<area shape="poly" id="edge33_Node000001_Node000019" title=" " alt="" coords="87,285,102,318,126,362,159,408,200,447,207,452,205,456,197,451,155,411,122,365,97,320,82,287"/>
 <area shape="rect" id="Node000021" href="$unit___model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="Unit test for Model systemsBegin function." alt="" coords="199,56,373,83"/>
-<area shape="poly" id="edge37_Node000001_Node000021" title=" " alt="" coords="82,257,97,224,122,179,155,133,197,93,205,88,207,92,200,97,159,136,126,182,102,226,87,259"/>
-<area shape="rect" id="Node000022" href="$unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="204,208,368,235"/>
-<area shape="poly" id="edge40_Node000001_Node000022" title=" " alt="" coords="135,255,213,236,214,241,137,261"/>
+<area shape="poly" id="edge36_Node000001_Node000021" title=" " alt="" coords="82,257,97,224,122,179,155,133,197,93,205,88,207,92,200,97,159,136,126,182,102,226,87,259"/>
+<area shape="rect" id="Node000022" href="$unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="204,157,368,184"/>
+<area shape="poly" id="edge39_Node000001_Node000022" title=" " alt="" coords="96,256,141,225,198,194,213,187,215,192,200,198,144,230,99,260"/>
 <area shape="rect" id="Node000003" href="$class_model.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Pure virtual method to add a system to the model." alt="" coords="452,56,537,83"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,157,372,143,386,131,395,119,404,106,419,92,437,83,439,88,423,97,408,109,399,122,390,135,374,148,344,161"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,210,371,194,382,182,389,170,395,145,401,119,408,106,419,93,436,81,439,86,423,97,412,109,406,121,400,146,394,172,387,185,375,198,344,215"/>
 <area shape="rect" id="Node000004" href="$class_model.html#a12d4767f5fe89090a58c1d1091dfa1f1" title="Pure virtual method to get the iterator of the beginning of the flows vector." alt="" coords="432,208,558,235"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="343,182,422,201,421,206,342,187"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="342,219,416,219,416,224,342,224"/>
 <area shape="rect" id="Node000005" href="$class_model.html#a865a19570378a396e1751c8ce4e6590b" title="Pure virtual method to get the iterator of the end of the flows vector." alt="" coords="437,107,553,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="342,154,421,135,422,140,343,160"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="341,207,372,194,386,182,395,169,404,156,419,143,428,138,431,143,423,148,408,160,399,172,390,185,374,198,344,212"/>
 <area shape="rect" id="Node000006" href="$class_model.html#a5cf4d533a7ac8752b9f6cab20e7d6f41" title="Pure virtual method to get the iterator of the beginning of the systems vector." alt="" coords="421,157,568,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="342,168,405,168,405,173,342,173"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="342,205,421,186,422,191,343,210"/>
 <area shape="rect" id="Node000007" href="$class_model.html#aed9cb3a0a968b2fe62323916715fbceb" title="Pure virtual method to get the iterator of the end of the systems vector." alt="" coords="426,259,563,285"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="344,180,374,194,390,207,399,220,408,232,423,244,431,249,428,254,419,249,404,236,395,223,386,210,372,198,341,185"/>
-<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="354,357,371,346,382,334,389,322,395,297,401,271,408,258,419,245,424,241,427,245,423,249,412,261,406,273,400,298,394,324,387,337,375,350,357,362"/>
-<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="356,357,371,346,388,322,396,297,397,273,395,247,393,222,394,196,401,170,419,144,422,140,426,144,423,147,406,172,399,197,398,222,400,247,402,272,401,298,393,324,375,350,359,362"/>
-<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="356,357,371,346,385,328,392,310,395,272,397,234,405,214,419,194,422,191,426,195,423,198,409,216,402,235,400,273,398,311,390,331,375,350,359,362"/>
-<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="348,357,372,346,386,334,395,321,404,308,419,295,428,290,431,295,423,300,408,312,399,324,390,337,374,350,350,362"/>
-<area shape="rect" id="Node000009" href="$class_model.html#a7a045ebb69213ab666550edaac1f207c" title="Pure virtual method to get the model clock." alt="" coords="437,411,552,437"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="345,385,423,404,421,409,343,390"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="343,232,422,252,421,257,342,238"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="348,306,372,295,386,283,395,271,404,258,419,244,428,239,431,244,423,249,408,261,399,274,390,287,374,300,350,311"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="356,307,371,295,385,277,392,259,395,222,397,183,405,163,419,144,422,141,426,144,423,147,409,166,402,184,400,222,398,260,390,280,375,299,359,311"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="354,306,371,295,382,283,389,272,395,246,401,220,408,207,419,194,424,190,427,194,423,198,412,210,406,222,400,248,394,273,387,287,375,299,357,311"/>
+<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="343,306,421,287,423,292,345,311"/>
+<area shape="rect" id="Node000009" href="$class_model.html#a7a045ebb69213ab666550edaac1f207c" title="Pure virtual method to get the model clock." alt="" coords="437,360,552,387"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="345,334,423,353,421,358,343,339"/>
 <area shape="rect" id="Node000010" href="$class_model.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Pure virtual method to get the model name." alt="" coords="437,461,553,488"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="350,385,374,396,390,409,399,422,408,435,423,447,431,452,428,457,419,452,404,438,395,425,386,413,372,401,348,390"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="357,334,375,346,387,359,394,372,400,398,406,423,412,435,423,447,427,451,424,455,419,451,408,438,401,425,395,399,389,374,382,362,371,350,354,339"/>
 <area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="343,103,436,81,437,86,345,109"/>
 <area shape="poly" id="edge17_Node000012_Node000004" title=" " alt="" coords="350,131,374,143,390,156,399,169,408,181,423,194,431,199,428,203,419,198,404,185,395,172,386,160,372,148,348,136"/>
 <area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="345,30,437,53,436,58,343,35"/>
@@ -52,15 +52,14 @@
 <area shape="poly" id="edge29_Node000015_Node000007" title=" " alt="" coords="352,269,410,269,410,275,352,275"/>
 <area shape="rect" id="Node000016" href="$class_model.html#aab07c39ea01c4296097674893858f12f" title="Pure virtual method to remove a system from the model." alt="" coords="442,309,547,336"/>
 <area shape="poly" id="edge27_Node000015_Node000016" title=" " alt="" coords="345,283,427,304,426,309,343,289"/>
-<area shape="poly" id="edge31_Node000017_Node000003" title=" " alt="" coords="340,314,357,306,371,295,388,271,396,247,397,222,395,197,393,171,394,145,401,119,419,93,436,80,439,84,423,96,406,121,399,146,398,171,400,196,402,222,401,247,393,273,375,299,360,311,342,318"/>
-<area shape="poly" id="edge32_Node000017_Node000009" title=" " alt="" coords="342,331,374,346,390,359,399,372,408,384,423,396,431,401,428,406,419,401,404,388,395,375,386,362,372,350,340,336"/>
-<area shape="rect" id="Node000018" href="$class_model.html#a1f6d177ba1a07431fc52a1ba07d4fd73" title="Pure virtual method to execute the model." alt="" coords="454,360,536,387"/>
-<area shape="poly" id="edge33_Node000017_Node000018" title=" " alt="" coords="341,333,439,357,438,362,340,338"/>
-<area shape="poly" id="edge35_Node000019_Node000010" title=" " alt="" coords="358,472,421,472,421,477,358,477"/>
+<area shape="poly" id="edge31_Node000017_Node000009" title=" " alt="" coords="341,371,421,371,421,376,341,376"/>
+<area shape="rect" id="Node000018" href="$class_model.html#a1f6d177ba1a07431fc52a1ba07d4fd73" title="Pure virtual method to execute the model." alt="" coords="454,411,536,437"/>
+<area shape="poly" id="edge32_Node000017_Node000018" title=" " alt="" coords="341,384,439,408,438,413,340,389"/>
+<area shape="poly" id="edge34_Node000019_Node000010" title=" " alt="" coords="358,472,421,472,421,477,358,477"/>
 <area shape="rect" id="Node000020" href="$class_model.html#aa17012307c37e6527ae6b1d3fff540e0" title="Pure virtual method to set the model name." alt="" coords="437,512,553,539"/>
-<area shape="poly" id="edge36_Node000019_Node000020" title=" " alt="" coords="345,486,423,505,421,510,343,491"/>
-<area shape="poly" id="edge38_Node000021_Node000003" title=" " alt="" coords="373,67,437,67,437,72,373,72"/>
-<area shape="poly" id="edge39_Node000021_Node000006" title=" " alt="" coords="350,81,374,92,390,105,399,118,408,131,423,143,431,148,428,153,419,148,404,134,395,121,386,109,372,97,348,86"/>
-<area shape="poly" id="edge41_Node000022_Node000003" title=" " alt="" coords="354,205,371,194,382,182,389,170,395,145,401,119,408,106,419,93,436,81,439,86,423,97,412,109,406,121,400,146,394,172,387,185,375,198,357,210"/>
-<area shape="poly" id="edge42_Node000022_Node000007" title=" " alt="" coords="345,233,423,252,421,257,343,238"/>
+<area shape="poly" id="edge35_Node000019_Node000020" title=" " alt="" coords="345,486,423,505,421,510,343,491"/>
+<area shape="poly" id="edge37_Node000021_Node000003" title=" " alt="" coords="373,67,437,67,437,72,373,72"/>
+<area shape="poly" id="edge38_Node000021_Node000006" title=" " alt="" coords="350,81,374,92,390,105,399,118,408,131,423,143,431,148,428,153,419,148,404,134,395,121,386,109,372,97,348,86"/>
+<area shape="poly" id="edge40_Node000022_Node000003" title=" " alt="" coords="348,154,372,143,386,131,395,119,404,106,419,92,437,83,439,88,423,97,408,109,399,122,390,135,374,148,350,159"/>
+<area shape="poly" id="edge41_Node000022_Node000007" title=" " alt="" coords="350,182,374,194,390,207,399,220,408,232,423,244,431,249,428,254,419,249,404,236,395,223,386,210,372,198,348,187"/>
 </map>

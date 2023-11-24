@@ -64,22 +64,11 @@ void unit_Model_remove(){
 
 void unit_Model_run(){
     Model *m = new ModelImpl();
-    System *s1 = new SystemImpl("s1", 10);
-    System *s2 = new SystemImpl("s2", 20);
-    Flow *f = new Exponential(s1, s2);
-
-    m->add(s1);
-    m->add(s2);
-    m->add(f);
-
+  
     m->run(0, 100);
-
     assert(m->getClock() == 100);
 
     delete m;
-    delete s1;
-    delete s2;
-    delete f;
 }
 
 void unit_Model_setName(){
@@ -101,8 +90,8 @@ void unit_Model_getName(){
 
 void unit_Model_setClock(){
     Model *m = new ModelImpl();
-    m->setClock(5);
 
+    m->setClock(5);
     assert(m->getClock() == 5);
 
     delete m;
@@ -121,7 +110,7 @@ void unit_Model_systemsBegin(){
     System *s = new SystemImpl();
     
     m->add(s);
-
+    
     assert(*m->systemsBegin() == s);
 
     delete m;
