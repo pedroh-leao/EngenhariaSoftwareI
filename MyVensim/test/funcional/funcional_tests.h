@@ -1,13 +1,6 @@
 #ifndef FUNCIONAL_TESTS_H
 #define FUNCIONAL_TESTS_H
 
-#include <assert.h>
-#include <cmath>
-#include "../../src/ModelImpl.h"
-#include "../../src/SystemImpl.h"
-#include "../../src/FlowImpl.h"
-#include "MyFlows.h"
-
 /**
  * @brief Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation
  *        When the model runs, the equation is executed from time 0 to 100 and the system values are updated

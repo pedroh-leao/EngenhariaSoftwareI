@@ -1,10 +1,6 @@
 #ifndef UNIT_SYSTEM_H
 #define UNIT_SYSTEM_H
 
-#include "assert.h"
-#include "cmath"
-#include "../../src/SystemImpl.h"
-
 /**
  * @brief Unit test for System constructor
  */

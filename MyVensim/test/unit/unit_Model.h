@@ -1,14 +1,6 @@
 #ifndef UNIT_MODEL_H
 #define UNIT_MODEL_H
 
-#include <assert.h>
-#include <cmath>
-#include <vector>
-#include <iterator>
-#include "../../src/ModelImpl.h"
-#include "../../src/SystemImpl.h"
-#include "../funcional/MyFlows.h"
-
 /**
  * @brief Unit test for Model constructor
  */
@@ -20,9 +12,19 @@ void unit_Model_constructor();
 void unit_Model_destructor();
 
 /**
- * @brief Unit test for Model add functions
- */
-void unit_Model_add();
+ * @brief Unit test for Model createModel function
+*/
+void unit_Model_createModel();
+
+/**
+ * @brief Unit test for Model createSystem function
+*/
+void unit_Model_createSystem();
+
+/**
+ * @brief Unit test for Model createFlow function
+*/
+void unit_Model_createFlow();
 
 /**
  * @brief Unit test for Model remove functions
@@ -73,6 +75,16 @@ void unit_Model_flowsBegin();
  * @brief Unit test for Model flowsEnd function
  */
 void unit_Model_flowsEnd();
+
+/**
+ * @brief Unit test for Model modelsBegin function
+ */
+void unit_Model_modelsBegin();
+
+/**
+ * @brief Unit test for Model modelsEnd function
+ */
+void unit_Model_modelsEnd();
 
 /**
  * @brief Call all the unit tests

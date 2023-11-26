@@ -1,4 +1,8 @@
 #include "ModelImpl.h"
+#include "SystemImpl.h"
+#include <iostream>
+
+vector<Model *> ModelImpl::models;
 
 ModelImpl :: ModelImpl(const string& name, const int& clock){
     this->name = name;
@@ -12,8 +16,42 @@ ModelImpl :: ModelImpl(const ModelImpl& m){
 }
 
 ModelImpl :: ~ModelImpl(){
-    systems.clear();
-    flows.clear();
+    for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
+        delete *it;
+
+    for(flowsIterator it = flowsBegin(); it < flowsEnd(); it++)
+        delete *it;
+    
+
+    for(modelsIterator it = modelsBegin(); it < modelsEnd(); it++)
+        if(*it == this){
+            models.erase(it);
+            break;
+        }
+}
+
+Model& Model :: createModel(const string& name, const int& clock){
+    return ModelImpl::createModel(name, clock);
+}
+
+Model& ModelImpl :: createModel(const string& name, const int& clock){
+    Model* m = new ModelImpl(name, clock);
+    add(m);
+    return *m;
+}
+
+System& ModelImpl :: createSystem(const string& name, const double& value){
+    System* s = new SystemImpl(name, value);
+    add(s);
+    return *s;
+}
+
+bool ModelImpl :: add(Model* m){
+    int lenBefore = models.size();
+
+    models.push_back(m);
+
+    return (lenBefore != models.size());
 }
 
 bool ModelImpl :: add(System* s){
@@ -21,9 +59,7 @@ bool ModelImpl :: add(System* s){
 
     systems.push_back(s);
 
-    if(lenBefore == systems.size()) return false;
-
-    return true;
+    return (lenBefore != systems.size());
 }
 
 bool ModelImpl :: add(Flow* f){
@@ -31,9 +67,7 @@ bool ModelImpl :: add(Flow* f){
 
     flows.push_back(f);
 
-    if(lenBefore == flows.size()) return false;
-
-    return true;
+    return (lenBefore != flows.size());
 }
 
 bool ModelImpl :: remove(System* s){
@@ -152,4 +186,12 @@ ModelImpl::flowsIterator ModelImpl :: flowsBegin(){
 
 ModelImpl::flowsIterator ModelImpl :: flowsEnd(){
     return flows.end();
+}
+
+ModelImpl::modelsIterator ModelImpl :: modelsBegin(){
+    return models.begin();
+}
+
+ModelImpl::modelsIterator ModelImpl :: modelsEnd(){
+    return models.end();
 }

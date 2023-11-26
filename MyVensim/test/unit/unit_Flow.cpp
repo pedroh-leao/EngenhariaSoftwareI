@@ -1,4 +1,9 @@
 #include "unit_Flow.h"
+#include "assert.h"
+#include "cmath"
+#include "../../src/FlowImpl.h"
+#include "../../src/SystemImpl.h"
+#include "../funcional/MyFlows.h"
 
 void unit_Flow_constructor(){
     Flow *flowExp = new Exponential();

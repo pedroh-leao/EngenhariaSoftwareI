@@ -1,4 +1,7 @@
 #include "unit_System.h"
+#include "assert.h"
+#include "cmath"
+#include "../../src/SystemImpl.h"
 
 void unit_System_constructor(){
     System *s = new SystemImpl();

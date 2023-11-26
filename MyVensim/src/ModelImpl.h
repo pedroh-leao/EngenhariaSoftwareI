@@ -1,7 +1,6 @@
 #ifndef MODELIMPL_H
 #define MODELIMPL_H
 
-#include <iostream>
 #include "Model.h"
 
 /**
@@ -15,6 +14,11 @@ protected:
     string name;
 
     /**
+     * @brief Model clock that saves the time the model is in
+    */
+    int clock;
+
+    /**
      * @brief A vector containing pointers to the model systems
     */
     vector<System*> systems;
@@ -25,9 +29,9 @@ protected:
     vector<Flow*> flows;
 
     /**
-     * @brief Model clock that saves the time the model is in
+     * @brief A static vector containing pointers to the models created
     */
-    int clock;
+    static vector<Model*> models;
 
 private:
     //prohibiting the copying of models
@@ -45,6 +49,27 @@ private:
      * @return a reference to the copied model
     */
     ModelImpl& operator=(const ModelImpl& m);
+
+     /**
+     * @brief Adds a pointer to a system in the systems vector
+     * @param s pointer to a system
+     * @return bool representing whether the operation completed successfully
+    */
+    bool add(System* s);
+
+    /**
+     * @brief Adds a pointer to a flow in the flows vector
+     * @param f pointer to a flow
+     * @return bool representing whether the operation completed successfully
+    */
+    bool add(Flow* f);
+
+    /**
+     * @brief Adds a model to the models vector
+     * @param f pointer to a model
+     * @return bool representing whether the operation completed successfully
+     */
+    static bool add(Model* m);
     
 public:
     /**
@@ -60,18 +85,14 @@ public:
     virtual ~ModelImpl();
 
     /**
-     * @brief Adds a pointer to a system in the systems vector
-     * @param s pointer to a system
-     * @return bool representing whether the operation completed successfully
+     * Creates a new Model
     */
-    bool add(System* s);
+    static Model& createModel(const string& name= "", const int& clock= 0);
 
     /**
-     * @brief Adds a pointer to a flow in the flows vector
-     * @param f pointer to a flow
-     * @return bool representing whether the operation completed successfully
+     * @brief Creates a new System and add it to the model
     */
-    bool add(Flow* f);
+    System& createSystem(const string& name= "", const double& value= 0.0);
 
     /**
      * @brief Removes the system pointer 's' of the systems vector
@@ -147,6 +168,18 @@ public:
      * @return flowsIterator being the iterator of the end of the vector
     */
     flowsIterator flowsEnd();
+
+    /**
+     * @brief Returns the iterator of the beginning of the models vector
+     * @return modelsIterator iterator of the beginning of the models vector
+    */
+    modelsIterator modelsBegin();
+
+    /**
+     * @brief Returns the iterator of the end of the models vector
+     * @return modelsIterator iterator of the end of the models vector
+    */
+    modelsIterator modelsEnd();
 };
 
 #endif

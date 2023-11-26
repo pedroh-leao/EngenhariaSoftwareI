@@ -1,97 +1,64 @@
 #include "funcional_tests.h"
+#include <assert.h>
+#include <cmath>
+#include "../../src/Model.h"
+#include "MyFlows.h"
 
 void exponentialFuncionalTest(){
-    Model *m = new ModelImpl();
-    System *pop1 = new SystemImpl("Pop1", 100), *pop2 = new SystemImpl("Pop2", 0);
-    Flow *f1 = new Exponential(pop1, pop2);
+    Model &m = Model::createModel();
+    System &pop1 = m.createSystem("Pop1", 100), &pop2 = m.createSystem("Pop2", 0);
+    Flow &f1 = m.createFlow<Exponential>(&pop1, &pop2);
 
-    m->add(pop1);
-    m->add(pop2);
-    m->add(f1);
-
-    m->run(0, 100);
+    m.run(0, 100);
     
-    m->reportStatus();
+    m.reportStatus();
 
-    assert(round(fabs(pop1->getValue() * 10000 - 10000 * 36.6032)) < 1);
-    assert(round(fabs(pop2->getValue() * 10000 - 10000 * 63.3968)) < 1);
+    assert(round(fabs(pop1.getValue() * 10000 - 10000 * 36.6032)) < 1);
+    assert(round(fabs(pop2.getValue() * 10000 - 10000 * 63.3968)) < 1);
 
-    delete m;
-    delete pop1;
-    delete pop2;
-    delete f1;
+    delete &m;
 }
 
 void logisticalFuncionalTest(){
-    Model *m = new ModelImpl();
-    System *p1 = new SystemImpl("P1", 100), *p2 = new SystemImpl("P2", 10);
-    Flow *f1 = new Logistic(p1, p2);
+    Model &m = Model::createModel();
+    System &p1 = m.createSystem("P1", 100), &p2 = m.createSystem("P2", 10);
+    Flow &f1 = m.createFlow<Logistic>(&p1, &p2);
 
-    m->add(p1);
-    m->add(p2);
-    m->add(f1);
+    m.run(0, 100);
 
-    m->run(0, 100);
+    m.reportStatus();
 
-    m->reportStatus();
+    assert(round(fabs(p1.getValue() * 10000 - 10000 * 88.2167)) < 1);
+    assert(round(fabs(p2.getValue() * 10000 - 10000 * 21.7833)) < 1);
 
-    assert(round(fabs(p1->getValue() * 10000 - 10000 * 88.2167)) < 1);
-    assert(round(fabs(p2->getValue() * 10000 - 10000 * 21.7833)) < 1);
-
-    delete m;
-    delete p1;
-    delete p2;
-    delete f1;
+    delete &m;
 }
 
 void complexFuncionalTest(){
-    Model *m = new ModelImpl();
+    Model &m = Model::createModel();
 
-    System *q1 = new SystemImpl("Q1", 100);
-    System *q2 = new SystemImpl("Q2", 0);
-    System *q3 = new SystemImpl("Q3", 100);
-    System *q4 = new SystemImpl("Q4", 0);
-    System *q5 = new SystemImpl("Q5", 0);
+    System &q1 = m.createSystem("Q1", 100);
+    System &q2 = m.createSystem("Q2", 0);
+    System &q3 = m.createSystem("Q3", 100);
+    System &q4 = m.createSystem("Q4", 0);
+    System &q5 = m.createSystem("Q5", 0);
 
-    Flow *f = new Complex(q1, q2);
-    Flow *g = new Complex(q1, q3);
-    Flow *r = new Complex(q2, q5);
-    Flow *t = new Complex(q2, q3);
-    Flow *u = new Complex(q3, q4);
-    Flow *v = new Complex(q4, q1);
+    Flow &f = m.createFlow<Complex>(&q1, &q2);
+    Flow &g = m.createFlow<Complex>(&q1, &q3);
+    Flow &r = m.createFlow<Complex>(&q2, &q5);
+    Flow &t = m.createFlow<Complex>(&q2, &q3);
+    Flow &u = m.createFlow<Complex>(&q3, &q4);
+    Flow &v = m.createFlow<Complex>(&q4, &q1);
 
-    m->add(q1);
-    m->add(q2);
-    m->add(q3);
-    m->add(q4);
-    m->add(q5);
-    m->add(f);
-    m->add(g);
-    m->add(r);
-    m->add(t);
-    m->add(u);
-    m->add(v);
-
-    m->run(0, 100);
+    m.run(0, 100);
     
-    m->reportStatus();
+    m.reportStatus();
 
-    assert(round(fabs(q1->getValue() * 10000 - 31.8513 * 10000)) < 1);
-    assert(round(fabs(q2->getValue() * 10000 - 18.4003 * 10000)) < 1);
-    assert(round(fabs(q3->getValue() * 10000 - 77.1143 * 10000)) < 1);
-    assert(round(fabs(q4->getValue() * 10000 - 56.1728 * 10000)) < 1);
-    assert(round(fabs(q5->getValue() * 10000 - 16.4612 * 10000)) < 1);
+    assert(round(fabs(q1.getValue() * 10000 - 31.8513 * 10000)) < 1);
+    assert(round(fabs(q2.getValue() * 10000 - 18.4003 * 10000)) < 1);
+    assert(round(fabs(q3.getValue() * 10000 - 77.1143 * 10000)) < 1);
+    assert(round(fabs(q4.getValue() * 10000 - 56.1728 * 10000)) < 1);
+    assert(round(fabs(q5.getValue() * 10000 - 16.4612 * 10000)) < 1);
 
-    delete m;
-    delete q1;
-    delete q2;
-    delete q3;
-    delete q4;
-    delete q5;
-    delete f;
-    delete t;
-    delete u;
-    delete v;
-    delete g;
-    delete r;
+    delete &m;
 }

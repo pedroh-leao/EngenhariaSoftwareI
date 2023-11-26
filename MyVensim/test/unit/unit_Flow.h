@@ -1,12 +1,6 @@
 #ifndef UNIT_FLOW_H
 #define UNIT_FLOW_H
 
-#include "assert.h"
-#include "cmath"
-#include "../../src/FlowImpl.h"
-#include "../../src/SystemImpl.h"
-#include "../funcional/MyFlows.h"
-
 /**
  * @brief Unit test for Flow default constructor
  */
