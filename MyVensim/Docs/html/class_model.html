@@ -73,6 +73,9 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="class_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Model Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -87,9 +90,9 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__inherit__graph.png" border="0" usemap="#a_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_model_inherit__map" id="a_model_inherit__map">
-<area shape="rect" title="Interface class for models." alt="" coords="19,5,199,581"/>
-<area shape="rect" href="class_model_impl.html" title="Class that defines a model, which is composed of systems and flows." alt="" coords="5,629,213,1163"/>
-<area shape="poly" title=" " alt="" coords="112,596,112,629,107,629,107,596"/>
+<area shape="rect" title="Interface class for models." alt="" coords="5,5,256,784"/>
+<area shape="rect" href="class_model_impl.html" title="Class that defines a model, which is composed of systems and flows." alt="" coords="27,832,235,1509"/>
+<area shape="poly" title=" " alt="" coords="133,799,133,832,128,832,128,799"/>
 </map>
 </div>
 <div class="dynheader">
@@ -97,7 +100,7 @@ Collaboration diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__coll__graph.png" border="0" usemap="#a_model_coll__map" alt="Collaboration graph"/></div>
 <map name="a_model_coll__map" id="a_model_coll__map">
-<area shape="rect" title="Interface class for models." alt="" coords="5,5,185,581"/>
+<area shape="rect" title="Interface class for models." alt="" coords="5,5,256,784"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -109,18 +112,22 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac2413a62cd7cbbed3103667f4459a035" id="r_ac2413a62cd7cbbed3103667f4459a035"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac2413a62cd7cbbed3103667f4459a035">flowsIterator</a></td></tr>
 <tr class="memdesc:ac2413a62cd7cbbed3103667f4459a035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a typedef for a iterator of vector&lt;Flow*&gt;  <br /></td></tr>
 <tr class="separator:ac2413a62cd7cbbed3103667f4459a035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b506dad53e16fb95fc57592cc530c0d" id="r_a0b506dad53e16fb95fc57592cc530c0d"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="class_model.html">Model</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a0b506dad53e16fb95fc57592cc530c0d">modelsIterator</a></td></tr>
+<tr class="memdesc:a0b506dad53e16fb95fc57592cc530c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a typedef for a iterator of vector&lt;Model*&gt;  <br /></td></tr>
+<tr class="separator:a0b506dad53e16fb95fc57592cc530c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af032d8433c87a0a3a431faf6563a1f03" id="r_af032d8433c87a0a3a431faf6563a1f03"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
 <tr class="memdesc:af032d8433c87a0a3a431faf6563a1f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for the interface.  <br /></td></tr>
 <tr class="separator:af032d8433c87a0a3a431faf6563a1f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb2ff6a7566fde6bea104ddd3c556ed" id="r_abfb2ff6a7566fde6bea104ddd3c556ed"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#abfb2ff6a7566fde6bea104ddd3c556ed">add</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
-<tr class="memdesc:abfb2ff6a7566fde6bea104ddd3c556ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to add a system to the model.  <br /></td></tr>
-<tr class="separator:abfb2ff6a7566fde6bea104ddd3c556ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7224e4a5be42bd0d56f6781fc82f084" id="r_ac7224e4a5be42bd0d56f6781fc82f084"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac7224e4a5be42bd0d56f6781fc82f084">add</a> (<a class="el" href="class_flow.html">Flow</a> *f)=0</td></tr>
-<tr class="memdesc:ac7224e4a5be42bd0d56f6781fc82f084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to add a flow to the model.  <br /></td></tr>
-<tr class="separator:ac7224e4a5be42bd0d56f6781fc82f084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57d42eef06605b2b97374d70b46fd8a" id="r_ae57d42eef06605b2b97374d70b46fd8a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ae57d42eef06605b2b97374d70b46fd8a">createSystem</a> (const string &amp;name=&quot;&quot;, const double &amp;value=0.0)=0</td></tr>
+<tr class="memdesc:ae57d42eef06605b2b97374d70b46fd8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to create a new <a class="el" href="class_system.html" title="Interface class for systems.">System</a> and add it to the model.  <br /></td></tr>
+<tr class="separator:ae57d42eef06605b2b97374d70b46fd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec79bed35d3d9a43252d62817d53e95" id="r_acec79bed35d3d9a43252d62817d53e95"><td class="memTemplParams" colspan="2">template&lt;typename T_FLOW &gt; </td></tr>
+<tr class="memitem:acec79bed35d3d9a43252d62817d53e95"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#acec79bed35d3d9a43252d62817d53e95">createFlow</a> (<a class="el" href="class_system.html">System</a> *source=NULL, <a class="el" href="class_system.html">System</a> *target=NULL)</td></tr>
+<tr class="memdesc:acec79bed35d3d9a43252d62817d53e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to create a new <a class="el" href="class_flow.html" title="Interface class for flows.">Flow</a> and add it to the model.  <br /></td></tr>
+<tr class="separator:acec79bed35d3d9a43252d62817d53e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab07c39ea01c4296097674893858f12f" id="r_aab07c39ea01c4296097674893858f12f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aab07c39ea01c4296097674893858f12f">remove</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
 <tr class="memdesc:aab07c39ea01c4296097674893858f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to remove a system from the model.  <br /></td></tr>
 <tr class="separator:aab07c39ea01c4296097674893858f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +164,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a865a19570378a396e1751c8ce4e6590b" id="r_a865a19570378a396e1751c8ce4e6590b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_model.html#ac2413a62cd7cbbed3103667f4459a035">flowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a865a19570378a396e1751c8ce4e6590b">flowsEnd</a> ()=0</td></tr>
 <tr class="memdesc:a865a19570378a396e1751c8ce4e6590b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to get the iterator of the end of the flows vector.  <br /></td></tr>
 <tr class="separator:a865a19570378a396e1751c8ce4e6590b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214e492d02b844dfa8899cc9e8d659bf" id="r_a214e492d02b844dfa8899cc9e8d659bf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_model.html#a0b506dad53e16fb95fc57592cc530c0d">modelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a214e492d02b844dfa8899cc9e8d659bf">modelsBegin</a> ()=0</td></tr>
+<tr class="memdesc:a214e492d02b844dfa8899cc9e8d659bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to get the iterator of the beginning of the models vector.  <br /></td></tr>
+<tr class="separator:a214e492d02b844dfa8899cc9e8d659bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d7fdf01d3f62864800882d11e7dfdf" id="r_ac8d7fdf01d3f62864800882d11e7dfdf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_model.html#a0b506dad53e16fb95fc57592cc530c0d">modelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac8d7fdf01d3f62864800882d11e7dfdf">modelsEnd</a> ()=0</td></tr>
+<tr class="memdesc:ac8d7fdf01d3f62864800882d11e7dfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to get the iterator of the end of the models vector.  <br /></td></tr>
+<tr class="separator:ac8d7fdf01d3f62864800882d11e7dfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:add0937bb42fa225c6bbb79a52bd55773" id="r_add0937bb42fa225c6bbb79a52bd55773"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#add0937bb42fa225c6bbb79a52bd55773">createModel</a> (const string &amp;name=&quot;&quot;, const int &amp;clock=0)</td></tr>
+<tr class="separator:add0937bb42fa225c6bbb79a52bd55773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac7224e4a5be42bd0d56f6781fc82f084" id="r_ac7224e4a5be42bd0d56f6781fc82f084"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac7224e4a5be42bd0d56f6781fc82f084">add</a> (<a class="el" href="class_flow.html">Flow</a> *f)=0</td></tr>
+<tr class="memdesc:ac7224e4a5be42bd0d56f6781fc82f084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to add a flow to the model.  <br /></td></tr>
+<tr class="separator:ac7224e4a5be42bd0d56f6781fc82f084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4c8566635d4c4311239a2ed5a3d75a8a" id="r_a4c8566635d4c4311239a2ed5a3d75a8a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a4c8566635d4c4311239a2ed5a3d75a8a">add</a> (<a class="el" href="class_model.html">Model</a> *m)</td></tr>
+<tr class="memdesc:a4c8566635d4c4311239a2ed5a3d75a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to add a model to the models vector.  <br /></td></tr>
+<tr class="separator:a4c8566635d4c4311239a2ed5a3d75a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface class for models. </p>
@@ -174,6 +204,22 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets a typedef for a iterator of vector&lt;Flow*&gt; </p>
+
+</div>
+</div>
+<a id="a0b506dad53e16fb95fc57592cc530c0d" name="a0b506dad53e16fb95fc57592cc530c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b506dad53e16fb95fc57592cc530c0d">&#9670;&#160;</a></span>modelsIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="class_model.html">Model</a>*&gt;::iterator <a class="el" href="class_model.html#a0b506dad53e16fb95fc57592cc530c0d">Model::modelsIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a typedef for a iterator of vector&lt;Model*&gt; </p>
 
 </div>
 </div>
@@ -218,7 +264,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Virtual destructor for the interface. </p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{}</div>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -242,7 +288,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -255,13 +301,46 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool representing whether the operation completed successfully </dd></dl>
-
-<p>Implemented in <a class="el" href="class_model_impl.html#afb03886a806066515ac40f9ac29155df">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_ac7224e4a5be42bd0d56f6781fc82f084_icgraph.png" border="0" usemap="#aclass_model_ac7224e4a5be42bd0d56f6781fc82f084_icgraph" alt=""/></div>
+<map name="aclass_model_ac7224e4a5be42bd0d56f6781fc82f084_icgraph" id="aclass_model_ac7224e4a5be42bd0d56f6781fc82f084_icgraph">
+<area shape="rect" title="Pure virtual method to add a flow to the model." alt="" coords="688,157,773,184"/>
+<area shape="rect" href="class_model.html#acec79bed35d3d9a43252d62817d53e95" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="512,157,640,184"/>
+<area shape="poly" title=" " alt="" coords="672,173,640,173,640,168,672,168"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="305,5,456,32"/>
+<area shape="poly" title=" " alt="" coords="556,146,517,95,492,69,463,46,440,35,442,30,466,42,495,65,521,92,560,143"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="296,56,464,83"/>
+<area shape="poly" title=" " alt="" coords="545,150,507,123,463,97,434,86,436,81,465,92,510,118,548,146"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="304,107,457,133"/>
+<area shape="poly" title=" " alt="" coords="506,155,434,137,435,131,507,150"/>
+<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="303,157,457,184"/>
+<area shape="poly" title=" " alt="" coords="497,173,458,173,458,168,497,168"/>
+<area shape="rect" href="unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="304,208,457,235"/>
+<area shape="poly" title=" " alt="" coords="507,191,435,210,434,205,506,186"/>
+<area shape="rect" href="unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="309,259,452,285"/>
+<area shape="poly" title=" " alt="" coords="548,196,510,223,465,249,436,261,434,256,463,244,507,219,545,191"/>
+<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="314,309,446,336"/>
+<area shape="poly" title=" " alt="" coords="560,199,521,250,495,277,466,300,442,311,440,306,463,295,492,273,517,246,556,195"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
+<area shape="poly" title=" " alt="" coords="309,39,201,66,200,61,308,34"/>
+<area shape="poly" title=" " alt="" coords="280,72,200,72,200,67,280,67"/>
+<area shape="poly" title=" " alt="" coords="308,105,200,78,201,73,309,100"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,233,248,260"/>
+<area shape="poly" title=" " alt="" coords="317,192,297,198,208,235,206,230,295,194,315,187"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,233,55,260"/>
+<area shape="poly" title=" " alt="" coords="87,249,55,249,55,244,87,244"/>
+<area shape="poly" title=" " alt="" coords="288,235,249,240,248,235,288,230"/>
+<area shape="poly" title=" " alt="" coords="293,264,248,258,249,253,294,259"/>
+<area shape="poly" title=" " alt="" coords="315,307,295,300,206,263,208,258,297,295,317,302"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="abfb2ff6a7566fde6bea104ddd3c556ed" name="abfb2ff6a7566fde6bea104ddd3c556ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfb2ff6a7566fde6bea104ddd3c556ed">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
+<a id="a4c8566635d4c4311239a2ed5a3d75a8a" name="a4c8566635d4c4311239a2ed5a3d75a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8566635d4c4311239a2ed5a3d75a8a">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,11 +349,264 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Model::add </td>
+          <td class="memname">static bool Model::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model.html">Model</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual method to add a model to the models vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>pointer to a model </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool representing whether the operation completed successfully </dd></dl>
+
+</div>
+</div>
+<a id="acec79bed35d3d9a43252d62817d53e95" name="acec79bed35d3d9a43252d62817d53e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec79bed35d3d9a43252d62817d53e95">&#9670;&#160;</a></span>createFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T_FLOW &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flow.html">Flow</a> &amp; Model::createFlow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramname"><em>source</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
+          <td class="paramname"><em>target</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual method to create a new <a class="el" href="class_flow.html" title="Interface class for flows.">Flow</a> and add it to the model. </p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                                {</div>
+<div class="line"><span class="lineno">   39</span>        <a class="code hl_class" href="class_flow.html">Flow</a>* f = <span class="keyword">new</span> T_FLOW(source, target);</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="class_model.html#ac7224e4a5be42bd0d56f6781fc82f084">add</a>(f);</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">return</span> *f;</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="ttc" id="aclass_flow_html"><div class="ttname"><a href="class_flow.html">Flow</a></div><div class="ttdoc">Interface class for flows.</div><div class="ttdef"><b>Definition</b> Flow.h:9</div></div>
+<div class="ttc" id="aclass_model_html_ac7224e4a5be42bd0d56f6781fc82f084"><div class="ttname"><a href="class_model.html#ac7224e4a5be42bd0d56f6781fc82f084">Model::add</a></div><div class="ttdeci">virtual bool add(Flow *f)=0</div><div class="ttdoc">Pure virtual method to add a flow to the model.</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_acec79bed35d3d9a43252d62817d53e95_cgraph.png" border="0" usemap="#aclass_model_acec79bed35d3d9a43252d62817d53e95_cgraph" alt=""/></div>
+<map name="aclass_model_acec79bed35d3d9a43252d62817d53e95_cgraph" id="aclass_model_acec79bed35d3d9a43252d62817d53e95_cgraph">
+<area shape="rect" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="5,5,133,32"/>
+<area shape="rect" href="class_model.html#ac7224e4a5be42bd0d56f6781fc82f084" title="Pure virtual method to add a flow to the model." alt="" coords="181,5,266,32"/>
+<area shape="poly" title=" " alt="" coords="133,16,165,16,165,21,133,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_acec79bed35d3d9a43252d62817d53e95_icgraph.png" border="0" usemap="#aclass_model_acec79bed35d3d9a43252d62817d53e95_icgraph" alt=""/></div>
+<map name="aclass_model_acec79bed35d3d9a43252d62817d53e95_icgraph" id="aclass_model_acec79bed35d3d9a43252d62817d53e95_icgraph">
+<area shape="rect" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="512,157,640,184"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="305,5,456,32"/>
+<area shape="poly" title=" " alt="" coords="556,146,517,95,492,69,463,46,440,35,442,30,466,42,495,65,521,92,560,143"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="296,56,464,83"/>
+<area shape="poly" title=" " alt="" coords="545,150,507,123,463,97,434,86,436,81,465,92,510,118,548,146"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="304,107,457,133"/>
+<area shape="poly" title=" " alt="" coords="506,155,434,137,435,131,507,150"/>
+<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="303,157,457,184"/>
+<area shape="poly" title=" " alt="" coords="497,173,458,173,458,168,497,168"/>
+<area shape="rect" href="unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="304,208,457,235"/>
+<area shape="poly" title=" " alt="" coords="507,191,435,210,434,205,506,186"/>
+<area shape="rect" href="unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="309,259,452,285"/>
+<area shape="poly" title=" " alt="" coords="548,196,510,223,465,249,436,261,434,256,463,244,507,219,545,191"/>
+<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="314,309,446,336"/>
+<area shape="poly" title=" " alt="" coords="560,199,521,250,495,277,466,300,442,311,440,306,463,295,492,273,517,246,556,195"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
+<area shape="poly" title=" " alt="" coords="309,39,201,66,200,61,308,34"/>
+<area shape="poly" title=" " alt="" coords="280,72,200,72,200,67,280,67"/>
+<area shape="poly" title=" " alt="" coords="308,105,200,78,201,73,309,100"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,233,248,260"/>
+<area shape="poly" title=" " alt="" coords="317,192,297,198,208,235,206,230,295,194,315,187"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,233,55,260"/>
+<area shape="poly" title=" " alt="" coords="87,249,55,249,55,244,87,244"/>
+<area shape="poly" title=" " alt="" coords="288,235,249,240,248,235,288,230"/>
+<area shape="poly" title=" " alt="" coords="293,264,248,258,249,253,294,259"/>
+<area shape="poly" title=" " alt="" coords="315,307,295,300,206,263,208,258,297,295,317,302"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add0937bb42fa225c6bbb79a52bd55773" name="add0937bb42fa225c6bbb79a52bd55773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0937bb42fa225c6bbb79a52bd55773">&#9670;&#160;</a></span>createModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model.html">Model</a> &amp; Model::createModel </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>clock</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pure virtual method to create a new <a class="el" href="class_model.html" title="Interface class for models.">Model</a> </p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                               {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_model_impl.html#a4368148054e77b3871ad2d54d1688333">ModelImpl::createModel</a>(name, clock);</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclass_model_impl_html_a4368148054e77b3871ad2d54d1688333"><div class="ttname"><a href="class_model_impl.html#a4368148054e77b3871ad2d54d1688333">ModelImpl::createModel</a></div><div class="ttdeci">static Model &amp; createModel(const string &amp;name=&quot;&quot;, const int &amp;clock=0)</div><div class="ttdef"><b>Definition</b> ModelImpl.cpp:37</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_add0937bb42fa225c6bbb79a52bd55773_cgraph.png" border="0" usemap="#aclass_model_add0937bb42fa225c6bbb79a52bd55773_cgraph" alt=""/></div>
+<map name="aclass_model_add0937bb42fa225c6bbb79a52bd55773_cgraph" id="aclass_model_add0937bb42fa225c6bbb79a52bd55773_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,141,32"/>
+<area shape="rect" href="class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="189,5,348,32"/>
+<area shape="poly" title=" " alt="" coords="141,16,173,16,173,21,141,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_add0937bb42fa225c6bbb79a52bd55773_icgraph.png" border="0" usemap="#aclass_model_add0937bb42fa225c6bbb79a52bd55773_icgraph" alt=""/></div>
+<map name="aclass_model_add0937bb42fa225c6bbb79a52bd55773_icgraph" id="aclass_model_add0937bb42fa225c6bbb79a52bd55773_icgraph">
+<area shape="rect" title=" " alt="" coords="518,461,654,488"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="308,5,459,32"/>
+<area shape="poly" title=" " alt="" coords="578,446,564,355,540,235,507,120,489,76,468,46,453,35,457,30,472,42,493,73,512,119,545,234,569,354,583,446"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="299,56,467,83"/>
+<area shape="poly" title=" " alt="" coords="582,446,578,376,562,282,547,232,528,183,502,137,469,97,453,85,456,81,472,93,506,134,532,180,552,230,567,280,583,375,587,446"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="307,107,460,133"/>
+<area shape="poly" title=" " alt="" coords="581,446,573,384,555,303,541,261,522,220,498,181,469,147,452,136,455,132,472,143,502,178,526,217,546,259,560,302,578,383,586,445"/>
+<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="305,157,461,184"/>
+<area shape="poly" title=" " alt="" coords="578,446,568,393,548,326,516,257,494,226,469,198,452,187,455,182,472,194,498,222,521,255,553,324,573,392,584,445"/>
+<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="306,208,460,235"/>
+<area shape="poly" title=" " alt="" coords="576,447,563,403,541,349,510,295,491,270,469,249,451,238,453,233,472,245,495,267,515,292,546,347,568,401,581,445"/>
+<area shape="rect" href="unit___model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model createModel function." alt="" coords="302,259,464,285"/>
+<area shape="poly" title=" " alt="" coords="572,448,556,414,534,374,504,334,469,299,449,288,451,284,472,295,508,330,538,371,561,411,577,446"/>
+<area shape="rect" href="unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for Model createSystem function." alt="" coords="297,309,469,336"/>
+<area shape="poly" title=" " alt="" coords="566,450,525,399,499,373,469,350,446,339,448,334,472,346,502,369,529,395,570,447"/>
+<area shape="rect" href="unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="307,360,460,387"/>
+<area shape="poly" title=" " alt="" coords="554,454,515,427,469,401,440,390,442,385,471,396,518,422,557,450"/>
+<area shape="rect" href="unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="312,411,455,437"/>
+<area shape="poly" title=" " alt="" coords="514,460,439,441,440,435,516,454"/>
+<area shape="rect" href="unit___model_8cpp.html#ae6d41c7055d6cab40311bacb885be338" title="Unit test for Model getClock function." alt="" coords="312,461,454,488"/>
+<area shape="poly" title=" " alt="" coords="503,477,455,477,455,472,503,472"/>
+<area shape="rect" href="unit___model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for Model getName function." alt="" coords="312,512,455,539"/>
+<area shape="poly" title=" " alt="" coords="516,495,440,514,439,509,514,490"/>
+<area shape="rect" href="unit___model_8cpp.html#aafd324facdcdfe44bd2b43bda9a9ca5e" title="Unit test for Model modelsBegin function." alt="" coords="300,563,466,589"/>
+<area shape="poly" title=" " alt="" coords="557,500,518,527,471,553,442,565,440,560,469,548,515,523,554,495"/>
+<area shape="rect" href="unit___model_8cpp.html#a16eb9b9c2196c14e47248c5148f3f41e" title="Unit test for Model modelsEnd function." alt="" coords="305,613,461,640"/>
+<area shape="poly" title=" " alt="" coords="570,503,529,554,502,581,472,604,448,615,446,610,469,599,499,577,525,550,566,499"/>
+<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="317,664,449,691"/>
+<area shape="poly" title=" " alt="" coords="577,503,561,538,538,579,508,619,472,654,451,666,448,661,469,650,504,616,534,576,556,536,572,501"/>
+<area shape="rect" href="unit___model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for Model run function." alt="" coords="329,715,438,741"/>
+<area shape="poly" title=" " alt="" coords="581,504,568,548,546,602,515,657,495,683,472,705,439,722,437,717,469,701,491,679,510,654,541,600,563,546,576,502"/>
+<area shape="rect" href="unit___model_8cpp.html#a7e8f1f19480fac59addf6157dedd69af" title="Unit test for Model setClock function." alt="" coords="312,765,454,792"/>
+<area shape="poly" title=" " alt="" coords="584,504,573,557,553,625,521,695,498,727,472,755,455,767,452,763,469,751,494,724,516,692,548,623,568,556,578,503"/>
+<area shape="rect" href="unit___model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for Model setName function." alt="" coords="312,816,455,843"/>
+<area shape="poly" title=" " alt="" coords="586,504,578,566,560,647,546,690,526,732,502,771,472,806,455,818,452,813,469,802,498,768,522,730,541,688,555,646,573,565,581,503"/>
+<area shape="rect" href="unit___model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="Unit test for Model systemsBegin function." alt="" coords="296,867,470,893"/>
+<area shape="poly" title=" " alt="" coords="587,504,583,574,567,669,552,719,532,769,506,816,472,857,456,868,453,864,469,853,502,813,528,767,547,718,562,668,578,574,582,503"/>
+<area shape="rect" href="unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="301,917,465,944"/>
+<area shape="poly" title=" " alt="" coords="583,504,569,595,545,715,512,831,493,876,472,907,457,919,453,915,468,903,489,873,507,829,540,714,564,594,578,503"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
+<area shape="poly" title=" " alt="" coords="311,39,201,66,200,61,310,34"/>
+<area shape="poly" title=" " alt="" coords="283,72,201,72,201,67,283,67"/>
+<area shape="poly" title=" " alt="" coords="310,105,200,78,201,73,311,100"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,537,248,564"/>
+<area shape="poly" title=" " alt="" coords="302,195,298,198,264,238,237,285,216,334,201,384,185,476,180,537,174,537,179,475,196,383,211,332,232,282,259,235,294,194,298,191"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,537,55,564"/>
+<area shape="poly" title=" " alt="" coords="87,553,55,553,55,548,87,548"/>
+<area shape="poly" title=" " alt="" coords="302,245,298,249,267,283,242,321,223,363,207,406,188,483,181,537,175,536,183,482,202,404,218,361,238,319,263,279,294,245,299,241"/>
+<area shape="poly" title=" " alt="" coords="302,296,298,299,271,327,248,358,214,427,192,492,182,537,176,536,187,490,209,425,244,356,267,323,294,295,299,292"/>
+<area shape="poly" title=" " alt="" coords="304,346,298,350,274,371,254,396,220,450,197,500,183,538,178,536,192,498,215,447,249,393,270,368,294,346,301,341"/>
+<area shape="poly" title=" " alt="" coords="306,396,298,401,259,434,227,472,186,538,181,536,223,469,255,430,294,397,303,391"/>
+<area shape="poly" title=" " alt="" coords="310,446,297,452,265,472,236,496,191,539,187,535,232,492,262,468,295,447,307,441"/>
+<area shape="poly" title=" " alt="" coords="297,539,249,544,248,539,296,533"/>
+<area shape="poly" title=" " alt="" coords="284,567,248,562,249,557,285,561"/>
+<area shape="poly" title=" " alt="" coords="316,611,295,604,206,567,208,562,297,599,318,606"/>
+<area shape="poly" title=" " alt="" coords="307,660,295,654,262,634,232,610,187,566,191,563,236,606,265,629,297,650,310,656"/>
+<area shape="poly" title=" " alt="" coords="313,715,294,705,255,671,223,632,181,566,186,563,227,629,259,668,298,700,315,710"/>
+<area shape="poly" title=" " alt="" coords="299,810,294,806,267,778,244,746,209,676,187,611,176,565,182,564,192,610,214,674,248,743,271,774,298,802,302,806"/>
+<area shape="poly" title=" " alt="" coords="299,860,294,857,263,822,238,782,218,740,202,697,183,619,175,565,181,564,188,618,207,696,223,738,242,780,267,819,298,853,302,856"/>
+<area shape="poly" title=" " alt="" coords="298,911,294,907,259,866,232,819,211,769,196,718,179,627,174,565,180,564,185,626,201,717,216,767,237,817,264,863,298,903,302,907"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae57d42eef06605b2b97374d70b46fd8a" name="ae57d42eef06605b2b97374d70b46fd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57d42eef06605b2b97374d70b46fd8a">&#9670;&#160;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> &amp; Model::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>value</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -284,53 +616,40 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pure virtual method to add a system to the model. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>pointer to a system </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>bool representing whether the operation completed successfully </dd></dl>
+<p>Pure virtual method to create a new <a class="el" href="class_system.html" title="Interface class for systems.">System</a> and add it to the model. </p>
 
-<p>Implemented in <a class="el" href="class_model_impl.html#a75824d3eb5f2e250616621b3ca8f081d">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_model_impl.html#afb0a5e3fd825e388987c8f685f0ca294">ModelImpl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph.png" border="0" usemap="#aclass_model_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph" alt=""/></div>
-<map name="aclass_model_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph" id="aclass_model_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph">
-<area shape="rect" title="Pure virtual method to add a system to the model." alt="" coords="518,208,604,235"/>
+<div class="center"><img src="class_model_ae57d42eef06605b2b97374d70b46fd8a_icgraph.png" border="0" usemap="#aclass_model_ae57d42eef06605b2b97374d70b46fd8a_icgraph" alt=""/></div>
+<map name="aclass_model_ae57d42eef06605b2b97374d70b46fd8a_icgraph" id="aclass_model_ae57d42eef06605b2b97374d70b46fd8a_icgraph">
+<area shape="rect" title="Pure virtual method to create a new System and add it to the model." alt="" coords="518,157,664,184"/>
 <area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="308,5,459,32"/>
-<area shape="poly" title=" " alt="" coords="550,193,540,159,523,120,499,80,469,46,451,35,453,30,472,42,504,77,528,117,545,157,555,192"/>
+<area shape="poly" title=" " alt="" coords="570,146,527,95,500,69,469,46,445,35,447,30,472,42,503,65,531,92,574,143"/>
 <area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="299,56,467,83"/>
-<area shape="poly" title=" " alt="" coords="545,195,515,145,493,119,469,97,448,86,450,81,472,92,497,115,519,141,549,192"/>
+<area shape="poly" title=" " alt="" coords="558,150,517,123,469,97,439,86,441,81,471,92,520,118,561,146"/>
 <area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="307,107,460,133"/>
-<area shape="poly" title=" " alt="" coords="535,199,505,172,469,148,442,136,445,131,472,143,508,168,538,195"/>
-<area shape="rect" href="unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="327,157,439,184"/>
-<area shape="poly" title=" " alt="" coords="502,208,432,187,433,182,504,202"/>
-<area shape="rect" href="unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="307,208,460,235"/>
-<area shape="poly" title=" " alt="" coords="503,224,460,224,460,219,503,219"/>
-<area shape="rect" href="unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="312,259,455,285"/>
-<area shape="poly" title=" " alt="" coords="504,240,433,261,432,256,502,235"/>
-<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="317,309,449,336"/>
-<area shape="poly" title=" " alt="" coords="538,248,508,275,472,300,445,311,442,306,469,295,505,271,535,244"/>
-<area shape="rect" href="unit___model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="Unit test for Model systemsBegin function." alt="" coords="296,360,470,387"/>
-<area shape="poly" title=" " alt="" coords="549,250,519,301,497,328,472,350,450,362,448,357,469,346,493,324,515,298,545,248"/>
-<area shape="rect" href="unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="301,411,465,437"/>
-<area shape="poly" title=" " alt="" coords="555,251,545,285,528,326,504,366,472,401,453,412,451,408,469,397,499,363,523,323,540,283,550,249"/>
+<area shape="poly" title=" " alt="" coords="518,156,440,137,442,131,519,151"/>
+<area shape="rect" href="unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for Model createSystem function." alt="" coords="297,157,469,184"/>
+<area shape="poly" title=" " alt="" coords="503,173,470,173,470,168,503,168"/>
+<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="317,208,449,235"/>
+<area shape="poly" title=" " alt="" coords="519,191,442,210,440,205,518,186"/>
+<area shape="rect" href="unit___model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="Unit test for Model systemsBegin function." alt="" coords="296,259,470,285"/>
+<area shape="poly" title=" " alt="" coords="561,195,520,223,471,249,441,261,439,256,469,244,517,218,558,191"/>
+<area shape="rect" href="unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="301,309,465,336"/>
+<area shape="poly" title=" " alt="" coords="574,198,531,250,503,277,472,300,447,311,445,306,469,295,500,272,527,246,570,195"/>
 <area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
 <area shape="poly" title=" " alt="" coords="311,39,201,66,200,61,310,34"/>
 <area shape="poly" title=" " alt="" coords="283,72,201,72,201,67,283,67"/>
 <area shape="poly" title=" " alt="" coords="310,105,200,78,201,73,311,100"/>
-<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,284,248,311"/>
-<area shape="poly" title=" " alt="" coords="313,191,297,198,265,219,236,242,191,285,187,282,232,238,262,214,295,194,311,186"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,284,55,311"/>
-<area shape="poly" title=" " alt="" coords="87,300,55,300,55,295,87,295"/>
-<area shape="poly" title=" " alt="" coords="318,242,297,249,208,286,206,281,295,244,316,237"/>
-<area shape="poly" title=" " alt="" coords="297,285,249,291,248,286,296,280"/>
-<area shape="poly" title=" " alt="" coords="301,315,248,309,249,304,302,310"/>
-<area shape="poly" title=" " alt="" coords="316,358,295,350,206,314,208,309,297,346,318,352"/>
-<area shape="poly" title=" " alt="" coords="307,407,295,401,262,380,232,356,187,313,191,309,236,352,265,376,297,396,310,402"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,233,248,260"/>
+<area shape="poly" title=" " alt="" coords="318,192,297,198,208,235,206,230,295,194,316,186"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,233,55,260"/>
+<area shape="poly" title=" " alt="" coords="87,249,55,249,55,244,87,244"/>
+<area shape="poly" title=" " alt="" coords="302,234,249,240,248,235,301,229"/>
+<area shape="poly" title=" " alt="" coords="280,262,248,258,248,253,281,257"/>
+<area shape="poly" title=" " alt="" coords="316,307,295,300,206,263,208,258,297,295,318,302"/>
 </map>
 </div>
 
@@ -369,10 +688,10 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_a12d4767f5fe89090a58c1d1091dfa1f1_icgraph.png" border="0" usemap="#aclass_model_a12d4767f5fe89090a58c1d1091dfa1f1_icgraph" alt=""/></div>
 <map name="aclass_model_a12d4767f5fe89090a58c1d1091dfa1f1_icgraph" id="aclass_model_a12d4767f5fe89090a58c1d1091dfa1f1_icgraph">
 <area shape="rect" title="Pure virtual method to get the iterator of the beginning of the flows vector." alt="" coords="500,81,627,108"/>
-<area shape="rect" href="unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="318,5,430,32"/>
+<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="296,5,452,32"/>
 <area shape="poly" title=" " alt="" coords="520,77,451,46,420,35,421,30,453,42,522,72"/>
-<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="296,56,452,83"/>
-<area shape="poly" title=" " alt="" coords="484,87,453,82,453,77,485,82"/>
+<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="297,56,451,83"/>
+<area shape="poly" title=" " alt="" coords="485,87,451,82,452,77,486,82"/>
 <area shape="rect" href="unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="298,107,451,133"/>
 <area shape="poly" title=" " alt="" coords="485,108,451,112,451,107,485,103"/>
 <area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="308,157,440,184"/>
@@ -381,7 +700,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="315,40,297,46,208,83,206,78,295,42,313,35"/>
 <area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
 <area shape="poly" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>
-<area shape="poly" title=" " alt="" coords="281,84,249,88,248,83,281,79"/>
+<area shape="poly" title=" " alt="" coords="282,84,248,88,248,83,281,79"/>
 <area shape="poly" title=" " alt="" coords="282,111,248,107,249,101,282,106"/>
 <area shape="poly" title=" " alt="" coords="313,154,295,148,206,111,208,106,297,143,315,149"/>
 </map>
@@ -422,10 +741,10 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_a865a19570378a396e1751c8ce4e6590b_icgraph.png" border="0" usemap="#aclass_model_a865a19570378a396e1751c8ce4e6590b_icgraph" alt=""/></div>
 <map name="aclass_model_a865a19570378a396e1751c8ce4e6590b_icgraph" id="aclass_model_a865a19570378a396e1751c8ce4e6590b_icgraph">
 <area shape="rect" title="Pure virtual method to get the iterator of the end of the flows vector." alt="" coords="500,81,617,108"/>
-<area shape="rect" href="unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="318,5,430,32"/>
+<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="296,5,452,32"/>
 <area shape="poly" title=" " alt="" coords="517,76,451,46,420,35,422,30,453,42,519,72"/>
-<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="296,56,452,83"/>
-<area shape="poly" title=" " alt="" coords="484,87,452,83,453,77,485,82"/>
+<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="297,56,451,83"/>
+<area shape="poly" title=" " alt="" coords="484,87,452,83,452,77,485,82"/>
 <area shape="rect" href="unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="303,107,446,133"/>
 <area shape="poly" title=" " alt="" coords="485,107,446,113,446,108,484,102"/>
 <area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="308,157,440,184"/>
@@ -434,7 +753,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="315,40,297,46,208,83,206,78,295,42,313,35"/>
 <area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
 <area shape="poly" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>
-<area shape="poly" title=" " alt="" coords="281,84,249,88,248,83,281,79"/>
+<area shape="poly" title=" " alt="" coords="282,84,248,88,248,83,281,79"/>
 <area shape="poly" title=" " alt="" coords="287,112,248,107,248,101,287,106"/>
 <area shape="poly" title=" " alt="" coords="313,154,295,148,206,111,208,106,297,143,315,149"/>
 </map>
@@ -538,6 +857,100 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
 <area shape="poly" title=" " alt="" coords="287,72,248,72,248,67,287,67"/>
 <area shape="poly" title=" " alt="" coords="303,105,230,86,231,81,305,100"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a214e492d02b844dfa8899cc9e8d659bf" name="a214e492d02b844dfa8899cc9e8d659bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214e492d02b844dfa8899cc9e8d659bf">&#9670;&#160;</a></span>modelsBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_model.html#a0b506dad53e16fb95fc57592cc530c0d">modelsIterator</a> Model::modelsBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual method to get the iterator of the beginning of the models vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>iterator of the beginning of the models vector </dd></dl>
+
+<p>Implemented in <a class="el" href="class_model_impl.html#a09c53cd1e079bf552895633ba1e5a578">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_a214e492d02b844dfa8899cc9e8d659bf_icgraph.png" border="0" usemap="#aclass_model_a214e492d02b844dfa8899cc9e8d659bf_icgraph" alt=""/></div>
+<map name="aclass_model_a214e492d02b844dfa8899cc9e8d659bf_icgraph" id="aclass_model_a214e492d02b844dfa8899cc9e8d659bf_icgraph">
+<area shape="rect" title="Pure virtual method to get the iterator of the beginning of the models vector." alt="" coords="510,31,650,57"/>
+<area shape="rect" href="unit___model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model createModel function." alt="" coords="298,5,460,32"/>
+<area shape="poly" title=" " alt="" coords="494,36,460,32,461,26,495,31"/>
+<area shape="rect" href="unit___model_8cpp.html#aafd324facdcdfe44bd2b43bda9a9ca5e" title="Unit test for Model modelsBegin function." alt="" coords="296,56,462,83"/>
+<area shape="poly" title=" " alt="" coords="495,57,463,61,462,56,495,52"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,31,248,57"/>
+<area shape="poly" title=" " alt="" coords="283,33,249,38,248,32,282,28"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" title=" " alt="" coords="280,60,248,56,249,50,281,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac8d7fdf01d3f62864800882d11e7dfdf" name="ac8d7fdf01d3f62864800882d11e7dfdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d7fdf01d3f62864800882d11e7dfdf">&#9670;&#160;</a></span>modelsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_model.html#a0b506dad53e16fb95fc57592cc530c0d">modelsIterator</a> Model::modelsEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual method to get the iterator of the end of the models vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>iterator of the end of the models vector </dd></dl>
+
+<p>Implemented in <a class="el" href="class_model_impl.html#abfc37cb0b560d02d692b2c009ea94c07">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_ac8d7fdf01d3f62864800882d11e7dfdf_icgraph.png" border="0" usemap="#aclass_model_ac8d7fdf01d3f62864800882d11e7dfdf_icgraph" alt=""/></div>
+<map name="aclass_model_ac8d7fdf01d3f62864800882d11e7dfdf_icgraph" id="aclass_model_ac8d7fdf01d3f62864800882d11e7dfdf_icgraph">
+<area shape="rect" title="Pure virtual method to get the iterator of the end of the models vector." alt="" coords="506,31,636,57"/>
+<area shape="rect" href="unit___model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model createModel function." alt="" coords="296,5,458,32"/>
+<area shape="poly" title=" " alt="" coords="490,36,459,32,459,27,491,31"/>
+<area shape="rect" href="unit___model_8cpp.html#a16eb9b9c2196c14e47248c5148f3f41e" title="Unit test for Model modelsEnd function." alt="" coords="299,56,455,83"/>
+<area shape="poly" title=" " alt="" coords="491,57,456,62,455,56,491,52"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,31,248,57"/>
+<area shape="poly" title=" " alt="" coords="281,33,249,38,248,32,280,28"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" title=" " alt="" coords="283,60,248,56,249,50,284,55"/>
 </map>
 </div>
 
@@ -879,10 +1292,10 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_a5cf4d533a7ac8752b9f6cab20e7d6f41_icgraph.png" border="0" usemap="#aclass_model_a5cf4d533a7ac8752b9f6cab20e7d6f41_icgraph" alt=""/></div>
 <map name="aclass_model_a5cf4d533a7ac8752b9f6cab20e7d6f41_icgraph" id="aclass_model_a5cf4d533a7ac8752b9f6cab20e7d6f41_icgraph">
 <area shape="rect" title="Pure virtual method to get the iterator of the beginning of the systems vector." alt="" coords="518,81,666,108"/>
-<area shape="rect" href="unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="327,5,439,32"/>
+<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="305,5,461,32"/>
 <area shape="poly" title=" " alt="" coords="545,77,469,47,434,35,436,30,471,41,547,72"/>
-<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="305,56,461,83"/>
-<area shape="poly" title=" " alt="" coords="502,87,461,81,462,76,503,81"/>
+<area shape="rect" href="unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for Model createSystem function." alt="" coords="297,56,469,83"/>
+<area shape="poly" title=" " alt="" coords="502,87,470,82,470,77,503,81"/>
 <area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="317,107,449,133"/>
 <area shape="poly" title=" " alt="" coords="503,108,450,115,449,109,503,103"/>
 <area shape="rect" href="unit___model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="Unit test for Model systemsBegin function." alt="" coords="296,157,470,184"/>
@@ -891,7 +1304,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="318,40,297,46,208,83,206,78,295,42,316,34"/>
 <area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
 <area shape="poly" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>
-<area shape="poly" title=" " alt="" coords="290,83,249,88,248,83,290,78"/>
+<area shape="poly" title=" " alt="" coords="282,84,249,88,248,83,281,79"/>
 <area shape="poly" title=" " alt="" coords="301,113,248,106,249,101,302,107"/>
 <area shape="poly" title=" " alt="" coords="316,155,295,148,206,111,208,106,297,143,318,150"/>
 </map>
@@ -931,29 +1344,30 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_aed9cb3a0a968b2fe62323916715fbceb_icgraph.png" border="0" usemap="#aclass_model_aed9cb3a0a968b2fe62323916715fbceb_icgraph" alt=""/></div>
 <map name="aclass_model_aed9cb3a0a968b2fe62323916715fbceb_icgraph" id="aclass_model_aed9cb3a0a968b2fe62323916715fbceb_icgraph">
-<area shape="rect" title="Pure virtual method to get the iterator of the end of the systems vector." alt="" coords="508,81,646,108"/>
-<area shape="rect" href="unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Unit test for Model add functions." alt="" coords="322,5,434,32"/>
-<area shape="poly" title=" " alt="" coords="532,77,459,46,426,35,428,30,461,42,534,72"/>
-<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="300,56,456,83"/>
-<area shape="poly" title=" " alt="" coords="493,87,457,82,457,77,494,81"/>
-<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="312,107,444,133"/>
-<area shape="poly" title=" " alt="" coords="494,108,445,114,444,109,493,103"/>
-<area shape="rect" href="unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="296,157,460,184"/>
-<area shape="poly" title=" " alt="" coords="534,117,461,148,428,159,426,154,459,143,532,112"/>
+<area shape="rect" title="Pure virtual method to get the iterator of the end of the systems vector." alt="" coords="516,81,654,108"/>
+<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="304,5,460,32"/>
+<area shape="poly" title=" " alt="" coords="540,77,467,46,433,35,435,30,469,42,542,72"/>
+<area shape="rect" href="unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for Model createSystem function." alt="" coords="296,56,468,83"/>
+<area shape="poly" title=" " alt="" coords="500,87,469,83,469,78,501,82"/>
+<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="316,107,448,133"/>
+<area shape="poly" title=" " alt="" coords="501,108,449,114,448,109,501,102"/>
+<area shape="rect" href="unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="300,157,464,184"/>
+<area shape="poly" title=" " alt="" coords="542,117,469,148,435,159,433,154,467,143,540,112"/>
 <area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,81,248,108"/>
-<area shape="poly" title=" " alt="" coords="316,40,297,46,208,83,206,78,295,42,314,35"/>
+<area shape="poly" title=" " alt="" coords="317,40,297,46,208,83,206,78,295,42,316,35"/>
 <area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
 <area shape="poly" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>
-<area shape="poly" title=" " alt="" coords="285,84,249,88,248,83,284,78"/>
-<area shape="poly" title=" " alt="" coords="297,113,248,106,249,101,297,107"/>
-<area shape="poly" title=" " alt="" coords="314,155,295,148,206,111,208,106,297,143,316,150"/>
+<area shape="poly" title=" " alt="" coords="281,84,248,88,248,83,280,79"/>
+<area shape="poly" title=" " alt="" coords="300,113,248,106,249,101,301,107"/>
+<area shape="poly" title=" " alt="" coords="316,155,295,148,206,111,208,106,297,143,317,150"/>
 </map>
 </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_model_8h_source.html">Model.h</a></li>
+<li>src/<a class="el" href="_model_impl_8cpp.html">ModelImpl.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

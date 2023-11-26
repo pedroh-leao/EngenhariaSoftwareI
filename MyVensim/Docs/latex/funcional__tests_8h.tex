@@ -1,18 +1,5 @@
 \doxysection{test/funcional/funcional\+\_\+tests.h File Reference}
 \hypertarget{funcional__tests_8h}{}\label{funcional__tests_8h}\index{test/funcional/funcional\_tests.h@{test/funcional/funcional\_tests.h}}
-{\ttfamily \#include $<$assert.\+h$>$}\newline
-{\ttfamily \#include $<$cmath$>$}\newline
-{\ttfamily \#include "{}../../src/\+Model\+Impl.\+h"{}}\newline
-{\ttfamily \#include "{}../../src/\+System\+Impl.\+h"{}}\newline
-{\ttfamily \#include "{}../../src/\+Flow\+Impl.\+h"{}}\newline
-{\ttfamily \#include "{}My\+Flows.\+h"{}}\newline
-Include dependency graph for funcional\+\_\+tests.\+h\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{funcional__tests_8h__incl}
-\end{center}
-\end{figure}
 This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -44,64 +31,42 @@ Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ *m\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_model_impl}{ModelImpl}}();}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *q1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q1"{}},\ 100);}
-\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *q2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q2"{}},\ 0);}
-\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *q3\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q3"{}},\ 100);}
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *q4\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q4"{}},\ 0);}
-\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *q5\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q5"{}},\ 0);}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *f\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(q1,\ q2);}
-\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *g\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(q1,\ q3);}
-\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *r\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(q2,\ q5);}
-\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *t\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(q2,\ q3);}
-\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(q3,\ q4);}
-\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_complex}{Complex}}(q4,\ q1);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ \&m\ =\ \mbox{\hyperlink{class_model_add0937bb42fa225c6bbb79a52bd55773}{Model::createModel}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&q1\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Q1"{}},\ 100);}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&q2\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Q2"{}},\ 0);}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&q3\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Q3"{}},\ 100);}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&q4\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Q4"{}},\ 0);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&q5\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Q5"{}},\ 0);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&f\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_complex}{Complex}}>(\&q1,\ \&q2);}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&g\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_complex}{Complex}}>(\&q1,\ \&q3);}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&r\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_complex}{Complex}}>(\&q2,\ \&q5);}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&t\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_complex}{Complex}}>(\&q2,\ \&q3);}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&u\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_complex}{Complex}}>(\&q3,\ \&q4);}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&v\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_complex}{Complex}}>(\&q4,\ \&q1);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ m.\mbox{\hyperlink{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73}{run}}(0,\ 100);}
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ m.\mbox{\hyperlink{class_model_aa14a031649a1dc8bd529691fd3cfd900}{reportStatus}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ assert(round(fabs(q1.getValue()\ *\ 10000\ -\/\ 31.8513\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00058\ \ \ \ \ assert(round(fabs(q2.getValue()\ *\ 10000\ -\/\ 18.4003\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00059\ \ \ \ \ assert(round(fabs(q3.getValue()\ *\ 10000\ -\/\ 77.1143\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00060\ \ \ \ \ assert(round(fabs(q4.getValue()\ *\ 10000\ -\/\ 56.1728\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00061\ \ \ \ \ assert(round(fabs(q5.\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 16.4612\ *\ 10000))\ <\ 1);}
 \DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(q1);}
-\DoxyCodeLine{00064\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(q2);}
-\DoxyCodeLine{00065\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(q3);}
-\DoxyCodeLine{00066\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(q4);}
-\DoxyCodeLine{00067\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(q5);}
-\DoxyCodeLine{00068\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(f);}
-\DoxyCodeLine{00069\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(g);}
-\DoxyCodeLine{00070\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(r);}
-\DoxyCodeLine{00071\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(t);}
-\DoxyCodeLine{00072\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(u);}
-\DoxyCodeLine{00073\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(v);}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73}{run}}(0,\ 100);}
-\DoxyCodeLine{00076\ \ \ \ \ }
-\DoxyCodeLine{00077\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_aa14a031649a1dc8bd529691fd3cfd900}{reportStatus}}();}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00079\ \ \ \ \ assert(round(fabs(q1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 31.8513\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00080\ \ \ \ \ assert(round(fabs(q2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 18.4003\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00081\ \ \ \ \ assert(round(fabs(q3-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 77.1143\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00082\ \ \ \ \ assert(round(fabs(q4-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 56.1728\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00083\ \ \ \ \ assert(round(fabs(q5-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 16.4612\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
-\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{delete}\ q1;}
-\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{delete}\ q2;}
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{delete}\ q3;}
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{delete}\ q4;}
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{delete}\ q5;}
-\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{delete}\ f;}
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{delete}\ t;}
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{delete}\ u;}
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{delete}\ v;}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{delete}\ g;}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{delete}\ r;}
-\DoxyCodeLine{00097\ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{delete}\ \&m;}
+\DoxyCodeLine{00064\ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=331pt]{funcional__tests_8h_a943dfe0c597a01c9760c140715fed527_cgraph}
+\includegraphics[width=350pt]{funcional__tests_8h_a943dfe0c597a01c9760c140715fed527_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
@@ -123,34 +88,28 @@ Given a model with 2 systems with value 100 and 0, and 1 flow that performs an e
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ *m\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_model_impl}{ModelImpl}}();}
-\DoxyCodeLine{00005\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *pop1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Pop1"{}},\ 100),\ *pop2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Pop2"{}},\ 0);}
-\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *f1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exponential}{Exponential}}(pop1,\ pop2);}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(pop1);}
-\DoxyCodeLine{00009\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(pop2);}
-\DoxyCodeLine{00010\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(f1);}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ \&m\ =\ \mbox{\hyperlink{class_model_add0937bb42fa225c6bbb79a52bd55773}{Model::createModel}}();}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&pop1\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Pop1"{}},\ 100),\ \&pop2\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}Pop2"{}},\ 0);}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&f1\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_exponential}{Exponential}}>(\&pop1,\ \&pop2);}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73}{run}}(0,\ 100);}
+\DoxyCodeLine{00012\ \ \ \ \ m.\mbox{\hyperlink{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73}{run}}(0,\ 100);}
 \DoxyCodeLine{00013\ \ \ \ \ }
-\DoxyCodeLine{00014\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_aa14a031649a1dc8bd529691fd3cfd900}{reportStatus}}();}
+\DoxyCodeLine{00014\ \ \ \ \ m.\mbox{\hyperlink{class_model_aa14a031649a1dc8bd529691fd3cfd900}{reportStatus}}();}
 \DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ assert(round(fabs(pop1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10000\ *\ 36.6032))\ <\ 1);}
-\DoxyCodeLine{00017\ \ \ \ \ assert(round(fabs(pop2-\/>getValue()\ *\ 10000\ -\/\ 10000\ *\ 63.3968))\ <\ 1);}
+\DoxyCodeLine{00016\ \ \ \ \ assert(round(fabs(pop1.getValue()\ *\ 10000\ -\/\ 10000\ *\ 36.6032))\ <\ 1);}
+\DoxyCodeLine{00017\ \ \ \ \ assert(round(fabs(pop2.getValue()\ *\ 10000\ -\/\ 10000\ *\ 63.3968))\ <\ 1);}
 \DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{delete}\ pop1;}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{delete}\ pop2;}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{delete}\ f1;}
-\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{delete}\ \&m;}
+\DoxyCodeLine{00020\ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=344pt]{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27_cgraph}
+\includegraphics[width=350pt]{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
@@ -172,34 +131,28 @@ Given a model with 2 systems with value 100 and 10, and 1 flow that performs a l
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ *m\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_model_impl}{ModelImpl}}();}
-\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *p1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}P1"{}},\ 100),\ *p2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}P2"{}},\ 10);}
-\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ *f1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_logistic}{Logistic}}(p1,\ p2);}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(p1);}
-\DoxyCodeLine{00031\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(p2);}
-\DoxyCodeLine{00032\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_abfb2ff6a7566fde6bea104ddd3c556ed}{add}}(f1);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\ \&m\ =\ \mbox{\hyperlink{class_model_add0937bb42fa225c6bbb79a52bd55773}{Model::createModel}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ \&p1\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}P1"{}},\ 100),\ \&p2\ =\ m.\mbox{\hyperlink{class_model_ae57d42eef06605b2b97374d70b46fd8a}{createSystem}}(\textcolor{stringliteral}{"{}P2"{}},\ 10);}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\ \&f1\ =\ m.\mbox{\hyperlink{class_model_acec79bed35d3d9a43252d62817d53e95}{createFlow}}<\mbox{\hyperlink{class_logistic}{Logistic}}>(\&p1,\ \&p2);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ m.\mbox{\hyperlink{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73}{run}}(0,\ 100);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ m.\mbox{\hyperlink{class_model_aa14a031649a1dc8bd529691fd3cfd900}{reportStatus}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ assert(round(fabs(p1.getValue()\ *\ 10000\ -\/\ 10000\ *\ 88.2167))\ <\ 1);}
+\DoxyCodeLine{00032\ \ \ \ \ assert(round(fabs(p2.getValue()\ *\ 10000\ -\/\ 10000\ *\ 21.7833))\ <\ 1);}
 \DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_a1f6d177ba1a07431fc52a1ba07d4fd73}{run}}(0,\ 100);}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ m-\/>\mbox{\hyperlink{class_model_aa14a031649a1dc8bd529691fd3cfd900}{reportStatus}}();}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ assert(round(fabs(p1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10000\ *\ 88.2167))\ <\ 1);}
-\DoxyCodeLine{00039\ \ \ \ \ assert(round(fabs(p2-\/>getValue()\ *\ 10000\ -\/\ 10000\ *\ 21.7833))\ <\ 1);}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{delete}\ p1;}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{delete}\ p2;}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{delete}\ f1;}
-\DoxyCodeLine{00045\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{delete}\ \&m;}
+\DoxyCodeLine{00035\ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=333pt]{funcional__tests_8h_a60914db64bde71b56d69320797266c29_cgraph}
+\includegraphics[width=350pt]{funcional__tests_8h_a60914db64bde71b56d69320797266c29_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak

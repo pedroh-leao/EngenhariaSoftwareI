@@ -1,5 +1,5 @@
 <map id="ModelImpl" name="ModelImpl">
-<area shape="rect" id="Node000001" title="Class that defines a model, which is composed of systems and flows." alt="" coords="5,629,213,1163"/>
-<area shape="rect" id="Node000002" href="$class_model.html" title="Interface class for models." alt="" coords="19,5,199,581"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,596,112,629,107,629,107,596"/>
+<area shape="rect" id="Node000001" title="Class that defines a model, which is composed of systems and flows." alt="" coords="27,832,235,1509"/>
+<area shape="rect" id="Node000002" href="$class_model.html" title="Interface class for models." alt="" coords="5,5,256,784"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,799,133,832,128,832,128,799"/>
 </map>

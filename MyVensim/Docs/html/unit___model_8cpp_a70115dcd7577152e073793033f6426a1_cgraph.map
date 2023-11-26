@@ -1,7 +1,13 @@
 <map id="unit_Model_flowsBegin" name="unit_Model_flowsBegin">
-<area shape="rect" id="Node000001" title="Unit test for Model flowsBegin function." alt="" coords="5,31,159,57"/>
-<area shape="rect" id="Node000002" href="$class_model.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Pure virtual method to add a system to the model." alt="" coords="227,5,313,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,31,212,24,213,29,160,36"/>
-<area shape="rect" id="Node000003" href="$class_model.html#a12d4767f5fe89090a58c1d1091dfa1f1" title="Pure virtual method to get the iterator of the beginning of the flows vector." alt="" coords="207,56,333,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,52,191,56,191,61,159,57"/>
+<area shape="rect" id="Node000001" title="Unit test for Model flowsBegin function." alt="" coords="5,56,159,83"/>
+<area shape="rect" id="Node000002" href="$class_model.html#acec79bed35d3d9a43252d62817d53e95" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="211,5,338,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,53,205,34,207,39,136,58"/>
+<area shape="rect" id="Node000004" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="207,56,342,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,67,191,67,191,72,159,72"/>
+<area shape="rect" id="Node000006" href="$class_model.html#a12d4767f5fe89090a58c1d1091dfa1f1" title="Pure virtual method to get the iterator of the beginning of the flows vector." alt="" coords="211,107,338,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,81,207,100,205,105,135,86"/>
+<area shape="rect" id="Node000003" href="$class_model.html#ac7224e4a5be42bd0d56f6781fc82f084" title="Pure virtual method to add a flow to the model." alt="" coords="427,5,512,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,16,411,16,411,21,338,21"/>
+<area shape="rect" id="Node000005" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="390,56,549,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="343,67,374,67,374,72,343,72"/>
 </map>

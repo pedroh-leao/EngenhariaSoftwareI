@@ -80,24 +80,27 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="unit___system_8h_source.html">unit_System.h</a>&quot;</code><br />
+<code>#include &quot;assert.h&quot;</code><br />
+<code>#include &quot;cmath&quot;</code><br />
+<code>#include &quot;<a class="el" href="_system_impl_8h_source.html">../../src/SystemImpl.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for unit_System.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="unit___system_8cpp__incl.png" border="0" usemap="#atest_2unit_2unit___system_8cpp" alt=""/></div>
 <map name="atest_2unit_2unit___system_8cpp" id="atest_2unit_2unit___system_8cpp">
-<area shape="rect" title=" " alt="" coords="41,5,211,32"/>
-<area shape="rect" href="unit___system_8h.html" title=" " alt="" coords="74,80,179,107"/>
-<area shape="poly" title=" " alt="" coords="129,33,129,64,124,64,124,33"/>
-<area shape="rect" title=" " alt="" coords="5,155,74,181"/>
-<area shape="poly" title=" " alt="" coords="113,109,68,147,64,143,109,105"/>
-<area shape="rect" title=" " alt="" coords="98,155,155,181"/>
-<area shape="poly" title=" " alt="" coords="129,107,129,139,124,139,124,107"/>
-<area shape="rect" href="_system_impl_8h.html" title=" " alt="" coords="179,155,327,181"/>
-<area shape="poly" title=" " alt="" coords="150,105,219,144,216,149,147,110"/>
-<area shape="rect" href="_system_8h.html" title=" " alt="" coords="214,229,292,256"/>
-<area shape="poly" title=" " alt="" coords="256,182,256,214,250,214,250,182"/>
-<area shape="rect" title=" " alt="" coords="226,304,280,331"/>
-<area shape="poly" title=" " alt="" coords="256,257,256,288,250,288,250,257"/>
+<area shape="rect" title=" " alt="" coords="126,5,297,32"/>
+<area shape="rect" href="unit___system_8h.html" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" title=" " alt="" coords="186,35,100,75,98,70,183,30"/>
+<area shape="rect" title=" " alt="" coords="135,80,203,107"/>
+<area shape="poly" title=" " alt="" coords="206,34,186,68,181,65,202,31"/>
+<area shape="rect" title=" " alt="" coords="227,80,284,107"/>
+<area shape="poly" title=" " alt="" coords="221,31,242,65,238,68,217,34"/>
+<area shape="rect" href="_system_impl_8h.html" title=" " alt="" coords="308,80,456,107"/>
+<area shape="poly" title=" " alt="" coords="242,30,339,71,337,76,240,35"/>
+<area shape="rect" href="_system_8h.html" title=" " alt="" coords="343,155,421,181"/>
+<area shape="poly" title=" " alt="" coords="385,107,385,139,379,139,379,107"/>
+<area shape="rect" title=" " alt="" coords="355,229,409,256"/>
+<area shape="poly" title=" " alt="" coords="385,182,385,214,379,214,379,182"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -148,31 +151,31 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Call all the unit tests. </p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                            {</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb">unit_System_constructor</a>();</div>
-<div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_function" href="unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37">unit_System_copyConstructor</a>();</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_function" href="unit___system_8cpp.html#a021603784a12638ed34bc8690c832dfc">unit_System_destructor</a>();</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea">unit_System_setName</a>();</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_function" href="unit___system_8cpp.html#a672a51794472bbde676a33115e003b15">unit_System_getName</a>();</div>
-<div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6">unit_System_setValue</a>();</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94">unit_System_getValue</a>();</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3">unit_System_equalsOperator</a>();</div>
-<div class="line"><span class="lineno">  100</span>}</div>
-<div class="ttc" id="aunit___system_8cpp_html_a021603784a12638ed34bc8690c832dfc"><div class="ttname"><a href="unit___system_8cpp.html#a021603784a12638ed34bc8690c832dfc">unit_System_destructor</a></div><div class="ttdeci">void unit_System_destructor()</div><div class="ttdoc">Unit test for System destructor.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:33</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_a11b125bb1d38d3f070c671cf5855bf37"><div class="ttname"><a href="unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37">unit_System_copyConstructor</a></div><div class="ttdeci">void unit_System_copyConstructor()</div><div class="ttdoc">Unit test for System copy constructor.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:22</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_a470f565c55f643e387d5cc7005cab1ea"><div class="ttname"><a href="unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea">unit_System_setName</a></div><div class="ttdeci">void unit_System_setName()</div><div class="ttdoc">Unit test for System setName function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:35</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_a672a51794472bbde676a33115e003b15"><div class="ttname"><a href="unit___system_8cpp.html#a672a51794472bbde676a33115e003b15">unit_System_getName</a></div><div class="ttdeci">void unit_System_getName()</div><div class="ttdoc">Unit test for System getName function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:45</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_a6a39fd054412469cd77649218d3ecceb"><div class="ttname"><a href="unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb">unit_System_constructor</a></div><div class="ttdeci">void unit_System_constructor()</div><div class="ttdoc">Unit test for System constructor.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:3</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_a9e27ecc7c1ab2646d3bcb73b08ded4a3"><div class="ttname"><a href="unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3">unit_System_equalsOperator</a></div><div class="ttdeci">void unit_System_equalsOperator()</div><div class="ttdoc">Unit test for System '=' operator.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:71</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_ab320622db511f54344c510a9cfdbff94"><div class="ttname"><a href="unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94">unit_System_getValue</a></div><div class="ttdeci">void unit_System_getValue()</div><div class="ttdoc">Unit test for System getValue function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:63</div></div>
-<div class="ttc" id="aunit___system_8cpp_html_ac322ab5fd0cd1051b54ffab7177032e6"><div class="ttname"><a href="unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6">unit_System_setValue</a></div><div class="ttdeci">void unit_System_setValue()</div><div class="ttdoc">Unit test for System setValue function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:53</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                            {</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb">unit_System_constructor</a>();</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_function" href="unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37">unit_System_copyConstructor</a>();</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="unit___system_8cpp.html#a021603784a12638ed34bc8690c832dfc">unit_System_destructor</a>();</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <a class="code hl_function" href="unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea">unit_System_setName</a>();</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="unit___system_8cpp.html#a672a51794472bbde676a33115e003b15">unit_System_getName</a>();</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6">unit_System_setValue</a>();</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94">unit_System_getValue</a>();</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3">unit_System_equalsOperator</a>();</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="aunit___system_8cpp_html_a021603784a12638ed34bc8690c832dfc"><div class="ttname"><a href="unit___system_8cpp.html#a021603784a12638ed34bc8690c832dfc">unit_System_destructor</a></div><div class="ttdeci">void unit_System_destructor()</div><div class="ttdoc">Unit test for System destructor.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:36</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_a11b125bb1d38d3f070c671cf5855bf37"><div class="ttname"><a href="unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37">unit_System_copyConstructor</a></div><div class="ttdeci">void unit_System_copyConstructor()</div><div class="ttdoc">Unit test for System copy constructor.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:25</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_a470f565c55f643e387d5cc7005cab1ea"><div class="ttname"><a href="unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea">unit_System_setName</a></div><div class="ttdeci">void unit_System_setName()</div><div class="ttdoc">Unit test for System setName function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:38</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_a672a51794472bbde676a33115e003b15"><div class="ttname"><a href="unit___system_8cpp.html#a672a51794472bbde676a33115e003b15">unit_System_getName</a></div><div class="ttdeci">void unit_System_getName()</div><div class="ttdoc">Unit test for System getName function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:48</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_a6a39fd054412469cd77649218d3ecceb"><div class="ttname"><a href="unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb">unit_System_constructor</a></div><div class="ttdeci">void unit_System_constructor()</div><div class="ttdoc">Unit test for System constructor.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:6</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_a9e27ecc7c1ab2646d3bcb73b08ded4a3"><div class="ttname"><a href="unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3">unit_System_equalsOperator</a></div><div class="ttdeci">void unit_System_equalsOperator()</div><div class="ttdoc">Unit test for System '=' operator.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:74</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_ab320622db511f54344c510a9cfdbff94"><div class="ttname"><a href="unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94">unit_System_getValue</a></div><div class="ttdeci">void unit_System_getValue()</div><div class="ttdoc">Unit test for System getValue function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:66</div></div>
+<div class="ttc" id="aunit___system_8cpp_html_ac322ab5fd0cd1051b54ffab7177032e6"><div class="ttname"><a href="unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6">unit_System_setValue</a></div><div class="ttdeci">void unit_System_setValue()</div><div class="ttdoc">Unit test for System setValue function.</div><div class="ttdef"><b>Definition</b> unit_System.cpp:56</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -242,24 +245,24 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> constructor. </p>
-<div class="fragment"><div class="line"><span class="lineno">    3</span>                              {</div>
-<div class="line"><span class="lineno">    4</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
-<div class="line"><span class="lineno">    5</span>    <a class="code hl_class" href="class_system.html">System</a> *s1 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System 1&quot;</span>);</div>
-<div class="line"><span class="lineno">    6</span>    <a class="code hl_class" href="class_system.html">System</a> *s2 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System 2&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">    7</span> </div>
-<div class="line"><span class="lineno">    8</span>    assert(s-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">    9</span>    assert(round(fabs(s-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 0 * 10000)) &lt; 1);</div>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>                              {</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_class" href="class_system.html">System</a> *s1 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System 1&quot;</span>);</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_class" href="class_system.html">System</a> *s2 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System 2&quot;</span>, 10);</div>
 <div class="line"><span class="lineno">   10</span> </div>
-<div class="line"><span class="lineno">   11</span>    assert(s1-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System 1&quot;</span>);</div>
-<div class="line"><span class="lineno">   12</span>    assert(round(fabs(s1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 0 * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   11</span>    assert(s-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   12</span>    assert(round(fabs(s-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 0 * 10000)) &lt; 1);</div>
 <div class="line"><span class="lineno">   13</span> </div>
-<div class="line"><span class="lineno">   14</span>    assert(s2-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System 2&quot;</span>);</div>
-<div class="line"><span class="lineno">   15</span>    assert(round(fabs(s2-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 10 * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   14</span>    assert(s1-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System 1&quot;</span>);</div>
+<div class="line"><span class="lineno">   15</span>    assert(round(fabs(s1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 0 * 10000)) &lt; 1);</div>
 <div class="line"><span class="lineno">   16</span> </div>
-<div class="line"><span class="lineno">   17</span>    <span class="keyword">delete</span> s;</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keyword">delete</span> s1;</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keyword">delete</span> s2;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<div class="line"><span class="lineno">   17</span>    assert(s2-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System 2&quot;</span>);</div>
+<div class="line"><span class="lineno">   18</span>    assert(round(fabs(s2-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 10 * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    <span class="keyword">delete</span> s;</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keyword">delete</span> s1;</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keyword">delete</span> s2;</div>
+<div class="line"><span class="lineno">   23</span>}</div>
 <div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdoc">Interface class for systems.</div><div class="ttdef"><b>Definition</b> System.h:11</div></div>
 <div class="ttc" id="aclass_system_html_a41b673faa6c199eb8e4f204639fab4f2"><div class="ttname"><a href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue</a></div><div class="ttdeci">virtual double getValue() const =0</div><div class="ttdoc">Pure virtual method to get the system value.</div></div>
 <div class="ttc" id="aclass_system_html_ab4f23c21832d6bbef462a5a20b296912"><div class="ttname"><a href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">System::getName</a></div><div class="ttdeci">virtual string getName() const =0</div><div class="ttdoc">Pure virtual method to get the system name.</div></div>
@@ -307,16 +310,16 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> copy constructor. </p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                                  {</div>
-<div class="line"><span class="lineno">   23</span>    <a class="code hl_class" href="class_system.html">System</a> *s1 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_class" href="class_system.html">System</a> *s2 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(*s1);</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    assert(s1-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == s2-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>());</div>
-<div class="line"><span class="lineno">   27</span>    assert(round(fabs(s1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - s2-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000)) &lt; 1);</div>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                  {</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_class" href="class_system.html">System</a> *s1 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>, 10);</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_class" href="class_system.html">System</a> *s2 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(*s1);</div>
 <div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keyword">delete</span> s1;</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keyword">delete</span> s2;</div>
-<div class="line"><span class="lineno">   31</span>}</div>
+<div class="line"><span class="lineno">   29</span>    assert(s1-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == s2-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>());</div>
+<div class="line"><span class="lineno">   30</span>    assert(round(fabs(s1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - s2-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="keyword">delete</span> s1;</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">delete</span> s2;</div>
+<div class="line"><span class="lineno">   34</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -360,7 +363,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> destructor. </p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{}</div>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -392,18 +395,18 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> '=' operator. </p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>                                 {</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_class" href="class_system.html">System</a> *s1 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_class" href="class_system.html">System</a> *s2 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    *s2 = *s1;</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    assert(s1-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == s2-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>());</div>
-<div class="line"><span class="lineno">   78</span>    assert(round(fabs(s1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - s2-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000)) &lt; 1);</div>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                 {</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_class" href="class_system.html">System</a> *s1 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>, 10);</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_class" href="class_system.html">System</a> *s2 = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    *s2 = *s1;</div>
 <div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    <span class="keyword">delete</span> s1;</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keyword">delete</span> s2;</div>
-<div class="line"><span class="lineno">   82</span>}</div>
+<div class="line"><span class="lineno">   80</span>    assert(s1-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == s2-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>());</div>
+<div class="line"><span class="lineno">   81</span>    assert(round(fabs(s1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - s2-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="keyword">delete</span> s1;</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keyword">delete</span> s2;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -447,13 +450,13 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> getName function. </p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                          {</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>);</div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    assert(s-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System&quot;</span>);</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keyword">delete</span> s;</div>
-<div class="line"><span class="lineno">   51</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                          {</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    assert(s-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System&quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">delete</span> s;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -495,13 +498,13 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> getValue function. </p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                           {</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    assert(round(fabs(s-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 10 * 10000)) &lt; 1);</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <span class="keyword">delete</span> s;</div>
-<div class="line"><span class="lineno">   69</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                           {</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>(<span class="stringliteral">&quot;System&quot;</span>, 10);</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    assert(round(fabs(s-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 10 * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="keyword">delete</span> s;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -543,15 +546,15 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> setName function. </p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                          {</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    s-&gt;<a class="code hl_function" href="class_system.html#afc362e8275b428a94c214826c60a01bc">setName</a>(<span class="stringliteral">&quot;System&quot;</span>);</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    assert(s-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System&quot;</span>);</div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>    <span class="keyword">delete</span> s;</div>
-<div class="line"><span class="lineno">   43</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                          {</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    s-&gt;<a class="code hl_function" href="class_system.html#afc362e8275b428a94c214826c60a01bc">setName</a>(<span class="stringliteral">&quot;System&quot;</span>);</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    assert(s-&gt;<a class="code hl_function" href="class_system.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System&quot;</span>);</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">delete</span> s;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 <div class="ttc" id="aclass_system_html_afc362e8275b428a94c214826c60a01bc"><div class="ttname"><a href="class_system.html#afc362e8275b428a94c214826c60a01bc">System::setName</a></div><div class="ttdeci">virtual void setName(const string &amp;name)=0</div><div class="ttdoc">Pure virtual method to set the system name.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -596,15 +599,15 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unit test for <a class="el" href="class_system.html" title="Interface class for systems.">System</a> setValue function. </p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                           {</div>
-<div class="line"><span class="lineno">   54</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    s-&gt;<a class="code hl_function" href="class_system.html#a4ade48b75793a48021cdb634a86ff988">setValue</a>(10);</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    assert(round(fabs(s-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 10 * 10000)) &lt; 1);</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="keyword">delete</span> s;</div>
-<div class="line"><span class="lineno">   61</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                           {</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_class" href="class_system.html">System</a> *s = <span class="keyword">new</span> <a class="code hl_class" href="class_system_impl.html">SystemImpl</a>();</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    s-&gt;<a class="code hl_function" href="class_system.html#a4ade48b75793a48021cdb634a86ff988">setValue</a>(10);</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    assert(round(fabs(s-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000 - 10 * 10000)) &lt; 1);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    <span class="keyword">delete</span> s;</div>
+<div class="line"><span class="lineno">   64</span>}</div>
 <div class="ttc" id="aclass_system_html_a4ade48b75793a48021cdb634a86ff988"><div class="ttname"><a href="class_system.html#a4ade48b75793a48021cdb634a86ff988">System::setValue</a></div><div class="ttdeci">virtual void setValue(const double &amp;value)=0</div><div class="ttdoc">Pure virtual method to set the system value.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

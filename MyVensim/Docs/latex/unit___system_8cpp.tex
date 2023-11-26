@@ -1,11 +1,15 @@
 \doxysection{test/unit/unit\+\_\+\+System.cpp File Reference}
 \hypertarget{unit___system_8cpp}{}\label{unit___system_8cpp}\index{test/unit/unit\_System.cpp@{test/unit/unit\_System.cpp}}
 {\ttfamily \#include "{}unit\+\_\+\+System.\+h"{}}\newline
-Include dependency graph for unit\+\_\+\+System.\+cpp\+:\nopagebreak
+{\ttfamily \#include "{}assert.\+h"{}}\newline
+{\ttfamily \#include "{}cmath"{}}\newline
+{\ttfamily \#include "{}../../src/\+System\+Impl.\+h"{}}\newline
+Include dependency graph for unit\+\_\+\+System.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=321pt]{unit___system_8cpp__incl}
+\includegraphics[width=350pt]{unit___system_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Functions}
@@ -44,23 +48,23 @@ Call all the unit tests.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a6a39fd054412469cd77649218d3ecceb}{unit\_System\_constructor}}();}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a11b125bb1d38d3f070c671cf5855bf37}{unit\_System\_copyConstructor}}();}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a021603784a12638ed34bc8690c832dfc}{unit\_System\_destructor}}();}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a470f565c55f643e387d5cc7005cab1ea}{unit\_System\_setName}}();}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a672a51794472bbde676a33115e003b15}{unit\_System\_getName}}();}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\_System\_setValue}}();}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_ab320622db511f54344c510a9cfdbff94}{unit\_System\_getValue}}();}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a9e27ecc7c1ab2646d3bcb73b08ded4a3}{unit\_System\_equalsOperator}}();}
-\DoxyCodeLine{00100\ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a6a39fd054412469cd77649218d3ecceb}{unit\_System\_constructor}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a11b125bb1d38d3f070c671cf5855bf37}{unit\_System\_copyConstructor}}();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a021603784a12638ed34bc8690c832dfc}{unit\_System\_destructor}}();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a470f565c55f643e387d5cc7005cab1ea}{unit\_System\_setName}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a672a51794472bbde676a33115e003b15}{unit\_System\_getName}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\_System\_setValue}}();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_ab320622db511f54344c510a9cfdbff94}{unit\_System\_getValue}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_a9e27ecc7c1ab2646d3bcb73b08ded4a3}{unit\_System\_equalsOperator}}();}
+\DoxyCodeLine{00103\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -89,24 +93,24 @@ Unit test for \doxylink{class_system}{System} constructor.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
-\DoxyCodeLine{00005\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System\ 1"{}});}
-\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System\ 2"{}},\ 10);}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \ \ \ \ assert(s-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}"{}});}
-\DoxyCodeLine{00009\ \ \ \ \ assert(round(fabs(s-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 0\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System\ 1"{}});}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System\ 2"{}},\ 10);}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System\ 1"{}});}
-\DoxyCodeLine{00012\ \ \ \ \ assert(round(fabs(s1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 0\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00011\ \ \ \ \ assert(s-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00012\ \ \ \ \ assert(round(fabs(s-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 0\ *\ 10000))\ <\ 1);}
 \DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ assert(s2-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System\ 2"{}});}
-\DoxyCodeLine{00015\ \ \ \ \ assert(round(fabs(s2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00014\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System\ 1"{}});}
+\DoxyCodeLine{00015\ \ \ \ \ assert(round(fabs(s1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 0\ *\ 10000))\ <\ 1);}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
-\DoxyCodeLine{00020\ \}}
+\DoxyCodeLine{00017\ \ \ \ \ assert(s2-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System\ 2"{}});}
+\DoxyCodeLine{00018\ \ \ \ \ assert(round(fabs(s2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00023\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -135,16 +139,16 @@ Unit test for \doxylink{class_system}{System} copy constructor.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}},\ 10);}
-\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(*s1);}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ s2-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}());}
-\DoxyCodeLine{00027\ \ \ \ \ assert(round(fabs(s1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ s2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}},\ 10);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(*s1);}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
-\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ s2-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}());}
+\DoxyCodeLine{00030\ \ \ \ \ assert(round(fabs(s1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ s2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00034\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -173,7 +177,7 @@ Unit test for \doxylink{class_system}{System} destructor.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00033\ \{\}}
+\DoxyCodeLine{00036\ \{\}}
 
 \end{DoxyCode}
 Here is the caller graph for this function\+:\nopagebreak
@@ -195,18 +199,18 @@ Unit test for \doxylink{class_system}{System} \textquotesingle{}=\textquotesingl
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}},\ 10);}
-\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \ \ \ \ *s2\ =\ *s1;}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ s2-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}());}
-\DoxyCodeLine{00078\ \ \ \ \ assert(round(fabs(s1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ s2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}},\ 10);}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ *s2\ =\ *s1;}
 \DoxyCodeLine{00079\ }
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
-\DoxyCodeLine{00082\ \}}
+\DoxyCodeLine{00080\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ s2-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}());}
+\DoxyCodeLine{00081\ \ \ \ \ assert(round(fabs(s1-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ s2-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00085\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -235,13 +239,13 @@ Unit test for \doxylink{class_system}{System} get\+Name function.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}});}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \ \ assert(s-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System"{}});}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
-\DoxyCodeLine{00051\ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ assert(s-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System"{}});}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
+\DoxyCodeLine{00054\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -270,13 +274,13 @@ Unit test for \doxylink{class_system}{System} get\+Value function.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}},\ 10);}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \ \ \ \ assert(round(fabs(s-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
-\DoxyCodeLine{00069\ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}System"{}},\ 10);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ assert(round(fabs(s-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
+\DoxyCodeLine{00072\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -305,15 +309,15 @@ Unit test for \doxylink{class_system}{System} set\+Name function.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ s-\/>\mbox{\hyperlink{class_system_afc362e8275b428a94c214826c60a01bc}{setName}}(\textcolor{stringliteral}{"{}System"{}});}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ assert(s-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System"{}});}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
-\DoxyCodeLine{00043\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ s-\/>\mbox{\hyperlink{class_system_afc362e8275b428a94c214826c60a01bc}{setName}}(\textcolor{stringliteral}{"{}System"{}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ assert(s-\/>\mbox{\hyperlink{class_system_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System"{}});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
+\DoxyCodeLine{00046\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -342,15 +346,15 @@ Unit test for \doxylink{class_system}{System} set\+Value function.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ s-\/>\mbox{\hyperlink{class_system_a4ade48b75793a48021cdb634a86ff988}{setValue}}(10);}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ assert(round(fabs(s-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10\ *\ 10000))\ <\ 1);}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
-\DoxyCodeLine{00061\ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_impl}{SystemImpl}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ s-\/>\mbox{\hyperlink{class_system_a4ade48b75793a48021cdb634a86ff988}{setValue}}(10);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ assert(round(fabs(s-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000\ -\/\ 10\ *\ 10000))\ <\ 1);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{delete}\ s;}
+\DoxyCodeLine{00064\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak

@@ -1,0 +1,9 @@
+<map id="unit_Model_modelsEnd" name="unit_Model_modelsEnd">
+<area shape="rect" id="Node000001" title="Unit test for Model modelsEnd function." alt="" coords="5,31,162,57"/>
+<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="210,5,345,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,31,194,27,195,32,162,36"/>
+<area shape="rect" id="Node000004" href="$class_model.html#ac8d7fdf01d3f62864800882d11e7dfdf" title="Pure virtual method to get the iterator of the end of the models vector." alt="" coords="213,56,342,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,52,198,56,197,62,162,57"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="393,5,552,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,16,377,16,377,21,346,21"/>
+</map>
