@@ -95,14 +95,14 @@ public:
     System& createSystem(const string& name= "", const double& value= 0.0);
 
     /**
-     * @brief Removes the system pointer 's' of the systems vector
+     * @brief Removes the system pointer 's' of the systems vector and deletes it of the memory
      * @param s pointer to a system
      * @return bool representing whether the operation completed successfully
     */
     bool remove(System* s);
     
     /**
-     * @brief Removes the flow pointer 'f' of the flows vector
+     * @brief Removes the flow pointer 'f' of the flows vector and deletes it of the memory
      * @param f pointer to a flow
      * @return bool representing whether the operation completed successfully
     */

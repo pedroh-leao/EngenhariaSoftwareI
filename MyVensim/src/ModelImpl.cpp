@@ -74,6 +74,7 @@ bool ModelImpl :: remove(System* s){
     for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++){
         if(*it == s){
             systems.erase(it);
+            delete s;
             return true;
         }
     }
@@ -85,6 +86,7 @@ bool ModelImpl :: remove(Flow* f){
     for(flowsIterator it = flowsBegin(); it < flowsEnd(); it++){
         if(*it == f){
             flows.erase(it);
+            delete f;
             return true;
         }
     }
