@@ -2790,14 +2790,14 @@ Creates a new {\b System} and add it to the model. }{
 bool {\b remove} ({\b System} *s)\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Removes the system pointer 's' of the systems vector. }{
+Removes the system pointer 's' of the systems vector and deletes it of the memory. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 bool {\b remove} ({\b Flow} *f)\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Removes the flow pointer 'f' of the flows vector. }{
+Removes the flow pointer 'f' of the flows vector and deletes it of the memory. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
@@ -3166,9 +3166,9 @@ flowsIterator being the iterator of the beginning of the vector \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGM \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 183                                               \{\par
-184     {\cf19 return} flows.begin();\par
-185 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 185                                               \{\par
+186     {\cf19 return} flows.begin();\par
+187 \}\par
 }
 }
 {\xe \v flowsEnd\:ModelImpl}
@@ -3193,9 +3193,9 @@ flowsIterator being the iterator of the end of the vector \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGO \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 187                                             \{\par
-188     {\cf19 return} flows.end();\par
-189 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 189                                             \{\par
+190     {\cf19 return} flows.end();\par
+191 \}\par
 }
 }
 {\xe \v getClock\:ModelImpl}
@@ -3220,9 +3220,9 @@ int containing the value of model clock \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGQ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 157                                \{\par
-158     {\cf19 return} clock;\par
-159 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 159                                \{\par
+160     {\cf19 return} clock;\par
+161 \}\par
 }
 }
 {\xe \v getName\:ModelImpl}
@@ -3247,9 +3247,9 @@ string containing the model name \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGS \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 149                                  \{\par
-150     {\cf19 return} name;\par
-151 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 151                                  \{\par
+152     {\cf19 return} name;\par
+153 \}\par
 }
 }
 {\xe \v modelsBegin\:ModelImpl}
@@ -3274,9 +3274,9 @@ modelsIterator iterator of the beginning of the models vector \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGU \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 191                                                 \{\par
-192     {\cf19 return} models.begin();\par
-193 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 193                                                 \{\par
+194     {\cf19 return} models.begin();\par
+195 \}\par
 }
 }
 {\xe \v modelsEnd\:ModelImpl}
@@ -3301,9 +3301,9 @@ modelsIterator iterator of the end of the models vector \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGW \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 195                                               \{\par
-196     {\cf19 return} models.end();\par
-197 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 197                                               \{\par
+198     {\cf19 return} models.end();\par
+199 \}\par
 }
 }
 {\xe \v remove\:ModelImpl}
@@ -3319,7 +3319,7 @@ bool ModelImpl::remove ({\b Flow} *  {\i f}){\f2 [virtual]}}}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Removes the flow pointer 'f' of the flows vector. }}\par
+Removes the flow pointer 'f' of the flows vector and deletes it of the memory. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
@@ -3337,16 +3337,17 @@ bool representing whether the operation completed successfully \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGY \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 84                                \{\par
-85     {\cf19 for}(flowsIterator it = flowsBegin(); it < flowsEnd(); it++)\{\par
-86         {\cf19 if}(*it == f)\{\par
-87             flows.erase(it);\par
-88             {\cf19 return} {\cf17 true};\par
-89         \}\par
-90     \}\par
-91 \par
-92     {\cf19 return} {\cf17 false};\par
-93 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 85                                \{\par
+86     {\cf19 for}(flowsIterator it = flowsBegin(); it < flowsEnd(); it++)\{\par
+87         {\cf19 if}(*it == f)\{\par
+88             flows.erase(it);\par
+89             {\cf17 delete} f;\par
+90             {\cf19 return} {\cf17 true};\par
+91         \}\par
+92     \}\par
+93 \par
+94     {\cf19 return} {\cf17 false};\par
+95 \}\par
 }
 }
 {\xe \v remove\:ModelImpl}
@@ -3362,7 +3363,7 @@ bool ModelImpl::remove ({\b System} *  {\i s}){\f2 [virtual]}}}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Removes the system pointer 's' of the systems vector. }}\par
+Removes the system pointer 's' of the systems vector and deletes it of the memory. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
@@ -3384,12 +3385,13 @@ Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHA \\*M
 74     {\cf19 for}(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)\{\par
 75         {\cf19 if}(*it == s)\{\par
 76             systems.erase(it);\par
-77             {\cf19 return} {\cf17 true};\par
-78         \}\par
-79     \}\par
-80 \par
-81     {\cf19 return} {\cf17 false};\par
-82 \}\par
+77             {\cf17 delete} s;\par
+78             {\cf19 return} {\cf17 true};\par
+79         \}\par
+80     \}\par
+81 \par
+82     {\cf19 return} {\cf17 false};\par
+83 \}\par
 }
 }
 {\xe \v reportStatus\:ModelImpl}
@@ -3409,12 +3411,12 @@ Shows the current model status, the systems values. }}\par
 {
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHC \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 138                               \{\par
-139     cout << {\cf22 "\\nCurrent Model Status:"} << endl;\par
-140 \par
-141     {\cf19 for}(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)\par
-142         cout << (*it)->getName() << {\cf22 ": "} << (*it)->getValue() << endl;\par
-143 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 140                               \{\par
+141     cout << {\cf22 "\\nCurrent Model Status:"} << endl;\par
+142 \par
+143     {\cf19 for}(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)\par
+144         cout << (*it)->getName() << {\cf22 ": "} << (*it)->getValue() << endl;\par
+145 \}\par
 }
 }
 {\xe \v run\:ModelImpl}
@@ -3454,48 +3456,48 @@ bool representing whether the execution completed successfully \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHE \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 95                                                  \{\par
-96     {\cf19 if}(startTime > finalTime || startTime < 0) {\cf19 return} {\cf17 false};\par
-97 \par
-98     clock = startTime;\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 97                                                  \{\par
+98     {\cf19 if}(startTime > finalTime || startTime < 0) {\cf19 return} {\cf17 false};\par
 99 \par
-100     System *source, *target;\par
+100     clock = startTime;\par
 101 \par
-102     vector<double> results;\par
-103     vector<double>::iterator itResults;\par
-104 \par
-105     {\cf18 int} len = flows.size();\par
-106     {\cf19 for}({\cf18 int} i = 0; i < len; i++)\par
-107         results.push_back(0.0);\par
-108     \par
-109     {\cf19 for}({\cf18 int} i = startTime; i < finalTime; i++)\{\par
-110         itResults = results.begin();\par
-111 \par
-112         {\cf20 //execute the equations of the flows}\par
-113         {\cf19 for}(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++)\{\par
-114             (*itResults) = (*itFlows)->executeEquation();\par
-115             itResults++;\par
-116         \}\par
-117 \par
-118         itResults = results.begin();\par
+102     System *source, *target;\par
+103 \par
+104     vector<double> results;\par
+105     vector<double>::iterator itResults;\par
+106 \par
+107     {\cf18 int} len = flows.size();\par
+108     {\cf19 for}({\cf18 int} i = 0; i < len; i++)\par
+109         results.push_back(0.0);\par
+110     \par
+111     {\cf19 for}({\cf18 int} i = startTime; i < finalTime; i++)\{\par
+112         itResults = results.begin();\par
+113 \par
+114         {\cf20 //execute the equations of the flows}\par
+115         {\cf19 for}(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++)\{\par
+116             (*itResults) = (*itFlows)->executeEquation();\par
+117             itResults++;\par
+118         \}\par
 119 \par
-120         {\cf19 for}(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++)\{            \par
-121             source = (*itFlows)->getSource();\par
-122             source->setValue(source->getValue() - (*itResults));\par
-123 \par
-124             target = (*itFlows)->getTarget();\par
-125             target->setValue(target->getValue() + (*itResults));\par
-126 \par
-127             itResults++;\par
-128         \}\par
-129 \par
-130         clock = i;\par
-131     \}\par
-132 \par
-133     clock += 1;\par
+120         itResults = results.begin();\par
+121 \par
+122         {\cf19 for}(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++)\{            \par
+123             source = (*itFlows)->getSource();\par
+124             source->setValue(source->getValue() - (*itResults));\par
+125 \par
+126             target = (*itFlows)->getTarget();\par
+127             target->setValue(target->getValue() + (*itResults));\par
+128 \par
+129             itResults++;\par
+130         \}\par
+131 \par
+132         clock = i;\par
+133     \}\par
 134 \par
-135     {\cf19 return} {\cf17 true};\par
-136 \}\par
+135     clock += 1;\par
+136 \par
+137     {\cf19 return} {\cf17 true};\par
+138 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -3530,9 +3532,9 @@ Parameters\par}
 }{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHG \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 153                                           \{\par
-154     this->clock = clock;\par
-155 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 155                                           \{\par
+156     this->clock = clock;\par
+157 \}\par
 }
 }
 {\xe \v setName\:ModelImpl}
@@ -3563,9 +3565,9 @@ Parameters\par}
 }{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHI \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 145                                            \{\par
-146     this->name = name;\par
-147 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 147                                            \{\par
+148     this->name = name;\par
+149 \}\par
 }
 }
 {\xe \v systemsBegin\:ModelImpl}
@@ -3590,9 +3592,9 @@ systemsIterator being the iterator of the beginning of the vector \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHK \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 175                                                   \{\par
-176     {\cf19 return} systems.begin();\par
-177 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 177                                                   \{\par
+178     {\cf19 return} systems.begin();\par
+179 \}\par
 }
 }
 {\xe \v systemsEnd\:ModelImpl}
@@ -3617,9 +3619,9 @@ systemsIterator being the iterator of the end of the vector \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHM \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 179                                                 \{\par
-180     {\cf19 return} systems.end();\par
-181 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 181                                                 \{\par
+182     {\cf19 return} systems.end();\par
+183 \}\par
 }
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
