@@ -1,43 +1,34 @@
 #include "FlowImpl.h"
 
-FlowImpl :: FlowImpl() {
+FlowBody :: FlowBody() {
     source = NULL;
     target = NULL;
 }
 
-FlowImpl :: FlowImpl(System* source, System* target){
+FlowBody :: FlowBody(System* source, System* target){
     this->source = source;
     this->target = target;
 }
 
-FlowImpl :: FlowImpl(const Flow& f){
+FlowBody :: FlowBody(const Flow& f){
     this->source = f.getSource();
     this->target = f.getTarget();
 }
 
-FlowImpl :: ~FlowImpl() {}
+FlowBody :: ~FlowBody() {}
 
-void FlowImpl :: setSource(System* s){
+void FlowBody :: setSource(System* s){
     source = s;
 }
 
-System* FlowImpl :: getSource() const{
+System* FlowBody :: getSource() const{
     return source;
 }
 
-void FlowImpl :: setTarget(System* s){
+void FlowBody :: setTarget(System* s){
     target = s;
 }
 
-System* FlowImpl :: getTarget() const{
+System* FlowBody :: getTarget() const{
     return target;
-}
-
-Flow& FlowImpl :: operator=(const Flow& f){
-    if(this == &f) return *this;
-
-    this->source = f.getSource();
-    this->target = f.getTarget();
-
-    return *this;
 }

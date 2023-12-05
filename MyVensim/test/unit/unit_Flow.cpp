@@ -6,17 +6,17 @@
 #include "../funcional/MyFlows.h"
 
 void unit_Flow_constructor(){
-    Flow *flowExp = new Exponential();
+    Flow *flowExp = new FlowHandle<Exponential>();
 
     assert(flowExp->getSource() == NULL);
     assert(flowExp->getTarget() == NULL);
 
-    Flow *flowLog = new Logistic();
+    Flow *flowLog = new FlowHandle<Logistic>();
 
     assert(flowLog->getSource() == NULL);
     assert(flowLog->getTarget() == NULL);
 
-    Flow *flowComplex = new Complex();
+    Flow *flowComplex = new FlowHandle<Complex>();
 
     assert(flowComplex->getSource() == NULL);
     assert(flowComplex->getTarget() == NULL);
@@ -27,20 +27,20 @@ void unit_Flow_constructor(){
 }
 
 void unit_Flow_constructorWithSystems(){
-    System *s1 = new SystemImpl();
-    System *s2 = new SystemImpl();
+    System *s1 = new SystemHandle();
+    System *s2 = new SystemHandle();
 
-    Flow *flowExp = new Exponential(s1, s2);
+    Flow *flowExp = new FlowHandle<Exponential>(s1, s2);
 
     assert(flowExp->getSource() == s1);
     assert(flowExp->getTarget() == s2);
 
-    Flow *flowLog = new Logistic(s1, s2);
+    Flow *flowLog = new FlowHandle<Logistic>(s1, s2);
 
     assert(flowLog->getSource() == s1);
     assert(flowLog->getTarget() == s2);
 
-    Flow *flowComplex = new Complex(s1, s2);
+    Flow *flowComplex = new FlowHandle<Complex>(s1, s2);
 
     assert(flowComplex->getSource() == s1);
     assert(flowComplex->getTarget() == s2);
@@ -53,23 +53,23 @@ void unit_Flow_constructorWithSystems(){
 }
 
 void unit_Flow_copyConstructor(){
-    System *s1 = new SystemImpl();
-    System *s2 = new SystemImpl();
+    System *s1 = new SystemHandle();
+    System *s2 = new SystemHandle();
 
-    Flow *flowExp1 = new Exponential(s1, s2);
-    Flow *flowExp2 = new Exponential(*flowExp1);
+    Flow *flowExp1 = new FlowHandle<Exponential>(s1, s2);
+    Flow *flowExp2 = new FlowHandle<Exponential>(*flowExp1);
 
     assert(flowExp2->getSource() == s1);
     assert(flowExp2->getTarget() == s2);
 
-    Flow *flowLog1 = new Logistic(s1, s2);
-    Flow *flowLog2 = new Logistic(*flowLog1);
+    Flow *flowLog1 = new FlowHandle<Logistic>(s1, s2);
+    Flow *flowLog2 = new FlowHandle<Logistic>(*flowLog1);
 
     assert(flowLog2->getSource() == s1);
     assert(flowLog2->getTarget() == s2);
 
-    Flow *flowComplex1 = new Complex(s1, s2);
-    Flow *flowComplex2 = new Complex(*flowComplex1);
+    Flow *flowComplex1 = new FlowHandle<Complex>(s1, s2);
+    Flow *flowComplex2 = new FlowHandle<Complex>(*flowComplex1);
 
     assert(flowComplex2->getSource() == s1);
     assert(flowComplex2->getTarget() == s2);
@@ -87,17 +87,17 @@ void unit_Flow_copyConstructor(){
 void unit_Flow_destructor(){}
 
 void unit_Flow_setSource(){
-    System *s1 = new SystemImpl();
+    System *s1 = new SystemHandle();
 
-    Flow *flowExp = new Exponential();
+    Flow *flowExp = new FlowHandle<Exponential>();
     flowExp->setSource(s1);
     assert(flowExp->getSource() == s1);
 
-    Flow *flowLog = new Logistic();
+    Flow *flowLog = new FlowHandle<Logistic>();
     flowLog->setSource(s1);
     assert(flowLog->getSource() == s1);
 
-    Flow *flowComplex = new Complex();
+    Flow *flowComplex = new FlowHandle<Complex>();
     flowComplex->setSource(s1);
     assert(flowComplex->getSource() == s1);
 
@@ -108,16 +108,16 @@ void unit_Flow_setSource(){
 }
 
 void unit_Flow_getSource(){
-    System *s1 = new SystemImpl();
-    System *s2 = new SystemImpl();
+    System *s1 = new SystemHandle();
+    System *s2 = new SystemHandle();
 
-    Flow *flowExp = new Exponential(s1, s2);
+    Flow *flowExp = new FlowHandle<Exponential>(s1, s2);
     assert(flowExp->getSource() == s1);
 
-    Flow *flowLog = new Logistic(s1, s2);
+    Flow *flowLog = new FlowHandle<Logistic>(s1, s2);
     assert(flowLog->getSource() == s1);
 
-    Flow *flowComplex = new Complex(s1, s2);
+    Flow *flowComplex = new FlowHandle<Complex>(s1, s2);
     assert(flowComplex->getSource() == s1);
 
     delete flowExp;
@@ -128,17 +128,17 @@ void unit_Flow_getSource(){
 }
 
 void unit_Flow_setTarget(){
-    System *s1 = new SystemImpl();
+    System *s1 = new SystemHandle();
 
-    Flow *flowExp = new Exponential();
+    Flow *flowExp = new FlowHandle<Exponential>();
     flowExp->setTarget(s1);
     assert(flowExp->getTarget() == s1);
 
-    Flow *flowLog = new Logistic();
+    Flow *flowLog = new FlowHandle<Logistic>();
     flowLog->setTarget(s1);
     assert(flowLog->getTarget() == s1);
 
-    Flow *flowComplex = new Complex();
+    Flow *flowComplex = new FlowHandle<Complex>();
     flowComplex->setTarget(s1);
     assert(flowComplex->getTarget() == s1);
 
@@ -149,16 +149,16 @@ void unit_Flow_setTarget(){
 }
 
 void unit_Flow_getTarget(){
-    System *s1 = new SystemImpl();
-    System *s2 = new SystemImpl();
+    System *s1 = new SystemHandle();
+    System *s2 = new SystemHandle();
 
-    Flow *flowExp = new Exponential(s1, s2);
+    Flow *flowExp = new FlowHandle<Exponential>(s1, s2);
     assert(flowExp->getTarget() == s2);
 
-    Flow *flowLog = new Logistic(s1, s2);
+    Flow *flowLog = new FlowHandle<Logistic>(s1, s2);
     assert(flowLog->getTarget() == s2);
 
-    Flow *flowComplex = new Complex(s1, s2);
+    Flow *flowComplex = new FlowHandle<Complex>(s1, s2);
     assert(flowComplex->getTarget() == s2);
 
     delete flowExp;
@@ -169,16 +169,16 @@ void unit_Flow_getTarget(){
 }
 
 void unit_Flow_executeEquation(){
-    System *s1 = new SystemImpl("s1", 10);
-    System *s2 = new SystemImpl("s2", 20);
+    System *s1 = new SystemHandle("s1", 10);
+    System *s2 = new SystemHandle("s2", 20);
 
-    Flow *flowExp = new Exponential(s1, s2);
+    Flow *flowExp = new FlowHandle<Exponential>(s1, s2);
     assert(round(fabs(flowExp->executeEquation() * 10000 - 0.1 * 10000)) < 1);
 
-    Flow *flowLog = new Logistic(s1, s2);
+    Flow *flowLog = new FlowHandle<Logistic>(s1, s2);
     assert(round(fabs(flowLog->executeEquation() * 10000 - 0.1429 * 10000)) < 1);
 
-    Flow *flowComplex = new Complex(s1, s2);
+    Flow *flowComplex = new FlowHandle<Complex>(s1, s2);
     assert(round(fabs(flowComplex->executeEquation() * 10000 - 0.1 * 10000)) < 1);
 
     delete flowExp;
@@ -189,25 +189,25 @@ void unit_Flow_executeEquation(){
 }
 
 void unit_Flow_equalsOperator(){
-    System *s1 = new SystemImpl();
-    System *s2 = new SystemImpl();
+    System *s1 = new SystemHandle();
+    System *s2 = new SystemHandle();
 
-    Flow *flowExp1 = new Exponential(s1, s2);
-    Flow *flowExp2 = new Exponential();
+    Flow *flowExp1 = new FlowHandle<Exponential>(s1, s2);
+    Flow *flowExp2 = new FlowHandle<Exponential>();
     *flowExp2 = *flowExp1;
 
     assert(flowExp2->getSource() == s1);
     assert(flowExp2->getTarget() == s2);
     
-    Flow *flowLog1 = new Logistic(s1, s2);
-    Flow *flowLog2 = new Logistic();
+    Flow *flowLog1 = new FlowHandle<Logistic>(s1, s2);
+    Flow *flowLog2 = new FlowHandle<Logistic>();
     *flowLog2 = *flowLog1;
 
     assert(flowLog2->getSource() == s1);
     assert(flowLog2->getTarget() == s2);
 
-    Flow *flowComplex1 = new Complex(s1, s2);
-    Flow *flowComplex2 = new Complex();
+    Flow *flowComplex1 = new FlowHandle<Complex>(s1, s2);
+    Flow *flowComplex2 = new FlowHandle<Complex>();
     *flowComplex2 = *flowComplex1;
 
     assert(flowComplex2->getSource() == s1);

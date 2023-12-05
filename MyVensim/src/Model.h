@@ -36,7 +36,7 @@ public:
     */
    template <typename T_FLOW>
     Flow& createFlow(System* source= NULL, System* target= NULL){
-        Flow* f = new T_FLOW(source, target);
+        Flow* f = new FlowHandle<T_FLOW>(source, target);
         add(f);
         return *f;
     }

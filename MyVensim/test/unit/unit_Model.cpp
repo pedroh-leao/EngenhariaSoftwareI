@@ -32,7 +32,7 @@ void unit_Model_destructor(){}
 
 void unit_Model_createModel(){
     Model &m = Model::createModel();
-
+    
     assert(m.modelsBegin() != m.modelsEnd());
     assert(*m.modelsBegin() == &m);
     

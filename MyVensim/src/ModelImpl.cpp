@@ -2,51 +2,51 @@
 #include "SystemImpl.h"
 #include <iostream>
 
-vector<Model *> ModelImpl::models;
+vector<Model *> ModelBody::models;
 
-ModelImpl :: ModelImpl(const string& name, const int& clock){
+ModelBody :: ModelBody(const string& name, const int& clock){
     this->name = name;
     this->clock = clock;
 }
 
-ModelImpl :: ModelImpl(const ModelImpl& m){
+ModelBody :: ModelBody(const ModelBody& m){
     this->name = m.name;
     systems.insert(systemsBegin(), m.systems.begin(), m.systems.end());
     flows.insert(flowsBegin(), m.flows.begin(), m.flows.end());
 }
 
-ModelImpl :: ~ModelImpl(){
-    for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
+ModelBody :: ~ModelBody(){
+    for(Model::systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
         delete *it;
 
-    for(flowsIterator it = flowsBegin(); it < flowsEnd(); it++)
+    for(Model::flowsIterator it = flowsBegin(); it < flowsEnd(); it++)
         delete *it;
-    
 
-    for(modelsIterator it = modelsBegin(); it < modelsEnd(); it++)
-        if(*it == this){
-            models.erase(it);
-            break;
-        }
+    // for(Model::modelsIterator it = modelsBegin(); it < modelsEnd(); it++){
+    //     if(*it == this){
+    //         models.erase(it);
+    //         break;
+    //     }     
+    // }
 }
 
 Model& Model :: createModel(const string& name, const int& clock){
-    return ModelImpl::createModel(name, clock);
+    return ModelBody::createModel(name, clock);
 }
 
-Model& ModelImpl :: createModel(const string& name, const int& clock){
-    Model* m = new ModelImpl(name, clock);
+Model& ModelBody :: createModel(const string& name, const int& clock){
+    Model* m = new ModelHandle(name, clock);
     add(m);
     return *m;
 }
 
-System& ModelImpl :: createSystem(const string& name, const double& value){
-    System* s = new SystemImpl(name, value);
+System& ModelBody :: createSystem(const string& name, const double& value){
+    System* s = new SystemHandle(name, value);
     add(s);
     return *s;
 }
 
-bool ModelImpl :: add(Model* m){
+bool ModelBody :: add(Model* m){
     int lenBefore = models.size();
 
     models.push_back(m);
@@ -54,7 +54,7 @@ bool ModelImpl :: add(Model* m){
     return (lenBefore != models.size());
 }
 
-bool ModelImpl :: add(System* s){
+bool ModelBody :: add(System* s){
     int lenBefore = systems.size();
 
     systems.push_back(s);
@@ -62,7 +62,7 @@ bool ModelImpl :: add(System* s){
     return (lenBefore != systems.size());
 }
 
-bool ModelImpl :: add(Flow* f){
+bool ModelBody :: add(Flow* f){
     int lenBefore = flows.size();
 
     flows.push_back(f);
@@ -70,8 +70,8 @@ bool ModelImpl :: add(Flow* f){
     return (lenBefore != flows.size());
 }
 
-bool ModelImpl :: remove(System* s){
-    for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++){
+bool ModelBody :: remove(System* s){
+    for(Model::systemsIterator it = systemsBegin(); it < systemsEnd(); it++){
         if(*it == s){
             systems.erase(it);
             delete s;
@@ -82,8 +82,8 @@ bool ModelImpl :: remove(System* s){
     return false;
 }
 
-bool ModelImpl :: remove(Flow* f){
-    for(flowsIterator it = flowsBegin(); it < flowsEnd(); it++){
+bool ModelBody :: remove(Flow* f){
+    for(Model::flowsIterator it = flowsBegin(); it < flowsEnd(); it++){
         if(*it == f){
             flows.erase(it);
             delete f;
@@ -94,7 +94,11 @@ bool ModelImpl :: remove(Flow* f){
     return false;
 }
 
-bool ModelImpl :: run(int startTime, int finalTime){
+void ModelBody :: eraseModel(Model::modelsIterator m){
+    models.erase(m);
+}
+
+bool ModelBody :: run(int startTime, int finalTime){
     if(startTime > finalTime || startTime < 0) return false;
 
     clock = startTime;
@@ -112,14 +116,14 @@ bool ModelImpl :: run(int startTime, int finalTime){
         itResults = results.begin();
 
         //execute the equations of the flows
-        for(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++){
+        for(Model::flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++){
             (*itResults) = (*itFlows)->executeEquation();
             itResults++;
         }
 
         itResults = results.begin();
 
-        for(flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++){            
+        for(Model::flowsIterator itFlows = flowsBegin(); itFlows < flowsEnd(); itFlows++){            
             source = (*itFlows)->getSource();
             source->setValue(source->getValue() - (*itResults));
 
@@ -137,30 +141,30 @@ bool ModelImpl :: run(int startTime, int finalTime){
     return true;
 }
 
-void ModelImpl :: reportStatus(){
+void ModelBody :: reportStatus(){
     cout << "\nCurrent Model Status:" << endl;
 
-    for(systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
+    for(Model::systemsIterator it = systemsBegin(); it < systemsEnd(); it++)
         cout << (*it)->getName() << ": " << (*it)->getValue() << endl;
 }
 
-void ModelImpl :: setName(const string& name){
+void ModelBody :: setName(const string& name){
     this->name = name;
 }
 
-string ModelImpl :: getName() const{
+string ModelBody :: getName() const{
     return name;
 }
 
-void ModelImpl :: setClock(const int& clock){
+void ModelBody :: setClock(const int& clock){
     this->clock = clock;
 }
 
-int ModelImpl :: getClock() const{
+int ModelBody :: getClock() const{
     return clock;
 }
 
-ModelImpl& ModelImpl:: operator= (const ModelImpl& m){
+ModelBody& ModelBody:: operator= (const ModelBody& m){
     if(this == &m) return *this;
 
     this->name = m.name;
@@ -174,26 +178,109 @@ ModelImpl& ModelImpl:: operator= (const ModelImpl& m){
     return *this;
 }
 
-ModelImpl::systemsIterator ModelImpl :: systemsBegin(){
+Model::systemsIterator ModelBody :: systemsBegin(){
     return systems.begin();
 }
 
-ModelImpl::systemsIterator ModelImpl :: systemsEnd(){
+Model::systemsIterator ModelBody :: systemsEnd(){
     return systems.end();
 }
 
-ModelImpl::flowsIterator ModelImpl :: flowsBegin(){
+Model::flowsIterator ModelBody :: flowsBegin(){
     return flows.begin();
 }
 
-ModelImpl::flowsIterator ModelImpl :: flowsEnd(){
+Model::flowsIterator ModelBody :: flowsEnd(){
     return flows.end();
 }
 
-ModelImpl::modelsIterator ModelImpl :: modelsBegin(){
+Model::modelsIterator ModelBody :: modelsBegin(){
     return models.begin();
 }
 
-ModelImpl::modelsIterator ModelImpl :: modelsEnd(){
+Model::modelsIterator ModelBody :: modelsEnd(){
     return models.end();
+}
+
+//ModelHandle
+ModelHandle :: ModelHandle(const string& name, const int& clock){
+    pImpl_->setName(name);
+    pImpl_->setClock(clock);
+}
+
+ModelHandle :: ~ModelHandle(){
+    for(Model::modelsIterator it = modelsBegin(); it < modelsEnd(); it++){
+        if(*it == this){
+            pImpl_->eraseModel(it);
+            break;
+        }     
+    }
+}
+
+System& ModelHandle :: createSystem(const string& name, const double& value){
+    return pImpl_->createSystem(name, value);
+}
+
+bool ModelHandle :: add(System* s){
+    return pImpl_->add(s);
+}
+
+bool ModelHandle :: add(Flow* f){
+    return pImpl_->add(f);
+}
+
+bool ModelHandle :: remove(System* s){
+    return pImpl_->remove(s);
+}
+
+bool ModelHandle :: remove(Flow* f){
+    return pImpl_->remove(f);
+}
+
+bool ModelHandle :: run(int startTime, int finalTime){
+    return pImpl_->run(startTime, finalTime);
+}
+
+void ModelHandle :: reportStatus(){
+    pImpl_->reportStatus();
+}
+
+void ModelHandle :: setName(const string& name){
+    pImpl_->setName(name);
+}
+
+string ModelHandle :: getName() const{
+    return pImpl_->getName();
+}
+
+void ModelHandle :: setClock(const int& clock){
+    pImpl_->setClock(clock);
+}
+
+int ModelHandle :: getClock() const{
+    return pImpl_->getClock();
+}
+
+Model::systemsIterator ModelHandle :: systemsBegin(){
+    return pImpl_->systemsBegin();
+}
+
+Model::systemsIterator ModelHandle :: systemsEnd(){
+    return pImpl_->systemsEnd();
+}
+
+Model::flowsIterator ModelHandle :: flowsBegin(){
+    return pImpl_->flowsBegin();
+}
+
+Model::flowsIterator ModelHandle :: flowsEnd(){
+    return pImpl_->flowsEnd();
+}
+
+Model::modelsIterator ModelHandle :: modelsBegin(){
+    return pImpl_->modelsBegin();
+}
+
+Model::modelsIterator ModelHandle :: modelsEnd(){
+    return pImpl_->modelsEnd();
 }

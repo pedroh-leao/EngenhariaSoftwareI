@@ -6,24 +6,24 @@
 /**
  * @brief Class that defines a flow with an exponential equation
 */
-class Exponential : public FlowImpl{
+class Exponential : public FlowBody{
 public:
     /**
      * @brief Default constructor
     */
-    Exponential() : FlowImpl(){}
+    Exponential() : FlowBody(){}
 
     /**
      * @brief Exponential flow constructor that receives pointers to the source and target systems
      * @param source pointer to the source system of the flow
      * @param target pointer to the target system of the flow
     */
-    Exponential(System* source, System* target) : FlowImpl(source, target){}
+    Exponential(System* source, System* target) : FlowBody(source, target){}
 
     /**
      * @brief Copy Constructor
     */
-    Exponential(const Flow& f) : FlowImpl(f){}
+    Exponential(const Flow& f) : FlowBody(f){}
 
     /**
      * @brief Executes the exponential equation that must be performed by the flow
@@ -37,24 +37,24 @@ public:
 /**
  * @brief Class that defines a flow with a logistic equation
 */
-class Logistic : public FlowImpl{
+class Logistic : public FlowBody{
 public:
     /**
      * @brief Default constructor
     */
-    Logistic() : FlowImpl(){}
+    Logistic() : FlowBody(){}
 
     /**
      * @brief Logistic flow constructor that receives pointers to the source and target systems
      * @param source pointer to the source system of the flow
      * @param target pointer to the target system of the flow
     */
-    Logistic(System* source, System* target) : FlowImpl(source, target){}
+    Logistic(System* source, System* target) : FlowBody(source, target){}
 
     /**
      * @brief Copy Constructor
     */
-    Logistic(const Flow& f) : FlowImpl(f){}
+    Logistic(const Flow& f) : FlowBody(f){}
 
     /**
      * @brief Executes the logistic equation that must be performed by the flow
@@ -69,24 +69,24 @@ public:
 /**
  * @brief Class that defines a flow with a complex equation
 */
-class Complex : public FlowImpl{
+class Complex : public FlowBody{
 public:
     /**
      * @brief Default constructor
     */
-    Complex() : FlowImpl(){}
+    Complex() : FlowBody(){}
 
     /**
      * @brief Complex flow constructor that receives pointers to the source and target systems
      * @param source pointer to the source system of the flow
      * @param target pointer to the target system of the flow
     */
-    Complex(System* source, System* target) : FlowImpl(source, target){}
+    Complex(System* source, System* target) : FlowBody(source, target){}
 
     /**
      * @brief Copy Constructor
     */
-    Complex(const Flow& f) : FlowImpl(f){}
+    Complex(const Flow& f) : FlowBody(f){}
 
     /**
      * @brief Executes the complex equation that must be performed by the flow
