@@ -1,0 +1,5 @@
+<map id="ModelBody::remove" name="ModelBody::remove">
+<area shape="rect" id="Node000001" title="Removes the system pointer &#39;s&#39; of the systems vector and deletes it of the memory." alt="" coords="5,5,141,32"/>
+<area shape="rect" id="Node000002" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="189,5,298,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,16,173,16,173,21,141,21"/>
+</map>

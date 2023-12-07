@@ -1,0 +1,58 @@
+\doxysection{test/unit/main.cpp File Reference}
+\hypertarget{unit_2main_8cpp}{}\label{unit_2main_8cpp}\index{test/unit/main.cpp@{test/unit/main.cpp}}
+{\ttfamily \#include "{}unit\+\_\+tests.\+h"{}}\newline
+{\ttfamily \#include "{}unit\+\_\+\+System.\+h"{}}\newline
+{\ttfamily \#include "{}unit\+\_\+\+Flow.\+h"{}}\newline
+{\ttfamily \#include "{}unit\+\_\+\+Model.\+h"{}}\newline
+{\ttfamily \#include "{}unit\+\_\+\+Handle\+Body.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{int}} \mbox{\hyperlink{unit_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{unit_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{unit_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{int}} main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//run\_unit\_tests\_globals();}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nRunning\ handle/body\ unit\ tests."{}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{unit___handle_body_8cpp_ae34a86d00f2e32c66ba3983cc97478cd}{run\_unit\_test\_HandleBody}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nRunning\ system\ unit\ tests."{}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{unit___system_8cpp_ad467de422f8fd316dde6be5ded75b13b}{run\_unit\_tests\_System}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nRunning\ flow\ unit\ tests."{}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{unit___flow_8cpp_a31fe372f712944be1d93f7c5b01fbb3e}{run\_unit\_tests\_Flow}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nRunning\ model\ unit\ tests."{}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{unit___model_8cpp_a8a49913008ee3aede79ca904bcb8cd51}{run\_unit\_tests\_Model}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00027\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

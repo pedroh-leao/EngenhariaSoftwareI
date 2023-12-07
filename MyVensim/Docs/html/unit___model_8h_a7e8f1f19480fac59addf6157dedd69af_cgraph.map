@@ -1,11 +1,9 @@
 <map id="unit_Model_setClock" name="unit_Model_setClock">
-<area shape="rect" id="Node000001" title="Unit test for Model setClock function." alt="" coords="5,56,148,83"/>
+<area shape="rect" id="Node000001" title="Unit test for Model setClock function." alt="" coords="5,5,148,32"/>
 <area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="196,5,331,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,53,196,34,198,39,129,58"/>
-<area shape="rect" id="Node000004" href="$class_model.html#a7a045ebb69213ab666550edaac1f207c" title="Pure virtual method to get the model clock." alt="" coords="206,56,321,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,67,190,67,190,72,148,72"/>
-<area shape="rect" id="Node000005" href="$class_model.html#ad0be58c51fab66e8e036745a27aed04f" title="Pure virtual method to set the model clock." alt="" coords="206,107,321,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="129,81,198,100,196,105,128,86"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="379,5,538,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,16,363,16,363,21,332,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="379,5,544,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,16,363,16,363,21,331,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="592,5,702,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="545,16,576,16,576,21,545,21"/>
 </map>

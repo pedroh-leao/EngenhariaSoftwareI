@@ -4,6 +4,14 @@
 #include "../../src/Model.h"
 #include "MyFlows.h"
 
+#define DEBUGING
+#ifdef DEBUGING
+    int numHandleCreated = 0;
+	int numHandleDeleted = 0;
+	int numBodyCreated = 0;
+	int numBodyDeleted = 0;
+#endif
+
 void exponentialFuncionalTest(){
     Model &m = Model::createModel();
     System &pop1 = m.createSystem("Pop1", 100), &pop2 = m.createSystem("Pop2", 0);

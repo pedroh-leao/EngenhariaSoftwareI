@@ -9,11 +9,6 @@
 #if ! defined( HANDLE_BODY )
 #define HANDLE_BODY
 
-// extern int numHandleCreated;
-// extern int numHandleDeleted;
-// extern int numBodyCreated;
-// extern int numBodyDeleted;
-
 /** 
  * \brief
  *
@@ -21,21 +16,24 @@
  * "handle/body idiom").
  * 
  */
+
+extern int numHandleCreated;
+extern int numHandleDeleted;
+extern int numBodyCreated;
+extern int numBodyDeleted;
+
 template <class T> 
-class Handle
-{
-
+class Handle{
 public:	
-
 	/// constructor
 	Handle<T>( ){  
-		//numHandleCreated++;
+		numHandleCreated++;
 		pImpl_ = new T; 
         pImpl_->attach();  
 	}
 	
 	/// Destructor
-	virtual ~Handle<T>(){ pImpl_->detach(); /*numHandleDeleted++;*/	}
+	virtual ~Handle<T>(){ pImpl_->detach(); numHandleDeleted++;	}
 
 	/// copy constructor 
 	Handle<T>( const Handle& hd ):pImpl_( hd.pImpl_ ) { pImpl_->attach();  }
@@ -63,11 +61,10 @@ protected:
  * and Gilberto C�mara and founded in the geographic library TerraLib.
  */
 
-class Body
-{	
+class Body{	
 public:
 	/// Constructor: zero references when the object is being built
-	Body(): refCount_ ( 0 ){ /*numBodyCreated++;*/ }
+	Body(): refCount_ ( 0 ){ numBodyCreated++; }
 	
 
 	/// Increases the number of references to this object
@@ -85,7 +82,7 @@ public:
 	int refCount(){ return refCount_; }
 
 	/// Destructor
-	virtual ~Body(){/*numBodyDeleted++;*/}
+	virtual ~Body(){numBodyDeleted++;}
 
 private:
 

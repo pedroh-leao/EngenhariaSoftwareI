@@ -1,0 +1,7 @@
+<map id="FlowBody::FlowBody" name="FlowBody::FlowBody">
+<area shape="rect" id="Node000001" title="Constructor for copy of flow." alt="" coords="5,31,149,57"/>
+<area shape="rect" id="Node000002" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Pure virtual method to get the source system of the flow." alt="" coords="197,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,181,26,182,32,149,36"/>
+<area shape="rect" id="Node000003" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Pure virtual method to get the target system of the flow." alt="" coords="199,56,310,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,52,184,57,184,62,148,57"/>
+</map>

@@ -1,0 +1,83 @@
+\doxysection{test/unit/unit\+\_\+\+Handle\+Body.h File Reference}
+\hypertarget{unit___handle_body_8h}{}\label{unit___handle_body_8h}\index{test/unit/unit\_HandleBody.h@{test/unit/unit\_HandleBody.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{unit___handle_body_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{unit___handle_body_8h_ae34a86d00f2e32c66ba3983cc97478cd}{run\+\_\+unit\+\_\+test\+\_\+\+Handle\+Body}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{unit___handle_body_8h_ae34a86d00f2e32c66ba3983cc97478cd}\label{unit___handle_body_8h_ae34a86d00f2e32c66ba3983cc97478cd} 
+\index{unit\_HandleBody.h@{unit\_HandleBody.h}!run\_unit\_test\_HandleBody@{run\_unit\_test\_HandleBody}}
+\index{run\_unit\_test\_HandleBody@{run\_unit\_test\_HandleBody}!unit\_HandleBody.h@{unit\_HandleBody.h}}
+\doxysubsubsection{\texorpdfstring{run\_unit\_test\_HandleBody()}{run\_unit\_test\_HandleBody()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{void}} run\+\_\+unit\+\_\+test\+\_\+\+Handle\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Create\ model}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\&\ \mbox{\hyperlink{class_handle}{m}}\ =\ \mbox{\hyperlink{class_model_add0937bb42fa225c6bbb79a52bd55773}{Model::createModel}}(\textcolor{stringliteral}{"{}Modelo\ Logístico."{}});\ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\&\ \mbox{\hyperlink{class_handle}{s1}}\ =\ \mbox{\hyperlink{class_handle}{m}}.createSystem(\textcolor{stringliteral}{"{}populacao"{}},10.0);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\&\ \mbox{\hyperlink{class_handle}{s2}}\ =\ \mbox{\hyperlink{class_handle}{m}}.createSystem(\textcolor{stringliteral}{"{}Teste"{}},\ 7.90);\ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\&\ \mbox{\hyperlink{class_handle}{f1}}\ =\ \mbox{\hyperlink{class_handle}{m}}.createFlow<\mbox{\hyperlink{class_logistic}{Logistic}}>(\&\mbox{\hyperlink{class_handle}{s1}},\ \&\mbox{\hyperlink{class_handle}{s2}});\ \ \ \ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ USANDO\ REFERENCIAS\ PARA\ INTERFACE\ (CLASSE\ ABSTRATA)}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}s1:\ "{}}\ <<\ \mbox{\hyperlink{class_handle}{s1}}.getName()\ <<\ \textcolor{stringliteral}{"{},\ s2:\ "{}}\ <<\ \ \mbox{\hyperlink{class_handle}{s2}}.getName()\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_handle}{s1}}\ =\ \mbox{\hyperlink{class_handle}{s2}};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}s1:\ "{}}\ <<\ \mbox{\hyperlink{class_handle}{s1}}.getName()\ <<\ \textcolor{stringliteral}{"{},\ s2:\ "{}}\ <<\ \ \mbox{\hyperlink{class_handle}{s2}}.getName()\ <<\ \mbox{\hyperlink{class_handle}{endl}};\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Fa{\ucr}a\ o\ teste\ COM\ e\ SEM\ as\ chaves\ abaixo}}
+\DoxyCodeLine{00033\ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ USANDO\ OBJETOS\ HANDLES\ (DELEGA{\ucr}{\ucr}O)}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_system_handle}{SystemHandle}}\ \mbox{\hyperlink{class_handle}{s3}}(\textcolor{stringliteral}{"{}tiago"{}},\ 7),\ \mbox{\hyperlink{class_handle}{s4}}(\textcolor{stringliteral}{"{}antonio"{}},\ 8);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}s3:\ "{}}\ <<\ \mbox{\hyperlink{class_handle}{s3}}.getName()\ <<\ \textcolor{stringliteral}{"{},\ s2:\ "{}}\ <<\ \ \mbox{\hyperlink{class_handle}{s4}}.getName()\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{s3}}\ =\ \mbox{\hyperlink{class_handle}{s4}};\ \ \textcolor{comment}{//\ comente\ esta\ linha\ e\ veja\ que\ o\ resultado\ muda}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}s3:\ "{}}\ <<\ \mbox{\hyperlink{class_handle}{s4}}.getName()\ <<\ \textcolor{stringliteral}{"{},\ s2:\ "{}}\ <<\ \ \mbox{\hyperlink{class_handle}{s4}}.getName()\ <<\ \mbox{\hyperlink{class_handle}{endl}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{s3}}\ =\ \mbox{\hyperlink{class_handle}{s3}};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}s3:\ "{}}\ <<\ \mbox{\hyperlink{class_handle}{s4}}.getName()\ <<\ \textcolor{stringliteral}{"{},\ s2:\ "{}}\ <<\ \ \mbox{\hyperlink{class_handle}{s4}}.getName()\ <<\ \mbox{\hyperlink{class_handle}{endl}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_handle}{assert}}(\mbox{\hyperlink{unit___handle_body_8cpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}\ ==\ 6);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_handle}{assert}}(\mbox{\hyperlink{unit___handle_body_8cpp_ac1322042429ed9724fbef55908244f3b}{numBodyCreated}}\ ==\ 6);}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ executa\ o\ modelo}}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_handle}{m}}.run(0,30);}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \mbox{\hyperlink{class_handle}{s1}}.getValue()\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{class_handle}{m}};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_handle}{assert}}(\mbox{\hyperlink{unit___handle_body_8cpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}}\ ==\ 6);}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_handle}{assert}}(\mbox{\hyperlink{unit___handle_body_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}{numBodyDeleted}}\ ==\ 6);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ imprime\ relatorio}}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}Created\ handles:\ "{}}\ \ <<\ \mbox{\hyperlink{unit___handle_body_8cpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}Deleted\ handles:\ "{}}\ \ <<\ \mbox{\hyperlink{unit___handle_body_8cpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};\ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}Created\ bodies:\ "{}}\ \ <<\ \mbox{\hyperlink{unit___handle_body_8cpp_ac1322042429ed9724fbef55908244f3b}{numBodyCreated}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}Deleted\ bodies:\ "{}}\ \ <<\ \mbox{\hyperlink{unit___handle_body_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}{numBodyDeleted}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit___handle_body_8h_ae34a86d00f2e32c66ba3983cc97478cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{unit___handle_body_8h_ae34a86d00f2e32c66ba3983cc97478cd_icgraph}
+\end{center}
+\end{figure}

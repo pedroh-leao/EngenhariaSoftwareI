@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['main_0',['main',['../test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
-  ['modelimpl_1',['ModelImpl',['../class_model_impl.html#a8f17c4329d5ba1bd70a16719ab656326',1,'ModelImpl']]],
-  ['modelsbegin_2',['modelsbegin',['../class_model.html#a214e492d02b844dfa8899cc9e8d659bf',1,'Model::modelsBegin()'],['../class_model_impl.html#a09c53cd1e079bf552895633ba1e5a578',1,'ModelImpl::modelsBegin()']]],
-  ['modelsend_3',['modelsend',['../class_model.html#ac8d7fdf01d3f62864800882d11e7dfdf',1,'Model::modelsEnd()'],['../class_model_impl.html#abfc37cb0b560d02d692b2c009ea94c07',1,'ModelImpl::modelsEnd()']]]
+  ['getclock_0',['getclock',['../class_model.html#a7a045ebb69213ab666550edaac1f207c',1,'Model::getClock()'],['../class_model_body.html#ae667eb29393588a77879b0391e42f92c',1,'ModelBody::getClock()'],['../class_model_handle.html#a2e89eff6dc67d5767289bbf45e2bfef5',1,'ModelHandle::getClock()']]],
+  ['getname_1',['getname',['../class_model.html#aa5365ab557ae47efffdf14ba7a46dac8',1,'Model::getName()'],['../class_model_body.html#a739f9c5245937a5e513d8c6d8aa6802b',1,'ModelBody::getName()'],['../class_model_handle.html#a3c3020fc71844e75fc6e4672514b5205',1,'ModelHandle::getName()'],['../class_system.html#ab4f23c21832d6bbef462a5a20b296912',1,'System::getName()'],['../class_system_body.html#a6274f513d0a11f2eb28314d995f60d89',1,'SystemBody::getName()'],['../class_system_handle.html#ae0e8c19df92e41d60f2156562fd2bd52',1,'SystemHandle::getName()']]],
+  ['getsource_2',['getsource',['../class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8',1,'Flow::getSource()'],['../class_flow_body.html#a73d79b44f545683272b888963469f9d0',1,'FlowBody::getSource()'],['../class_flow_handle.html#acfa22cf0f7b796229f12a481fbcb4673',1,'FlowHandle::getSource()']]],
+  ['gettarget_3',['gettarget',['../class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787',1,'Flow::getTarget()'],['../class_flow_body.html#a437ebb62001b40c57cc0bf3effd8a431',1,'FlowBody::getTarget()'],['../class_flow_handle.html#aa3173bf1ba26cc9e8d1e5351b2c1d493',1,'FlowHandle::getTarget()']]],
+  ['getvalue_4',['getvalue',['../class_system.html#a41b673faa6c199eb8e4f204639fab4f2',1,'System::getValue()'],['../class_system_body.html#aaa79b2b5454c81ffd4020de4d0b9da6a',1,'SystemBody::getValue()'],['../class_system_handle.html#aeb69190853dc47d4c73ccd3928bfc3a1',1,'SystemHandle::getValue()']]]
 ];

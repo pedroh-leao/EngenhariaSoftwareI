@@ -1,5 +1,7 @@
 <map id="Model::createModel" name="Model::createModel">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,141,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="189,5,348,32"/>
+<area shape="rect" id="Node000002" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="189,5,354,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,16,173,16,173,21,141,21"/>
+<area shape="rect" id="Node000003" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="402,5,511,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,16,386,16,386,21,354,21"/>
 </map>

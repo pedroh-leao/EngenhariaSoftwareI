@@ -1,43 +1,11 @@
 <map id="System::getValue" name="System::getValue">
-<area shape="rect" id="Node000001" title="Pure virtual method to get the system value." alt="" coords="550,335,676,361"/>
-<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="329,5,480,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,319,600,261,582,187,568,149,550,111,528,76,501,46,479,32,482,28,504,42,532,73,555,109,573,147,587,186,605,260,613,319"/>
-<area shape="rect" id="Node000004" href="$class_exponential.html#a0f745ae43423151cf778893afff97937" title="Executes the exponential equation that must be performed by the flow." alt="" coords="307,56,501,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="605,320,595,271,575,211,545,149,524,121,501,97,483,86,486,81,504,93,529,118,549,146,580,209,600,270,610,319"/>
-<area shape="rect" id="Node000005" href="$class_logistic.html#af5c1d2f9a0982f4e605e6c4fd1b2e6ef" title="Executes the logistic equation that must be performed by the flow." alt="" coords="319,107,490,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="602,321,589,281,568,234,539,187,501,147,481,136,484,132,504,143,543,184,573,232,594,280,607,319"/>
-<area shape="rect" id="Node000006" href="$class_complex.html#a6287071e2a32944893e6c0b2c41a1622" title="Executes the complex equation that must be performed by the flow." alt="" coords="316,157,493,184"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="597,322,560,259,533,226,501,198,479,187,482,182,504,194,537,222,564,256,602,319"/>
-<area shape="rect" id="Node000007" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="320,208,488,235"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="589,324,551,285,501,249,475,238,477,233,504,244,554,281,593,321"/>
-<area shape="rect" id="Node000008" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="328,259,481,285"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="571,330,501,300,465,288,466,283,503,295,573,325"/>
-<area shape="rect" id="Node000009" href="$class_system_impl.html#a9a7668e85fc1be7903f410973c28f32a" title="Defines how the &#39;=&#39; operator works for systems." alt="" coords="328,309,481,336"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="534,341,481,335,481,329,535,336"/>
-<area shape="rect" id="Node000010" href="$class_model_impl.html#a631e9210e60832b4c98b5adb048b8068" title="Executes the model, performing flow operations and updating system values." alt="" coords="351,360,457,387"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="535,360,458,370,458,364,534,355"/>
-<area shape="rect" id="Node000011" href="$class_system_impl.html#a5ea2f9b0b82bf06466fea4fe5513aa90" title="Constructor for copy of system." alt="" coords="321,411,488,437"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="573,371,503,401,466,413,465,408,501,396,571,366"/>
-<area shape="rect" id="Node000012" href="$unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title="Unit test for System constructor." alt="" coords="321,461,487,488"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="593,375,554,415,504,452,477,463,475,458,501,447,551,411,589,372"/>
-<area shape="rect" id="Node000015" href="$unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37" title="Unit test for System copy constructor." alt="" coords="306,512,502,539"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="602,377,564,440,537,474,504,502,482,514,479,509,501,498,533,470,560,437,597,374"/>
-<area shape="rect" id="Node000016" href="$unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3" title="Unit test for System &#39;=&#39; operator." alt="" coords="310,563,499,589"/>
-<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="607,377,594,416,573,464,543,512,504,553,484,564,481,560,501,549,539,509,568,462,589,415,602,375"/>
-<area shape="rect" id="Node000017" href="$unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Unit test for System getValue function." alt="" coords="328,613,480,640"/>
-<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="610,377,600,426,580,487,549,550,529,578,504,603,482,617,479,612,501,599,524,575,545,547,575,485,595,425,605,376"/>
-<area shape="rect" id="Node000018" href="$unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for System setValue function." alt="" coords="328,664,480,691"/>
-<area shape="poly" id="edge22_Node000001_Node000018" title=" " alt="" coords="613,377,605,436,587,510,573,549,555,587,532,623,504,654,482,668,479,663,501,650,528,620,550,585,568,547,582,509,600,435,607,377"/>
-<area shape="rect" id="Node000003" href="$test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="156,208,205,235"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,41,308,46,265,85,231,131,205,175,190,209,185,207,201,173,226,128,261,82,304,42,313,37"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="305,224,205,224,205,219,305,219"/>
-<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="327,257,205,229,206,224,328,252"/>
-<area shape="rect" id="Node000013" href="$unit___system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Call all the unit tests." alt="" coords="103,563,258,589"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="326,495,307,502,249,533,202,564,199,560,246,529,305,498,324,490"/>
-<area shape="rect" id="Node000014" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,563,55,589"/>
-<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="87,579,55,579,55,573,87,573"/>
-<area shape="poly" id="edge17_Node000015_Node000013" title=" " alt="" coords="327,545,243,565,242,559,326,540"/>
-<area shape="poly" id="edge19_Node000016_Node000013" title=" " alt="" coords="294,579,259,579,259,573,294,573"/>
-<area shape="poly" id="edge21_Node000017_Node000013" title=" " alt="" coords="326,612,242,593,243,587,327,607"/>
-<area shape="poly" id="edge23_Node000018_Node000013" title=" " alt="" coords="324,662,305,654,246,623,199,592,202,588,249,619,307,650,326,657"/>
+<area shape="rect" id="Node000001" title="Pure virtual method to get the system value." alt="" coords="248,81,373,108"/>
+<area shape="rect" id="Node000002" href="$class_exponential.html#a0f745ae43423151cf778893afff97937" title="Executes the exponential equation that must be performed by the flow." alt="" coords="5,5,200,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,77,199,46,162,35,164,30,201,42,270,72"/>
+<area shape="rect" id="Node000003" href="$class_logistic.html#af5c1d2f9a0982f4e605e6c4fd1b2e6ef" title="Executes the logistic equation that must be performed by the flow." alt="" coords="17,56,188,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,88,188,82,189,77,233,83"/>
+<area shape="rect" id="Node000004" href="$class_complex.html#a6287071e2a32944893e6c0b2c41a1622" title="Executes the complex equation that must be performed by the flow." alt="" coords="14,107,191,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,107,192,112,191,107,232,101"/>
+<area shape="rect" id="Node000005" href="$class_model_body.html#aa32386278de38f617a32d3069dc66903" title="Executes the model, performing flow operations and updating system values." alt="" coords="46,157,159,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="270,118,201,148,160,160,158,155,199,143,268,113"/>
 </map>

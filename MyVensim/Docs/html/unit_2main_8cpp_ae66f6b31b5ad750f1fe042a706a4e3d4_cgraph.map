@@ -1,0 +1,97 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,599,55,626"/>
+<area shape="rect" id="Node000002" href="$unit___handle_body_8cpp.html#ae34a86d00f2e32c66ba3983cc97478cd" title=" " alt="" coords="103,135,276,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,598,52,477,73,393,100,307,134,234,169,174,173,177,139,236,105,309,78,394,58,478,36,599"/>
+<area shape="rect" id="Node000006" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Call all the unit tests." alt="" coords="121,320,258,347"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="37,597,171,359,175,362,41,600"/>
+<area shape="rect" id="Node000017" href="$unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="117,903,262,930"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="41,625,176,888,172,890,36,627"/>
+<area shape="rect" id="Node000033" href="$unit___system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Call all the unit tests." alt="" coords="112,1486,267,1512"/>
+<area shape="poly" id="edge46_Node000001_Node000033" title=" " alt="" coords="36,626,186,1470,180,1471,31,627"/>
+<area shape="rect" id="Node000003" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="568,928,704,955"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="200,133,249,83,284,56,323,37,379,16,428,4,451,3,474,8,498,19,522,37,535,56,547,87,568,179,586,302,602,443,625,722,636,913,631,913,619,723,597,443,581,303,563,180,542,88,530,58,518,41,495,24,473,13,451,9,429,9,381,21,325,42,286,61,252,87,204,136"/>
+<area shape="rect" id="Node000004" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="752,928,917,955"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="704,939,736,939,736,944,704,944"/>
+<area shape="rect" id="Node000005" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="965,928,1074,955"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="917,939,949,939,949,944,917,944"/>
+<area shape="rect" id="Node000007" href="$unit___flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title="Unit test for Flow default constructor." alt="" coords="348,51,496,78"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="196,319,322,88,332,81,335,85,326,92,200,321"/>
+<area shape="rect" id="Node000008" href="$unit___flow_8cpp.html#a0b23a5869ee89ba30e9bb1e703dcf50e" title="Unit test for Flow constructor with pointers to source and target systems." alt="" coords="335,102,510,144"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="195,319,213,286,241,242,278,195,322,154,329,150,332,154,326,159,282,199,245,245,218,288,200,321"/>
+<area shape="rect" id="Node000009" href="$unit___flow_8cpp.html#a1c8c397dfd75aaa0bd9b04c522dd0ec2" title="Unit test for Flow copy constructor." alt="" coords="333,168,511,195"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="199,318,248,263,283,232,323,205,335,199,338,203,325,209,287,236,252,267,203,322"/>
+<area shape="rect" id="Node000010" href="$unit___flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title="Unit test for Flow destructor." alt="" coords="352,219,493,246"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="210,318,260,287,323,255,342,248,344,253,325,260,263,291,212,322"/>
+<area shape="rect" id="Node000011" href="$unit___flow_8cpp.html#a1464336f3eff3d23ac4ca4a0fac38343" title="Unit test for Flow &#39;=&#39; operator." alt="" coords="337,270,508,296"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="254,317,342,298,343,303,255,322"/>
+<area shape="rect" id="Node000012" href="$unit___flow_8cpp.html#a1c9a53fba9246d1754484a59ed8fc4d2" title="Unit test for Flow executeEquation function." alt="" coords="332,320,512,347"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="258,331,317,331,317,336,258,336"/>
+<area shape="rect" id="Node000013" href="$unit___flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Unit test for Flow getSource function." alt="" coords="351,371,493,398"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="255,345,343,365,342,370,254,350"/>
+<area shape="rect" id="Node000014" href="$unit___flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Unit test for Flow getTarget function." alt="" coords="354,422,491,448"/>
+<area shape="poly" id="edge13_Node000006_Node000014" title=" " alt="" coords="212,345,263,376,325,407,344,414,342,419,323,412,260,381,210,350"/>
+<area shape="rect" id="Node000015" href="$unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Unit test for Flow setSource function." alt="" coords="351,472,493,499"/>
+<area shape="poly" id="edge14_Node000006_Node000015" title=" " alt="" coords="203,346,252,401,287,432,325,458,338,464,335,469,323,463,283,436,248,404,199,349"/>
+<area shape="rect" id="Node000016" href="$unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for Flow setTarget function." alt="" coords="354,523,491,550"/>
+<area shape="poly" id="edge15_Node000006_Node000016" title=" " alt="" coords="199,346,217,379,244,424,281,470,326,509,340,517,338,522,322,513,277,474,240,427,212,382,194,349"/>
+<area shape="rect" id="Node000018" href="$unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Unit test for Model constructor." alt="" coords="344,574,500,600"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="190,903,200,848,223,770,240,726,262,684,289,645,322,610,329,606,332,610,326,614,293,648,267,687,245,729,228,771,205,850,195,904"/>
+<area shape="rect" id="Node000019" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="345,624,499,651"/>
+<area shape="poly" id="edge19_Node000017_Node000019" title=" " alt="" coords="191,902,204,856,229,791,268,721,293,689,322,661,330,656,333,660,326,665,297,692,272,724,234,793,209,858,196,904"/>
+<area shape="rect" id="Node000020" href="$unit___model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model createModel function." alt="" coords="341,675,503,702"/>
+<area shape="poly" id="edge21_Node000017_Node000020" title=" " alt="" coords="193,902,209,864,236,812,274,758,297,733,322,712,330,707,333,711,326,716,301,737,278,761,241,815,214,866,198,904"/>
+<area shape="rect" id="Node000021" href="$unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for Model createSystem function." alt="" coords="336,726,508,752"/>
+<area shape="poly" id="edge23_Node000017_Node000021" title=" " alt="" coords="197,901,244,834,280,795,323,762,333,757,335,761,325,767,284,799,248,838,201,904"/>
+<area shape="rect" id="Node000022" href="$unit___model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for Model destructor." alt="" coords="348,776,497,803"/>
+<area shape="poly" id="edge25_Node000017_Node000022" title=" " alt="" coords="203,900,253,857,287,833,323,813,338,806,340,811,325,817,290,838,257,861,207,904"/>
+<area shape="rect" id="Node000023" href="$unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="346,827,499,854"/>
+<area shape="poly" id="edge26_Node000017_Node000023" title=" " alt="" coords="223,900,323,863,348,856,349,861,325,868,225,905"/>
+<area shape="rect" id="Node000024" href="$unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="351,878,494,904"/>
+<area shape="poly" id="edge28_Node000017_Node000024" title=" " alt="" coords="262,906,335,898,335,903,263,911"/>
+<area shape="rect" id="Node000025" href="$unit___model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for Model getName function." alt="" coords="351,928,494,955"/>
+<area shape="poly" id="edge30_Node000017_Node000025" title=" " alt="" coords="263,922,335,930,335,935,262,927"/>
+<area shape="rect" id="Node000026" href="$unit___model_8cpp.html#aafd324facdcdfe44bd2b43bda9a9ca5e" title="Unit test for Model modelsBegin function." alt="" coords="339,979,505,1006"/>
+<area shape="poly" id="edge32_Node000017_Node000026" title=" " alt="" coords="225,928,325,965,349,972,348,977,323,970,223,933"/>
+<area shape="rect" id="Node000027" href="$unit___model_8cpp.html#a16eb9b9c2196c14e47248c5148f3f41e" title="Unit test for Model modelsEnd function." alt="" coords="344,1030,500,1056"/>
+<area shape="poly" id="edge34_Node000017_Node000027" title=" " alt="" coords="207,928,257,971,290,995,325,1015,340,1022,338,1027,323,1020,287,1000,253,976,203,932"/>
+<area shape="rect" id="Node000028" href="$unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="356,1080,488,1107"/>
+<area shape="poly" id="edge36_Node000017_Node000028" title=" " alt="" coords="201,929,248,995,284,1034,325,1066,342,1075,340,1080,323,1071,280,1038,244,998,197,932"/>
+<area shape="rect" id="Node000029" href="$unit___model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for Model run function." alt="" coords="368,1131,477,1158"/>
+<area shape="poly" id="edge38_Node000017_Node000029" title=" " alt="" coords="198,929,214,967,241,1018,278,1072,301,1096,325,1117,354,1131,351,1136,323,1121,297,1100,274,1075,236,1021,209,969,193,931"/>
+<area shape="rect" id="Node000030" href="$unit___model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for Model setName function." alt="" coords="351,1182,494,1208"/>
+<area shape="poly" id="edge40_Node000017_Node000030" title=" " alt="" coords="196,929,209,975,234,1040,272,1109,297,1140,326,1168,338,1176,335,1180,322,1172,293,1144,268,1112,229,1042,204,977,191,931"/>
+<area shape="rect" id="Node000031" href="$unit___model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="Unit test for Model systemsBegin function." alt="" coords="335,1232,509,1259"/>
+<area shape="poly" id="edge42_Node000017_Node000031" title=" " alt="" coords="195,929,205,983,228,1062,245,1104,267,1146,293,1185,326,1218,331,1222,328,1227,322,1222,289,1188,262,1149,240,1106,223,1063,200,984,190,930"/>
+<area shape="rect" id="Node000032" href="$unit___model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="Unit test for Model systemsEnd function." alt="" coords="340,1283,504,1310"/>
+<area shape="poly" id="edge44_Node000017_Node000032" title=" " alt="" coords="194,930,201,992,222,1083,238,1134,261,1183,290,1229,326,1269,330,1272,326,1276,322,1273,286,1232,256,1186,233,1136,216,1085,196,992,189,930"/>
+<area shape="poly" id="edge18_Node000018_Node000003" title=" " alt="" coords="502,597,522,610,553,645,577,684,596,726,611,769,629,850,636,913,631,913,624,851,606,770,591,728,572,686,548,648,519,614,499,602"/>
+<area shape="poly" id="edge20_Node000019_Node000003" title=" " alt="" coords="501,648,522,661,549,689,571,721,589,756,604,791,624,859,634,913,629,914,619,860,599,793,585,758,567,724,545,692,519,665,499,653"/>
+<area shape="poly" id="edge22_Node000020_Node000003" title=" " alt="" coords="503,700,522,712,545,734,565,759,597,814,618,869,631,913,626,914,613,870,592,816,561,762,541,737,519,716,500,705"/>
+<area shape="poly" id="edge24_Node000021_Node000003" title=" " alt="" coords="501,751,522,762,559,797,589,837,611,878,627,913,622,915,606,881,584,840,555,800,519,767,498,755"/>
+<area shape="poly" id="edge27_Node000023_Node000003" title=" " alt="" coords="489,852,521,863,568,889,608,917,605,921,565,893,519,868,488,857"/>
+<area shape="poly" id="edge29_Node000024_Node000003" title=" " alt="" coords="482,902,563,922,561,927,481,908"/>
+<area shape="poly" id="edge31_Node000025_Node000003" title=" " alt="" coords="494,939,553,939,553,944,494,944"/>
+<area shape="poly" id="edge33_Node000026_Node000003" title=" " alt="" coords="481,976,561,957,563,962,482,981"/>
+<area shape="poly" id="edge35_Node000027_Node000003" title=" " alt="" coords="488,1027,519,1015,565,990,605,962,608,967,568,995,521,1020,489,1032"/>
+<area shape="poly" id="edge37_Node000028_Node000003" title=" " alt="" coords="488,1080,519,1066,549,1044,575,1018,616,967,620,970,579,1021,552,1048,522,1071,490,1085"/>
+<area shape="poly" id="edge39_Node000029_Node000003" title=" " alt="" coords="477,1135,499,1128,519,1117,555,1083,584,1043,606,1003,622,968,627,971,611,1005,589,1046,559,1087,522,1121,501,1133,478,1140"/>
+<area shape="poly" id="edge41_Node000030_Node000003" title=" " alt="" coords="493,1182,519,1168,541,1146,561,1122,592,1067,613,1013,626,969,631,971,618,1015,597,1069,565,1125,545,1150,522,1172,495,1187"/>
+<area shape="poly" id="edge43_Node000031_Node000003" title=" " alt="" coords="501,1230,519,1218,545,1191,567,1160,585,1126,599,1091,619,1023,629,970,634,971,624,1024,604,1092,589,1128,571,1162,549,1194,522,1222,504,1234"/>
+<area shape="poly" id="edge45_Node000032_Node000003" title=" " alt="" coords="502,1280,519,1269,548,1236,572,1197,591,1156,606,1113,624,1033,631,970,636,971,629,1033,611,1115,596,1158,577,1200,553,1239,522,1273,505,1285"/>
+<area shape="rect" id="Node000034" href="$unit___system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title="Unit test for System constructor." alt="" coords="339,1334,505,1360"/>
+<area shape="poly" id="edge47_Node000033_Node000034" title=" " alt="" coords="199,1484,248,1428,283,1397,323,1370,335,1364,338,1369,325,1375,287,1401,252,1432,203,1487"/>
+<area shape="rect" id="Node000035" href="$unit___system_8cpp.html#a11b125bb1d38d3f070c671cf5855bf37" title="Unit test for System copy constructor." alt="" coords="324,1384,520,1411"/>
+<area shape="poly" id="edge48_Node000033_Node000035" title=" " alt="" coords="210,1483,260,1452,323,1421,342,1414,344,1419,325,1426,263,1457,212,1487"/>
+<area shape="rect" id="Node000036" href="$unit___system_8cpp.html#a021603784a12638ed34bc8690c832dfc" title="Unit test for System destructor." alt="" coords="343,1435,502,1462"/>
+<area shape="poly" id="edge49_Node000033_Node000036" title=" " alt="" coords="254,1482,342,1463,343,1468,255,1488"/>
+<area shape="rect" id="Node000037" href="$unit___system_8cpp.html#a9e27ecc7c1ab2646d3bcb73b08ded4a3" title="Unit test for System &#39;=&#39; operator." alt="" coords="328,1486,517,1512"/>
+<area shape="poly" id="edge50_Node000033_Node000037" title=" " alt="" coords="267,1496,312,1496,312,1502,267,1502"/>
+<area shape="rect" id="Node000038" href="$unit___system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Unit test for System getName function." alt="" coords="346,1536,499,1563"/>
+<area shape="poly" id="edge51_Node000033_Node000038" title=" " alt="" coords="255,1510,343,1530,342,1535,254,1516"/>
+<area shape="rect" id="Node000039" href="$unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Unit test for System getValue function." alt="" coords="346,1587,498,1614"/>
+<area shape="poly" id="edge52_Node000033_Node000039" title=" " alt="" coords="212,1511,263,1542,325,1573,344,1580,342,1585,323,1578,260,1546,210,1515"/>
+<area shape="rect" id="Node000040" href="$unit___system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit test for System setName function." alt="" coords="346,1638,499,1664"/>
+<area shape="poly" id="edge53_Node000033_Node000040" title=" " alt="" coords="203,1511,252,1566,287,1597,325,1623,338,1629,335,1634,323,1628,283,1601,248,1570,199,1515"/>
+<area shape="rect" id="Node000041" href="$unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for System setValue function." alt="" coords="346,1688,498,1715"/>
+<area shape="poly" id="edge54_Node000033_Node000041" title=" " alt="" coords="199,1511,217,1545,244,1589,281,1635,326,1674,334,1679,331,1684,322,1679,277,1639,240,1592,212,1547,194,1514"/>
+</map>

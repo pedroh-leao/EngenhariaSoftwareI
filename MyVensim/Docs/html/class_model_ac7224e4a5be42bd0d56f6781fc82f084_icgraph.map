@@ -1,30 +1,5 @@
 <map id="Model::add" name="Model::add">
-<area shape="rect" id="Node000001" title="Pure virtual method to add a flow to the model." alt="" coords="688,157,773,184"/>
-<area shape="rect" id="Node000002" href="$class_model.html#acec79bed35d3d9a43252d62817d53e95" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="512,157,640,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="672,173,640,173,640,168,672,168"/>
-<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Given a model with 5 systems, q1, q2, q3, q4 and q5, with value 100, 0, 100, 0, 0,..." alt="" coords="305,5,456,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="556,146,517,95,492,69,463,46,440,35,442,30,466,42,495,65,521,92,560,143"/>
-<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Given a model with 2 systems with value 100 and 0, and 1 flow that performs an exponencial equation W..." alt="" coords="296,56,464,83"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="545,150,507,123,463,97,434,86,436,81,465,92,510,118,548,146"/>
-<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="304,107,457,133"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="506,155,434,137,435,131,507,150"/>
-<area shape="rect" id="Node000007" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for Model createFlow function." alt="" coords="303,157,457,184"/>
-<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="497,173,458,173,458,168,497,168"/>
-<area shape="rect" id="Node000010" href="$unit___model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="Unit test for Model flowsBegin function." alt="" coords="304,208,457,235"/>
-<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="507,191,435,210,434,205,506,186"/>
-<area shape="rect" id="Node000011" href="$unit___model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="Unit test for Model flowsEnd function." alt="" coords="309,259,452,285"/>
-<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="548,196,510,223,465,249,436,261,434,256,463,244,507,219,545,191"/>
-<area shape="rect" id="Node000012" href="$unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Unit test for Model remove functions." alt="" coords="314,309,446,336"/>
-<area shape="poly" id="edge15_Node000002_Node000012" title=" " alt="" coords="560,199,521,250,495,277,466,300,442,311,440,306,463,295,492,273,517,246,556,195"/>
-<area shape="rect" id="Node000004" href="$test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,39,201,66,200,61,308,34"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="280,72,200,72,200,67,280,67"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="308,105,200,78,201,73,309,100"/>
-<area shape="rect" id="Node000008" href="$unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Call all the unit tests." alt="" coords="103,233,248,260"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="317,192,297,198,208,235,206,230,295,194,315,187"/>
-<area shape="rect" id="Node000009" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,233,55,260"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="87,249,55,249,55,244,87,244"/>
-<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="288,235,249,240,248,235,288,230"/>
-<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="293,264,248,258,249,253,294,259"/>
-<area shape="poly" id="edge16_Node000012_Node000008" title=" " alt="" coords="315,307,295,300,206,263,208,258,297,295,317,302"/>
+<area shape="rect" id="Node000001" title="Pure virtual method to add a flow to the model." alt="" coords="181,5,266,32"/>
+<area shape="rect" id="Node000002" href="$class_model.html#acec79bed35d3d9a43252d62817d53e95" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="5,5,133,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,21,133,21,133,16,165,16"/>
 </map>

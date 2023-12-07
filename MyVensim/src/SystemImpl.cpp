@@ -40,8 +40,6 @@ SystemHandle :: SystemHandle(const System& s){
     pImpl_->setValue(s.getValue());
 }
 
-SystemHandle :: ~SystemHandle(){}
-
 void SystemHandle :: setName(const string& name){
     pImpl_->setName(name);
 }
@@ -59,6 +57,15 @@ double SystemHandle :: getValue() const{
 }
 
 System& SystemHandle :: operator=(const System& s){
+    if(this == &s) return *this;
+
+    pImpl_->setName(s.getName());
+    pImpl_->setValue(s.getValue());
+
+    return *this;
+}
+
+SystemHandle& SystemHandle :: operator=(const SystemHandle& s){
     if(this == &s) return *this;
 
     pImpl_->setName(s.getName());

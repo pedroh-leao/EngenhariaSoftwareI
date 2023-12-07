@@ -1,18 +1,8 @@
 var searchData=
 [
-  ['setclock_0',['setclock',['../class_model.html#ad0be58c51fab66e8e036745a27aed04f',1,'Model::setClock()'],['../class_model_impl.html#a7116b86b62895bccce3141ccc4571437',1,'ModelImpl::setClock()']]],
-  ['setname_1',['setname',['../class_model.html#aa17012307c37e6527ae6b1d3fff540e0',1,'Model::setName()'],['../class_model_impl.html#a0122a51ecc35cf4cf3d28a0366d9527c',1,'ModelImpl::setName()'],['../class_system.html#afc362e8275b428a94c214826c60a01bc',1,'System::setName()'],['../class_system_impl.html#a6f1abee03e95201f0e2d36cddbeaccad',1,'SystemImpl::setName()']]],
-  ['setsource_2',['setsource',['../class_flow.html#a4d756236982858350e7bf80a465926a7',1,'Flow::setSource()'],['../class_flow_impl.html#ac761ce3fc1b097b3086a2618f645a2a2',1,'FlowImpl::setSource()']]],
-  ['settarget_3',['settarget',['../class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe',1,'Flow::setTarget()'],['../class_flow_impl.html#a9c9d09746b4fb2fae14041beafcba9dc',1,'FlowImpl::setTarget()']]],
-  ['setvalue_4',['setvalue',['../class_system.html#a4ade48b75793a48021cdb634a86ff988',1,'System::setValue()'],['../class_system_impl.html#ab8682deb13b158ee77e23e2d048c70a7',1,'SystemImpl::setValue()']]],
-  ['source_5',['source',['../class_flow_impl.html#a950987351656a518a1057b64c5f85af8',1,'FlowImpl']]],
-  ['system_6',['System',['../class_system.html',1,'']]],
-  ['system_2eh_7',['System.h',['../_system_8h.html',1,'']]],
-  ['systemimpl_8',['systemimpl',['../class_system_impl.html',1,'SystemImpl'],['../class_system_impl.html#a7ba1a978df3b5cdf008be1abbf745d82',1,'SystemImpl::SystemImpl(const string &amp;name=&quot;&quot;, const double &amp;value=0.0)'],['../class_system_impl.html#a5ea2f9b0b82bf06466fea4fe5513aa90',1,'SystemImpl::SystemImpl(const System &amp;s)']]],
-  ['systemimpl_2ecpp_9',['SystemImpl.cpp',['../_system_impl_8cpp.html',1,'']]],
-  ['systemimpl_2eh_10',['SystemImpl.h',['../_system_impl_8h.html',1,'']]],
-  ['systems_11',['systems',['../class_model_impl.html#a767e2054ecaaa8d1401ef2c962adc3e2',1,'ModelImpl']]],
-  ['systemsbegin_12',['systemsbegin',['../class_model.html#a5cf4d533a7ac8752b9f6cab20e7d6f41',1,'Model::systemsBegin()'],['../class_model_impl.html#a43e37d70bc3c50579187a749d94e2ae8',1,'ModelImpl::systemsBegin()']]],
-  ['systemsend_13',['systemsend',['../class_model.html#aed9cb3a0a968b2fe62323916715fbceb',1,'Model::systemsEnd()'],['../class_model_impl.html#a9c43899645ff8112b6470cf6f72f3775',1,'ModelImpl::systemsEnd()']]],
-  ['systemsiterator_14',['systemsIterator',['../class_model.html#ae2987d24c6adff4b124fb758dcc6bb83',1,'Model']]]
+  ['name_0',['name',['../class_model_body.html#a31381d779f86d0a202122e50c1449ead',1,'ModelBody::name'],['../class_system_body.html#ac95aca9d3648f257855ca6436e7cb630',1,'SystemBody::name']]],
+  ['numbodycreated_1',['numbodycreated',['../handle_body_8h.html#ac1322042429ed9724fbef55908244f3b',1,'numBodyCreated:&#160;funcional_tests.cpp'],['../funcional__tests_8cpp.html#ac1322042429ed9724fbef55908244f3b',1,'numBodyCreated:&#160;funcional_tests.cpp'],['../unit___handle_body_8cpp.html#ac1322042429ed9724fbef55908244f3b',1,'numBodyCreated:&#160;unit_HandleBody.cpp']]],
+  ['numbodydeleted_2',['numbodydeleted',['../handle_body_8h.html#aba38ebae7f83ef57afab8c447dddb6cf',1,'numBodyDeleted:&#160;funcional_tests.cpp'],['../funcional__tests_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf',1,'numBodyDeleted:&#160;funcional_tests.cpp'],['../unit___handle_body_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf',1,'numBodyDeleted:&#160;unit_HandleBody.cpp']]],
+  ['numhandlecreated_3',['numhandlecreated',['../handle_body_8h.html#aac78cb29dfe4a565da68073b0beebf2f',1,'numHandleCreated:&#160;funcional_tests.cpp'],['../funcional__tests_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f',1,'numHandleCreated:&#160;funcional_tests.cpp'],['../unit___handle_body_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f',1,'numHandleCreated:&#160;unit_HandleBody.cpp']]],
+  ['numhandledeleted_4',['numhandledeleted',['../handle_body_8h.html#a01128a06118f949a0b24a3d080f515fd',1,'numHandleDeleted:&#160;funcional_tests.cpp'],['../funcional__tests_8cpp.html#a01128a06118f949a0b24a3d080f515fd',1,'numHandleDeleted:&#160;funcional_tests.cpp'],['../unit___handle_body_8cpp.html#a01128a06118f949a0b24a3d080f515fd',1,'numHandleDeleted:&#160;unit_HandleBody.cpp']]]
 ];

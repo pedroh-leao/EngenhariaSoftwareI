@@ -1,5 +1,5 @@
 <map id="System" name="System">
-<area shape="rect" id="Node000001" title="Interface class for systems." alt="" coords="21,5,191,261"/>
-<area shape="rect" id="Node000002" href="$class_system_impl.html" title="Class that defines a system." alt="" coords="5,309,207,629"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,276,109,310,103,310,103,276"/>
+<area shape="rect" id="Node000001" title="Interface class for systems." alt="" coords="11,5,180,261"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html" title=" " alt="" coords="5,309,185,640"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,277,98,310,93,310,93,277"/>
 </map>

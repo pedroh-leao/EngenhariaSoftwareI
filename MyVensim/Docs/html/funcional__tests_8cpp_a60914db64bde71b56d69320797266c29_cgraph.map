@@ -1,19 +1,9 @@
 <map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
-<area shape="rect" id="Node000001" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="5,132,159,159"/>
-<area shape="rect" id="Node000002" href="$class_model.html#acec79bed35d3d9a43252d62817d53e95" title="Pure virtual method to create a new Flow and add it to the model." alt="" coords="216,5,343,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,129,142,87,205,42,216,36,219,41,208,46,145,91,99,133"/>
-<area shape="rect" id="Node000004" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="212,56,347,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="115,129,206,92,223,86,224,91,208,97,117,134"/>
-<area shape="rect" id="Node000006" href="$class_model.html#ae57d42eef06605b2b97374d70b46fd8a" title="Pure virtual method to create a new System and add it to the model." alt="" coords="207,107,352,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="159,133,191,129,192,134,159,138"/>
-<area shape="rect" id="Node000007" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual method to get the system value." alt="" coords="217,157,342,184"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="159,153,202,158,201,163,159,158"/>
-<area shape="rect" id="Node000008" href="$class_model.html#aa14a031649a1dc8bd529691fd3cfd900" title="Pure virtual method to show the current model status." alt="" coords="212,208,347,235"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="117,157,208,194,224,200,223,205,206,198,115,162"/>
-<area shape="rect" id="Node000009" href="$class_model.html#a1f6d177ba1a07431fc52a1ba07d4fd73" title="Pure virtual method to execute the model." alt="" coords="238,259,321,285"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="99,157,145,200,208,244,225,253,223,257,205,249,142,204,95,161"/>
-<area shape="rect" id="Node000003" href="$class_model.html#ac7224e4a5be42bd0d56f6781fc82f084" title="Pure virtual method to add a flow to the model." alt="" coords="437,5,522,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,16,422,16,422,21,343,21"/>
-<area shape="rect" id="Node000005" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="400,56,559,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="348,67,384,67,384,72,348,72"/>
+<area shape="rect" id="Node000001" title="Given a model with 2 systems with value 100 and 10, and 1 flow that performs a logistical equation Wh..." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="207,5,342,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="390,5,555,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,16,374,16,374,21,342,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="603,5,713,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="556,16,587,16,587,21,556,21"/>
 </map>

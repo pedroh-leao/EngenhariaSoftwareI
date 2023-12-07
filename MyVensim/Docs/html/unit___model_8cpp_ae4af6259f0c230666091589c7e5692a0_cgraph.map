@@ -1,9 +1,9 @@
 <map id="unit_Model_getName" name="unit_Model_getName">
-<area shape="rect" id="Node000001" title="Unit test for Model getName function." alt="" coords="5,31,149,57"/>
+<area shape="rect" id="Node000001" title="Unit test for Model getName function." alt="" coords="5,5,149,32"/>
 <area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="197,5,332,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,32,181,27,182,33,150,37"/>
-<area shape="rect" id="Node000004" href="$class_model.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Pure virtual method to get the model name." alt="" coords="206,56,323,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,51,191,57,190,62,149,56"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="380,5,539,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,16,364,16,364,21,333,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,16,181,16,181,21,149,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="380,5,545,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,16,364,16,364,21,332,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="593,5,703,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="546,16,577,16,577,21,546,21"/>
 </map>

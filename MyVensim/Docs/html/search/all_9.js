@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['remove_0',['remove',['../class_model.html#aab07c39ea01c4296097674893858f12f',1,'Model::remove(System *s)=0'],['../class_model.html#a8568b21dec4f8781179a64b44826e029',1,'Model::remove(Flow *f)=0'],['../class_model_impl.html#a5145a5ed6c8cb204137fc161d94bb9e4',1,'ModelImpl::remove(System *s)'],['../class_model_impl.html#a91ecf96ee8a524711c34a5291e799470',1,'ModelImpl::remove(Flow *f)']]],
-  ['reportstatus_1',['reportstatus',['../class_model.html#aa14a031649a1dc8bd529691fd3cfd900',1,'Model::reportStatus()'],['../class_model_impl.html#a5a91c502ce910ec19a69140cb26683f1',1,'ModelImpl::reportStatus()']]],
-  ['run_2',['run',['../class_model.html#a1f6d177ba1a07431fc52a1ba07d4fd73',1,'Model::run()'],['../class_model_impl.html#a631e9210e60832b4c98b5adb048b8068',1,'ModelImpl::run()']]],
-  ['run_5funit_5ftests_5fflow_3',['run_unit_tests_flow',['../unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e',1,'run_unit_tests_Flow():&#160;unit_Flow.cpp'],['../unit___flow_8h.html#a31fe372f712944be1d93f7c5b01fbb3e',1,'run_unit_tests_Flow():&#160;unit_Flow.cpp']]],
-  ['run_5funit_5ftests_5fglobals_4',['run_unit_tests_globals',['../unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a',1,'run_unit_tests_globals():&#160;unit_tests.cpp'],['../unit__tests_8h.html#aaef0e580ac1123f30a7c742b9b73e51a',1,'run_unit_tests_globals():&#160;unit_tests.cpp']]],
-  ['run_5funit_5ftests_5fmodel_5',['run_unit_tests_model',['../unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51',1,'run_unit_tests_Model():&#160;unit_Model.cpp'],['../unit___model_8h.html#a8a49913008ee3aede79ca904bcb8cd51',1,'run_unit_tests_Model():&#160;unit_Model.cpp']]],
-  ['run_5funit_5ftests_5fsystem_6',['run_unit_tests_system',['../unit___system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b',1,'run_unit_tests_System():&#160;unit_System.cpp'],['../unit___system_8h.html#ad467de422f8fd316dde6be5ded75b13b',1,'run_unit_tests_System():&#160;unit_System.cpp']]]
+  ['main_0',['main',['../funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../funcional_2main_8cpp.html',1,'(Global Namespace)'],['../unit_2main_8cpp.html',1,'(Global Namespace)']]],
+  ['model_2',['Model',['../class_model.html',1,'']]],
+  ['model_2eh_3',['Model.h',['../_model_8h.html',1,'']]],
+  ['modelbody_4',['modelbody',['../class_model_body.html',1,'ModelBody'],['../class_model_body.html#a05f7a7a781353220cd718ffc1da00b66',1,'ModelBody::ModelBody()']]],
+  ['modelhandle_5',['modelhandle',['../class_model_handle.html',1,'ModelHandle'],['../class_model_handle.html#ab9e10d690a38f95b298e6620a4ef66a3',1,'ModelHandle::ModelHandle()']]],
+  ['modelimpl_2ecpp_6',['ModelImpl.cpp',['../_model_impl_8cpp.html',1,'']]],
+  ['modelimpl_2eh_7',['ModelImpl.h',['../_model_impl_8h.html',1,'']]],
+  ['models_8',['models',['../class_model_body.html#ac7520681b552ec8ea86dc899b61d8b71',1,'ModelBody']]],
+  ['modelsbegin_9',['modelsbegin',['../class_model.html#a214e492d02b844dfa8899cc9e8d659bf',1,'Model::modelsBegin()'],['../class_model_body.html#a34829c42adfcf6e80a12ee46203a6743',1,'ModelBody::modelsBegin()'],['../class_model_handle.html#a5d7d93aee3308c46d318a0ab8ae91653',1,'ModelHandle::modelsBegin()']]],
+  ['modelsend_10',['modelsend',['../class_model.html#ac8d7fdf01d3f62864800882d11e7dfdf',1,'Model::modelsEnd()'],['../class_model_body.html#a3f40f3f59eab9d27df907a5c999b67dd',1,'ModelBody::modelsEnd()'],['../class_model_handle.html#afaab7d1e5d035b3c19cce46bcc70f66b',1,'ModelHandle::modelsEnd()']]],
+  ['modelsiterator_11',['modelsIterator',['../class_model.html#a0b506dad53e16fb95fc57592cc530c0d',1,'Model']]],
+  ['myflows_2eh_12',['MyFlows.h',['../_my_flows_8h.html',1,'']]]
 ];

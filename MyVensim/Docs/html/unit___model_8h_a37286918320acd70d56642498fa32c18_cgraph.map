@@ -1,11 +1,9 @@
 <map id="unit_Model_run" name="unit_Model_run">
-<area shape="rect" id="Node000001" title="Unit test for Model run function." alt="" coords="5,56,115,83"/>
+<area shape="rect" id="Node000001" title="Unit test for Model run function." alt="" coords="5,5,115,32"/>
 <area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="163,5,298,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,53,168,34,169,39,108,58"/>
-<area shape="rect" id="Node000004" href="$class_model.html#a7a045ebb69213ab666550edaac1f207c" title="Pure virtual method to get the model clock." alt="" coords="173,56,288,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="115,67,157,67,157,72,115,72"/>
-<area shape="rect" id="Node000005" href="$class_model.html#a1f6d177ba1a07431fc52a1ba07d4fd73" title="Pure virtual method to execute the model." alt="" coords="189,107,272,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="108,81,175,101,173,106,107,86"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="346,5,505,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,16,330,16,330,21,299,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,16,147,16,147,21,115,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="346,5,511,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,16,330,16,330,21,298,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="559,5,669,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="512,16,543,16,543,21,512,21"/>
 </map>

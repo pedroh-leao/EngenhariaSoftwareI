@@ -1,0 +1,9 @@
+<map id="run_unit_test_HandleBody" name="run_unit_test_HandleBody">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,179,32"/>
+<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="227,5,362,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,16,211,16,211,21,179,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="410,5,575,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,16,394,16,394,21,362,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="623,5,733,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="576,16,607,16,607,21,576,21"/>
+</map>

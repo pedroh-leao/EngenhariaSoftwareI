@@ -100,11 +100,6 @@ public:
     }
 
     /**
-     * @brief Virtual class destructor
-    */
-    virtual ~FlowHandle(){}
-
-    /**
      * @brief Sets the pointer to the source system of the flow
      * @param s pointer to the source system of the flow
     */

@@ -1,9 +1,9 @@
 <map id="unit_Model_modelsBegin" name="unit_Model_modelsBegin">
-<area shape="rect" id="Node000001" title="Unit test for Model modelsBegin function." alt="" coords="5,31,172,57"/>
-<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="222,5,357,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,206,26,207,32,172,36"/>
-<area shape="rect" id="Node000004" href="$class_model.html#a214e492d02b844dfa8899cc9e8d659bf" title="Pure virtual method to get the iterator of the beginning of the models vector." alt="" coords="220,56,359,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,52,205,56,204,61,172,57"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="407,5,566,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,16,391,16,391,21,358,21"/>
+<area shape="rect" id="Node000001" title="Unit test for Model modelsBegin function." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="220,5,355,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,16,204,16,204,21,172,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="403,5,568,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,16,387,16,387,21,355,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="616,5,726,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="569,16,600,16,600,21,569,21"/>
 </map>

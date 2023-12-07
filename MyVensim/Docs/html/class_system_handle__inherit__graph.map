@@ -1,0 +1,7 @@
+<map id="SystemHandle" name="SystemHandle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,309,277,640"/>
+<area shape="rect" id="Node000002" href="$class_system.html" title="Interface class for systems." alt="" coords="5,5,175,261"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,275,143,309,138,310,128,277"/>
+<area shape="rect" id="Node000003" href="$class_handle.html" title=" " alt="" coords="199,51,373,216"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,231,238,310,233,309,256,230"/>
+</map>

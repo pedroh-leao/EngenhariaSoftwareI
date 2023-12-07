@@ -1,0 +1,746 @@
+\doxysection{Model\+Body Class Reference}
+\hypertarget{class_model_body}{}\label{class_model_body}\index{ModelBody@{ModelBody}}
+
+
+Class that defines a model, which is composed of systems and flows.  
+
+
+
+
+{\ttfamily \#include $<$Model\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Model\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_model_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_model_body__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_body_a05f7a7a781353220cd718ffc1da00b66}{Model\+Body}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&\mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}}="{}"{}, \mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{int}} \&\mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}}=0)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_model}{Model} constructor that works as default as well. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{virtual}} \mbox{\hyperlink{class_model_body_a61bb091ef404a3615bace348e2071809}{\texorpdfstring{$\sim$}{\string~}\+Model\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Virtual class destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \& \mbox{\hyperlink{class_model_body_a76fdb81440ad0087f87380c72afa40bb}{create\+System}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&\mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}}="{}"{}, \mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{double}} \&value=0.\+0)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_system}{System} and add it to the model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{bool}} \mbox{\hyperlink{class_model_body_a89dbbbfd85742226fb2a0cb13907b5b4}{add}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_handle}{s}})
+\begin{DoxyCompactList}\small\item\em Adds a pointer to a system in the systems vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{bool}} \mbox{\hyperlink{class_model_body_a8871c590bfabedbf138ebc61389728ed}{add}} (\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_handle}{f}})
+\begin{DoxyCompactList}\small\item\em Adds a pointer to a flow in the flows vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{bool}} \mbox{\hyperlink{class_model_body_aae9d2d5e0065d066c5561e9e4c04bc40}{remove}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_handle}{s}})
+\begin{DoxyCompactList}\small\item\em Removes the system pointer \textquotesingle{}s\textquotesingle{} of the systems vector and deletes it of the memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{bool}} \mbox{\hyperlink{class_model_body_ab95f503185d5c81111d31bd34ffe1967}{remove}} (\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_handle}{f}})
+\begin{DoxyCompactList}\small\item\em Removes the flow pointer \textquotesingle{}f\textquotesingle{} of the flows vector and deletes it of the memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_model_body_a3d8d7df7d51e86e1d86a2db53efc91f9}{erase\+Model}} (\mbox{\hyperlink{class_model_a0b506dad53e16fb95fc57592cc530c0d}{Model\+::models\+Iterator}} \mbox{\hyperlink{class_handle}{m}})
+\begin{DoxyCompactList}\small\item\em Erases the model pointer \textquotesingle{}m\textquotesingle{} of the models vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{bool}} \mbox{\hyperlink{class_model_body_aa32386278de38f617a32d3069dc66903}{run}} (\mbox{\hyperlink{class_handle}{int}} \mbox{\hyperlink{class_handle}{start\+Time}}, \mbox{\hyperlink{class_handle}{int}} \mbox{\hyperlink{class_handle}{final\+Time}})
+\begin{DoxyCompactList}\small\item\em Executes the model, performing flow operations and updating system values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_model_body_abba11ce3fc70a26d25524f6b91fadff5}{report\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Shows the current model status, the systems values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_model_body_a9245dba278b8f997546e85b2240865a1}{set\+Name}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&\mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}})
+\begin{DoxyCompactList}\small\item\em Sets the model name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{string}} \mbox{\hyperlink{class_model_body_a739f9c5245937a5e513d8c6d8aa6802b}{get\+Name}} () \mbox{\hyperlink{class_handle}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the model name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_model_body_a08c67df385c8b17e31673b07c82b3e14}{set\+Clock}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{int}} \&\mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}})
+\begin{DoxyCompactList}\small\item\em Sets the model clock. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{int}} \mbox{\hyperlink{class_model_body_ae667eb29393588a77879b0391e42f92c}{get\+Clock}} () \mbox{\hyperlink{class_handle}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the model clock. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model\+::systems\+Iterator}} \mbox{\hyperlink{class_model_body_a60c6260eba08c1094dad25e28fdef18f}{systems\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the iterator of the beginning of the systems vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model\+::systems\+Iterator}} \mbox{\hyperlink{class_model_body_a14843e848c3f9e20f62e302f8fa6e9ea}{systems\+End}} ()
+\begin{DoxyCompactList}\small\item\em Returns the iterator of the end of the systems vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model\+::flows\+Iterator}} \mbox{\hyperlink{class_model_body_a400604eb7af4590bd648b24f675b5b30}{flows\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the iterator of the beginning of the flows vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model\+::flows\+Iterator}} \mbox{\hyperlink{class_model_body_acd74842419c49ef91ad542ce701a59fe}{flows\+End}} ()
+\begin{DoxyCompactList}\small\item\em Returns the iterator of the end of the flows vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a0b506dad53e16fb95fc57592cc530c0d}{Model\+::models\+Iterator}} \mbox{\hyperlink{class_model_body_a34829c42adfcf6e80a12ee46203a6743}{models\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the iterator of the beginning of the models vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a0b506dad53e16fb95fc57592cc530c0d}{Model\+::models\+Iterator}} \mbox{\hyperlink{class_model_body_a3f40f3f59eab9d27df907a5c999b67dd}{models\+End}} ()
+\begin{DoxyCompactList}\small\item\em Returns the iterator of the end of the models vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_body}{Body}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_body_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: zero references when the object is being built. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_body_a5d53322c76a6952d096cb7564ac86db1}{attach}} ()
+\begin{DoxyCompactList}\small\item\em Increases the number of references to this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_body_ad481d0c8368db318795c9a0a8fdd3717}{detach}} ()
+\item 
+\mbox{\hyperlink{class_handle}{int}} \mbox{\hyperlink{class_body_a59ae961812625b8636071ba61b1a75fc}{ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of references to this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{virtual}} \mbox{\hyperlink{class_body_a9b15e54cf881ac0ca64790ca1d50110e}{\texorpdfstring{$\sim$}{\string~}\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{static}} \mbox{\hyperlink{class_model}{Model}} \& \mbox{\hyperlink{class_model_body_a050f3192b5aa034dd457c54efd25f52a}{create\+Model}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&\mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}}="{}"{}, \mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{int}} \&\mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}}=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{string}} \mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_model}{Model} name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{int}} \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_model}{Model} clock that saves the time the model is in. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{vector}}$<$ \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}
+\begin{DoxyCompactList}\small\item\em A vector containing pointers to the model systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{vector}}$<$ \mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}
+\begin{DoxyCompactList}\small\item\em A vector containing pointers to the model flows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{static}} \mbox{\hyperlink{class_handle}{vector}}$<$ \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_body_ac7520681b552ec8ea86dc899b61d8b71}{models}}
+\begin{DoxyCompactList}\small\item\em A static vector containing pointers to the models created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that defines a model, which is composed of systems and flows. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_model_body_a05f7a7a781353220cd718ffc1da00b66}\label{class_model_body_a05f7a7a781353220cd718ffc1da00b66} 
+\index{ModelBody@{ModelBody}!ModelBody@{ModelBody}}
+\index{ModelBody@{ModelBody}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{ModelBody()}{ModelBody()}}
+{\footnotesize\ttfamily Model\+Body\+::\+Model\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&}]{name = {\ttfamily "{}"{}},  }\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{int}} \&}]{clock = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_model}{Model} constructor that works as default as well. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & model name \\
+\hline
+{\em clock} & model clock value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00008\ \ \ \ \ this-\/>name\ =\ \mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}};}
+\DoxyCodeLine{00009\ \ \ \ \ this-\/>clock\ =\ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}};}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a61bb091ef404a3615bace348e2071809}\label{class_model_body_a61bb091ef404a3615bace348e2071809} 
+\index{ModelBody@{ModelBody}!````~ModelBody@{\texorpdfstring{$\sim$}{\string~}ModelBody}}
+\index{````~ModelBody@{\texorpdfstring{$\sim$}{\string~}ModelBody}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ModelBody()}{\string~ModelBody()}}
+{\footnotesize\ttfamily Model\+Body\+::\texorpdfstring{$\sim$}{\string~}\+Model\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual class destructor. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model::systemsIterator}}\ \mbox{\hyperlink{class_handle}{it}}\ =\ \mbox{\hyperlink{class_model_body_a60c6260eba08c1094dad25e28fdef18f}{systemsBegin}}();\ \mbox{\hyperlink{class_handle}{it}}\ <\ \mbox{\hyperlink{class_model_body_a14843e848c3f9e20f62e302f8fa6e9ea}{systemsEnd}}();\ \mbox{\hyperlink{class_handle}{it}}++)}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ *\mbox{\hyperlink{class_handle}{it}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model::flowsIterator}}\ \mbox{\hyperlink{class_handle}{it}}\ =\ \mbox{\hyperlink{class_model_body_a400604eb7af4590bd648b24f675b5b30}{flowsBegin}}();\ \mbox{\hyperlink{class_handle}{it}}\ <\ \mbox{\hyperlink{class_model_body_acd74842419c49ef91ad542ce701a59fe}{flowsEnd}}();\ \mbox{\hyperlink{class_handle}{it}}++)}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ *\mbox{\hyperlink{class_handle}{it}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ for(Model::modelsIterator\ it\ =\ modelsBegin();\ it\ <\ modelsEnd();\ it++)\{}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ if(*it\ ==\ this)\{}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ models.erase(it);}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \}\ \ \ \ \ }}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{00031\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_body_a8871c590bfabedbf138ebc61389728ed}\label{class_model_body_a8871c590bfabedbf138ebc61389728ed} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{bool}} Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{f }\end{DoxyParamCaption})}
+
+
+
+Adds a pointer to a flow in the flows vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & pointer to a flow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing whether the operation completed successfully 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_handle}{lenBefore}}\ =\ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.size();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.push\_back(\mbox{\hyperlink{class_handle}{f}});}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_handle}{lenBefore}}\ !=\ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.size());}
+\DoxyCodeLine{00071\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a89dbbbfd85742226fb2a0cb13907b5b4}\label{class_model_body_a89dbbbfd85742226fb2a0cb13907b5b4} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{bool}} Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})}
+
+
+
+Adds a pointer to a system in the systems vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to a system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing whether the operation completed successfully 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_handle}{lenBefore}}\ =\ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}.size();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}.push\_back(\mbox{\hyperlink{class_handle}{s}});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_handle}{lenBefore}}\ !=\ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}.size());}
+\DoxyCodeLine{00063\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a050f3192b5aa034dd457c54efd25f52a}\label{class_model_body_a050f3192b5aa034dd457c54efd25f52a} 
+\index{ModelBody@{ModelBody}!createModel@{createModel}}
+\index{createModel@{createModel}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model}{Model}} \& Model\+Body\+::create\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&}]{name = {\ttfamily "{}"{}},  }\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{int}} \&}]{clock = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new \doxylink{class_model}{Model} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}*\ \mbox{\hyperlink{class_handle}{m}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_model_handle}{ModelHandle}}(\mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}},\ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}});}
+\DoxyCodeLine{00039\ \ \ \ \ add(\mbox{\hyperlink{class_handle}{m}});}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{return}\ *\mbox{\hyperlink{class_handle}{m}};}
+\DoxyCodeLine{00041\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_model_body_a050f3192b5aa034dd457c54efd25f52a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_body_a050f3192b5aa034dd457c54efd25f52a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_body_a76fdb81440ad0087f87380c72afa40bb}\label{class_model_body_a76fdb81440ad0087f87380c72afa40bb} 
+\index{ModelBody@{ModelBody}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} \& Model\+Body\+::create\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&}]{name = {\ttfamily "{}"{}},  }\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{double}} \&}]{value = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{class_system}{System} and add it to the model. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}*\ \mbox{\hyperlink{class_handle}{s}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_system_handle}{SystemHandle}}(\mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}},\ value);}
+\DoxyCodeLine{00045\ \ \ \ \ add(\mbox{\hyperlink{class_handle}{s}});}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{return}\ *\mbox{\hyperlink{class_handle}{s}};}
+\DoxyCodeLine{00047\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_model_body_a76fdb81440ad0087f87380c72afa40bb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_body_a3d8d7df7d51e86e1d86a2db53efc91f9}\label{class_model_body_a3d8d7df7d51e86e1d86a2db53efc91f9} 
+\index{ModelBody@{ModelBody}!eraseModel@{eraseModel}}
+\index{eraseModel@{eraseModel}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{eraseModel()}{eraseModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{void}} Model\+Body\+::erase\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_model_a0b506dad53e16fb95fc57592cc530c0d}{Model\+::models\+Iterator}}}]{m }\end{DoxyParamCaption})}
+
+
+
+Erases the model pointer \textquotesingle{}m\textquotesingle{} of the models vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & iterator of a model \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_model_body_ac7520681b552ec8ea86dc899b61d8b71}{models}}.erase(\mbox{\hyperlink{class_handle}{m}});}
+\DoxyCodeLine{00099\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a400604eb7af4590bd648b24f675b5b30}\label{class_model_body_a400604eb7af4590bd648b24f675b5b30} 
+\index{ModelBody@{ModelBody}!flowsBegin@{flowsBegin}}
+\index{flowsBegin@{flowsBegin}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{flowsBegin()}{flowsBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model\+::flows\+Iterator}} Model\+Body\+::flows\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the iterator of the beginning of the flows vector. 
+
+\begin{DoxyReturn}{Returns}
+flows\+Iterator being the iterator of the beginning of the vector 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.begin();}
+\DoxyCodeLine{00191\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_acd74842419c49ef91ad542ce701a59fe}\label{class_model_body_acd74842419c49ef91ad542ce701a59fe} 
+\index{ModelBody@{ModelBody}!flowsEnd@{flowsEnd}}
+\index{flowsEnd@{flowsEnd}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{flowsEnd()}{flowsEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model\+::flows\+Iterator}} Model\+Body\+::flows\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the iterator of the end of the flows vector. 
+
+\begin{DoxyReturn}{Returns}
+flows\+Iterator being the iterator of the end of the vector 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.end();}
+\DoxyCodeLine{00195\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_ae667eb29393588a77879b0391e42f92c}\label{class_model_body_ae667eb29393588a77879b0391e42f92c} 
+\index{ModelBody@{ModelBody}!getClock@{getClock}}
+\index{getClock@{getClock}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getClock()}{getClock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{int}} Model\+Body\+::get\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the model clock. 
+
+\begin{DoxyReturn}{Returns}
+int containing the value of model clock 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}};}
+\DoxyCodeLine{00165\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a739f9c5245937a5e513d8c6d8aa6802b}\label{class_model_body_a739f9c5245937a5e513d8c6d8aa6802b} 
+\index{ModelBody@{ModelBody}!getName@{getName}}
+\index{getName@{getName}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{string}} Model\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the model name. 
+
+\begin{DoxyReturn}{Returns}
+string containing the model name 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}};}
+\DoxyCodeLine{00157\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a34829c42adfcf6e80a12ee46203a6743}\label{class_model_body_a34829c42adfcf6e80a12ee46203a6743} 
+\index{ModelBody@{ModelBody}!modelsBegin@{modelsBegin}}
+\index{modelsBegin@{modelsBegin}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{modelsBegin()}{modelsBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_a0b506dad53e16fb95fc57592cc530c0d}{Model\+::models\+Iterator}} Model\+Body\+::models\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the iterator of the beginning of the models vector. 
+
+\begin{DoxyReturn}{Returns}
+models\+Iterator iterator of the beginning of the models vector 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_ac7520681b552ec8ea86dc899b61d8b71}{models}}.begin();}
+\DoxyCodeLine{00199\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a3f40f3f59eab9d27df907a5c999b67dd}\label{class_model_body_a3f40f3f59eab9d27df907a5c999b67dd} 
+\index{ModelBody@{ModelBody}!modelsEnd@{modelsEnd}}
+\index{modelsEnd@{modelsEnd}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{modelsEnd()}{modelsEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_a0b506dad53e16fb95fc57592cc530c0d}{Model\+::models\+Iterator}} Model\+Body\+::models\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the iterator of the end of the models vector. 
+
+\begin{DoxyReturn}{Returns}
+models\+Iterator iterator of the end of the models vector 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_ac7520681b552ec8ea86dc899b61d8b71}{models}}.end();}
+\DoxyCodeLine{00203\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_ab95f503185d5c81111d31bd34ffe1967}\label{class_model_body_ab95f503185d5c81111d31bd34ffe1967} 
+\index{ModelBody@{ModelBody}!remove@{remove}}
+\index{remove@{remove}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{bool}} Model\+Body\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{f }\end{DoxyParamCaption})}
+
+
+
+Removes the flow pointer \textquotesingle{}f\textquotesingle{} of the flows vector and deletes it of the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & pointer to a flow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing whether the operation completed successfully 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model::flowsIterator}}\ \mbox{\hyperlink{class_handle}{it}}\ =\ \mbox{\hyperlink{class_model_body_a400604eb7af4590bd648b24f675b5b30}{flowsBegin}}();\ \mbox{\hyperlink{class_handle}{it}}\ <\ \mbox{\hyperlink{class_model_body_acd74842419c49ef91ad542ce701a59fe}{flowsEnd}}();\ \mbox{\hyperlink{class_handle}{it}}++)\{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*\mbox{\hyperlink{class_handle}{it}}\ ==\ \mbox{\hyperlink{class_handle}{f}})\{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.erase(\mbox{\hyperlink{class_handle}{it}});}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{class_handle}{f}};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00095\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_model_body_ab95f503185d5c81111d31bd34ffe1967_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_body_aae9d2d5e0065d066c5561e9e4c04bc40}\label{class_model_body_aae9d2d5e0065d066c5561e9e4c04bc40} 
+\index{ModelBody@{ModelBody}!remove@{remove}}
+\index{remove@{remove}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{bool}} Model\+Body\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})}
+
+
+
+Removes the system pointer \textquotesingle{}s\textquotesingle{} of the systems vector and deletes it of the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to a system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing whether the operation completed successfully 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model::systemsIterator}}\ \mbox{\hyperlink{class_handle}{it}}\ =\ \mbox{\hyperlink{class_model_body_a60c6260eba08c1094dad25e28fdef18f}{systemsBegin}}();\ \mbox{\hyperlink{class_handle}{it}}\ <\ \mbox{\hyperlink{class_model_body_a14843e848c3f9e20f62e302f8fa6e9ea}{systemsEnd}}();\ \mbox{\hyperlink{class_handle}{it}}++)\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*\mbox{\hyperlink{class_handle}{it}}\ ==\ \mbox{\hyperlink{class_handle}{s}})\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}.erase(\mbox{\hyperlink{class_handle}{it}});}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{class_handle}{s}};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00083\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_model_body_aae9d2d5e0065d066c5561e9e4c04bc40_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_body_abba11ce3fc70a26d25524f6b91fadff5}\label{class_model_body_abba11ce3fc70a26d25524f6b91fadff5} 
+\index{ModelBody@{ModelBody}!reportStatus@{reportStatus}}
+\index{reportStatus@{reportStatus}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{reportStatus()}{reportStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{void}} Model\+Body\+::report\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the current model status, the systems values. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nCurrent\ Model\ Status:"{}}\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model::systemsIterator}}\ \mbox{\hyperlink{class_handle}{it}}\ =\ \mbox{\hyperlink{class_model_body_a60c6260eba08c1094dad25e28fdef18f}{systemsBegin}}();\ \mbox{\hyperlink{class_handle}{it}}\ <\ \mbox{\hyperlink{class_model_body_a14843e848c3f9e20f62e302f8fa6e9ea}{systemsEnd}}();\ \mbox{\hyperlink{class_handle}{it}}++)}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{cout}}\ <<\ (*it)-\/>getName()\ <<\ \textcolor{stringliteral}{"{}:\ "{}}\ <<\ (*it)-\/>getValue()\ <<\ \mbox{\hyperlink{class_handle}{endl}};}
+\DoxyCodeLine{00149\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_model_body_abba11ce3fc70a26d25524f6b91fadff5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_body_aa32386278de38f617a32d3069dc66903}\label{class_model_body_aa32386278de38f617a32d3069dc66903} 
+\index{ModelBody@{ModelBody}!run@{run}}
+\index{run@{run}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{bool}} Model\+Body\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{int}}}]{start\+Time,  }\item[{\mbox{\hyperlink{class_handle}{int}}}]{final\+Time }\end{DoxyParamCaption})}
+
+
+
+Executes the model, performing flow operations and updating system values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & when the execution of the model starts \\
+\hline
+{\em final\+Time} & when the execution of the model ends \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing whether the execution completed successfully 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_handle}{startTime}}\ >\ \mbox{\hyperlink{class_handle}{finalTime}}\ ||\ \mbox{\hyperlink{class_handle}{startTime}}\ <\ 0)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}}\ =\ \mbox{\hyperlink{class_handle}{startTime}};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *source,\ *target;}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{class_handle}{vector<double>}}\ \mbox{\hyperlink{class_handle}{results}};}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{class_handle}{vector<double>::iterator}}\ \mbox{\hyperlink{class_handle}{itResults}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_handle}{len}}\ =\ \mbox{\hyperlink{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}{flows}}.size();}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_handle}{i}}\ =\ 0;\ \mbox{\hyperlink{class_handle}{i}}\ <\ \mbox{\hyperlink{class_handle}{len}};\ \mbox{\hyperlink{class_handle}{i}}++)}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{results}}.push\_back(0.0);}
+\DoxyCodeLine{00114\ \ \ \ \ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_handle}{i}}\ =\ \mbox{\hyperlink{class_handle}{startTime}};\ \mbox{\hyperlink{class_handle}{i}}\ <\ \mbox{\hyperlink{class_handle}{finalTime}};\ \mbox{\hyperlink{class_handle}{i}}++)\{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{itResults}}\ =\ \mbox{\hyperlink{class_handle}{results}}.begin();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{comment}{//execute\ the\ equations\ of\ the\ flows}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model::flowsIterator}}\ \mbox{\hyperlink{class_handle}{itFlows}}\ =\ \mbox{\hyperlink{class_model_body_a400604eb7af4590bd648b24f675b5b30}{flowsBegin}}();\ \mbox{\hyperlink{class_handle}{itFlows}}\ <\ \mbox{\hyperlink{class_model_body_acd74842419c49ef91ad542ce701a59fe}{flowsEnd}}();\ \mbox{\hyperlink{class_handle}{itFlows}}++)\{}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ (*itResults)\ =\ (*itFlows)-\/>executeEquation();}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{itResults}}++;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{itResults}}\ =\ \mbox{\hyperlink{class_handle}{results}}.begin();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_model_ac2413a62cd7cbbed3103667f4459a035}{Model::flowsIterator}}\ \mbox{\hyperlink{class_handle}{itFlows}}\ =\ \mbox{\hyperlink{class_model_body_a400604eb7af4590bd648b24f675b5b30}{flowsBegin}}();\ \mbox{\hyperlink{class_handle}{itFlows}}\ <\ \mbox{\hyperlink{class_model_body_acd74842419c49ef91ad542ce701a59fe}{flowsEnd}}();\ \mbox{\hyperlink{class_handle}{itFlows}}++)\{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ source\ =\ (*itFlows)-\/>getSource();}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ source-\/>\mbox{\hyperlink{class_system_a4ade48b75793a48021cdb634a86ff988}{setValue}}(source-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ -\/\ (*itResults));}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ target\ =\ (*itFlows)-\/>getTarget();}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ target-\/>\mbox{\hyperlink{class_system_a4ade48b75793a48021cdb634a86ff988}{setValue}}(target-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ +\ (*itResults));}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{itResults}}++;}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}}\ =\ \mbox{\hyperlink{class_handle}{i}};}
+\DoxyCodeLine{00137\ \ \ \ \ \}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}}\ +=\ 1;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00142\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_model_body_aa32386278de38f617a32d3069dc66903_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_body_a08c67df385c8b17e31673b07c82b3e14}\label{class_model_body_a08c67df385c8b17e31673b07c82b3e14} 
+\index{ModelBody@{ModelBody}!setClock@{setClock}}
+\index{setClock@{setClock}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setClock()}{setClock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{void}} Model\+Body\+::set\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{int}} \&}]{clock }\end{DoxyParamCaption})}
+
+
+
+Sets the model clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock} & model clock \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ this-\/>clock\ =\ \mbox{\hyperlink{class_model_body_a3e49aa7f670fd9b949d095b322957da8}{clock}};}
+\DoxyCodeLine{00161\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a9245dba278b8f997546e85b2240865a1}\label{class_model_body_a9245dba278b8f997546e85b2240865a1} 
+\index{ModelBody@{ModelBody}!setName@{setName}}
+\index{setName@{setName}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{void}} Model\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{string}} \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the model name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & model name \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ this-\/>name\ =\ \mbox{\hyperlink{class_model_body_a31381d779f86d0a202122e50c1449ead}{name}};}
+\DoxyCodeLine{00153\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a60c6260eba08c1094dad25e28fdef18f}\label{class_model_body_a60c6260eba08c1094dad25e28fdef18f} 
+\index{ModelBody@{ModelBody}!systemsBegin@{systemsBegin}}
+\index{systemsBegin@{systemsBegin}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{systemsBegin()}{systemsBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model\+::systems\+Iterator}} Model\+Body\+::systems\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the iterator of the beginning of the systems vector. 
+
+\begin{DoxyReturn}{Returns}
+systems\+Iterator being the iterator of the beginning of the vector 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}.begin();}
+\DoxyCodeLine{00183\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_body_a14843e848c3f9e20f62e302f8fa6e9ea}\label{class_model_body_a14843e848c3f9e20f62e302f8fa6e9ea} 
+\index{ModelBody@{ModelBody}!systemsEnd@{systemsEnd}}
+\index{systemsEnd@{systemsEnd}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{systemsEnd()}{systemsEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_ae2987d24c6adff4b124fb758dcc6bb83}{Model\+::systems\+Iterator}} Model\+Body\+::systems\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the iterator of the end of the systems vector. 
+
+\begin{DoxyReturn}{Returns}
+systems\+Iterator being the iterator of the end of the vector 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}{systems}}.end();}
+\DoxyCodeLine{00187\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_model_body_a3e49aa7f670fd9b949d095b322957da8}\label{class_model_body_a3e49aa7f670fd9b949d095b322957da8} 
+\index{ModelBody@{ModelBody}!clock@{clock}}
+\index{clock@{clock}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{int}} Model\+Body\+::clock\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxylink{class_model}{Model} clock that saves the time the model is in. 
+
+\Hypertarget{class_model_body_a275a4efed4bca08a5d995c6d532d4c41}\label{class_model_body_a275a4efed4bca08a5d995c6d532d4c41} 
+\index{ModelBody@{ModelBody}!flows@{flows}}
+\index{flows@{flows}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{vector}}$<$\mbox{\hyperlink{class_flow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model\+Body\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector containing pointers to the model flows. 
+
+\Hypertarget{class_model_body_ac7520681b552ec8ea86dc899b61d8b71}\label{class_model_body_ac7520681b552ec8ea86dc899b61d8b71} 
+\index{ModelBody@{ModelBody}!models@{models}}
+\index{models@{models}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{vector}}$<$ \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} $>$ Model\+Body\+::models\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+A static vector containing pointers to the models created. 
+
+\Hypertarget{class_model_body_a31381d779f86d0a202122e50c1449ead}\label{class_model_body_a31381d779f86d0a202122e50c1449ead} 
+\index{ModelBody@{ModelBody}!name@{name}}
+\index{name@{name}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{string}} Model\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxylink{class_model}{Model} name. 
+
+\Hypertarget{class_model_body_a6204f76405f7d7fea398a3dd03f144e7}\label{class_model_body_a6204f76405f7d7fea398a3dd03f144e7} 
+\index{ModelBody@{ModelBody}!systems@{systems}}
+\index{systems@{systems}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_handle}{vector}}$<$\mbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*}$>$ Model\+Body\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector containing pointers to the model systems. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_model_impl_8h}{Model\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{_model_impl_8cpp}{Model\+Impl.\+cpp}}\end{DoxyCompactItemize}

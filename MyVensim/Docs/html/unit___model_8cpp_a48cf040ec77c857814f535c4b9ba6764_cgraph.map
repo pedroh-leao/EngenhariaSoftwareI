@@ -1,11 +1,9 @@
 <map id="unit_Model_systemsEnd" name="unit_Model_systemsEnd">
-<area shape="rect" id="Node000001" title="Unit test for Model systemsEnd function." alt="" coords="5,56,170,83"/>
-<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="223,5,358,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,53,219,34,220,39,145,58"/>
-<area shape="rect" id="Node000004" href="$class_model.html#ae57d42eef06605b2b97374d70b46fd8a" title="Pure virtual method to create a new System and add it to the model." alt="" coords="218,56,363,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,67,202,67,202,72,170,72"/>
-<area shape="rect" id="Node000005" href="$class_model.html#aed9cb3a0a968b2fe62323916715fbceb" title="Pure virtual method to get the iterator of the end of the systems vector." alt="" coords="222,107,359,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="145,81,220,100,219,105,143,86"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a4368148054e77b3871ad2d54d1688333" title=" " alt="" coords="411,5,570,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,16,395,16,395,21,359,21"/>
+<area shape="rect" id="Node000001" title="Unit test for Model systemsEnd function." alt="" coords="5,5,170,32"/>
+<area shape="rect" id="Node000002" href="$class_model.html#add0937bb42fa225c6bbb79a52bd55773" title=" " alt="" coords="218,5,353,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,16,202,16,202,21,170,21"/>
+<area shape="rect" id="Node000003" href="$class_model_body.html#a050f3192b5aa034dd457c54efd25f52a" title=" " alt="" coords="401,5,566,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,16,385,16,385,21,353,21"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="614,5,724,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,16,598,16,598,21,567,21"/>
 </map>

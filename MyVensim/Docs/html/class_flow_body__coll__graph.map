@@ -1,0 +1,7 @@
+<map id="FlowBody" name="FlowBody">
+<area shape="rect" id="Node000001" title="Class that defines a flow, which is a connection between two systems." alt="" coords="29,341,251,629"/>
+<area shape="rect" id="Node000002" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="5,56,112,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,225,109,341,104,342,77,226"/>
+<area shape="rect" id="Node000003" href="$class_system.html" title="Interface class for systems." alt="" coords="137,5,306,261"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,262,180,326,174,325,189,261"/>
+</map>

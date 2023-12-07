@@ -1,0 +1,315 @@
+\doxysection{Flow\+Handle\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_flow_handle}{}\label{class_flow_handle}\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Flow\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Flow\+Handle\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_handle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Handle\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_handle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_handle_a9660537c3378be39b9ffbb5d29785505}{Flow\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_flow}{Flow} default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_handle_aeda7929d347be5c623320047248caa2a}{Flow\+Handle}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_flow}{Flow} constructor that receives pointers to the source and target systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_handle_a977f1a4845ec5243c13ba3868ce22708}{Flow\+Handle}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_flow}{Flow}} \&\mbox{\hyperlink{class_handle}{f}})
+\begin{DoxyCompactList}\small\item\em Constructor for copy of flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_flow_handle_a3dad85489c9ff0c7cd6c87995fcffc03}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_handle}{s}})
+\begin{DoxyCompactList}\small\item\em Sets the pointer to the source system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle_acfa22cf0f7b796229f12a481fbcb4673}{get\+Source}} () \mbox{\hyperlink{class_handle}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the source system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_flow_handle_aa4e5fb10c18057baa0835209ab4c6a7c}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_handle}{s}})
+\begin{DoxyCompactList}\small\item\em Sets the pointer to the target system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle_aa3173bf1ba26cc9e8d1e5351b2c1d493}{get\+Target}} () \mbox{\hyperlink{class_handle}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the target system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{double}} \mbox{\hyperlink{class_flow_handle_af4ad80aec3064fca526e3db847c7c9c3}{execute\+Equation}} ()
+\begin{DoxyCompactList}\small\item\em Executes the equation that must be performed by the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow}{Flow}} \& \mbox{\hyperlink{class_flow_handle_ae1518c59afef4203c6bf81290e71867b}{operator=}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_flow}{Flow}} \&\mbox{\hyperlink{class_handle}{f}})
+\begin{DoxyCompactList}\small\item\em Defines how the \textquotesingle{}=\textquotesingle{} operator works for flows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{virtual}} \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handle}{Handle$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{virtual}} \mbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle_af304e7014a2e600e235140d246783f85}{Handle}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{Handle}} \&\mbox{\hyperlink{class_handle}{hd}})
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$ \& \mbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_handle}{Handle}} \&\mbox{\hyperlink{class_handle}{hd}})
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handle}{Handle$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle}{T}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em refer{\ucr}ncia para a implementa{\ucr}{\ucr}o \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flow_handle_a9660537c3378be39b9ffbb5d29785505}\label{class_flow_handle_a9660537c3378be39b9ffbb5d29785505} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!FlowHandle@{FlowHandle}}
+\index{FlowHandle@{FlowHandle}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FlowHandle()}{FlowHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\mbox{\hyperlink{class_flow_handle}{\+::\+Flow\+Handle}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{class_flow}{Flow} default constructor. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setSource(\mbox{\hyperlink{class_handle}{NULL}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setTarget(\mbox{\hyperlink{class_handle}{NULL}});}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_flow_handle_aeda7929d347be5c623320047248caa2a}\label{class_flow_handle_aeda7929d347be5c623320047248caa2a} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!FlowHandle@{FlowHandle}}
+\index{FlowHandle@{FlowHandle}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FlowHandle()}{FlowHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\mbox{\hyperlink{class_flow_handle}{\+::\+Flow\+Handle}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{class_flow}{Flow} constructor that receives pointers to the source and target systems. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & pointer to the source system of the flow \\
+\hline
+{\em target} & pointer to the target system of the flow \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setSource(source);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setTarget(target);}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_flow_handle_a977f1a4845ec5243c13ba3868ce22708}\label{class_flow_handle_a977f1a4845ec5243c13ba3868ce22708} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!FlowHandle@{FlowHandle}}
+\index{FlowHandle@{FlowHandle}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FlowHandle()}{FlowHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\mbox{\hyperlink{class_flow_handle}{\+::\+Flow\+Handle}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_flow}{Flow}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for copy of flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & flow object that will be copied \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setSource(\mbox{\hyperlink{class_handle}{f}}.getSource());}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setTarget(\mbox{\hyperlink{class_handle}{f}}.getTarget());}
+\DoxyCodeLine{00100\ \ \ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_flow_handle_a977f1a4845ec5243c13ba3868ce22708_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flow_handle_af4ad80aec3064fca526e3db847c7c9c3}\label{class_flow_handle_af4ad80aec3064fca526e3db847c7c9c3} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!executeEquation@{executeEquation}}
+\index{executeEquation@{executeEquation}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{executeEquation()}{executeEquation()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_handle}{double}} \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\+::execute\+Equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Executes the equation that must be performed by the flow. 
+
+\begin{DoxyReturn}{Returns}
+double containing the result of the equation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow_aa72cd33b5f91e59e84afbf2800b8e71d}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130\ \{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>executeEquation();\}}
+
+\end{DoxyCode}
+\Hypertarget{class_flow_handle_acfa22cf0f7b796229f12a481fbcb4673}\label{class_flow_handle_acfa22cf0f7b796229f12a481fbcb4673} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!getSource@{getSource}}
+\index{getSource@{getSource}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the pointer to the source system of the flow. 
+
+\begin{DoxyReturn}{Returns}
+system pointer that points to the source system of the flow 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112\ \{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>getSource();\}}
+
+\end{DoxyCode}
+\Hypertarget{class_flow_handle_aa3173bf1ba26cc9e8d1e5351b2c1d493}\label{class_flow_handle_aa3173bf1ba26cc9e8d1e5351b2c1d493} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the pointer to the target system of the flow. 
+
+\begin{DoxyReturn}{Returns}
+system pointer that points to the target system of the flow 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>getTarget();\}}
+
+\end{DoxyCode}
+\Hypertarget{class_flow_handle_ae1518c59afef4203c6bf81290e71867b}\label{class_flow_handle_ae1518c59afef4203c6bf81290e71867b} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_flow}{Flow}} \& \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\mbox{\hyperlink{class_handle}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_handle}{const}} \mbox{\hyperlink{class_flow}{Flow}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Defines how the \textquotesingle{}=\textquotesingle{} operator works for flows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & flow object that will be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to the copied flow 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow_a0dd744856f301102110c1129bcdd92fe}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{this}\ ==\ \&\mbox{\hyperlink{class_handle}{f}})\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setSource(\mbox{\hyperlink{class_handle}{f}}.getSource());}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setTarget(\mbox{\hyperlink{class_handle}{f}}.getTarget());}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00144\ \ \ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_flow_handle_ae1518c59afef4203c6bf81290e71867b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_handle_a3dad85489c9ff0c7cd6c87995fcffc03}\label{class_flow_handle_a3dad85489c9ff0c7cd6c87995fcffc03} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!setSource@{setSource}}
+\index{setSource@{setSource}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the pointer to the source system of the flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to the source system of the flow \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_flow_a4d756236982858350e7bf80a465926a7}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00106\ \{\mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setSource(\mbox{\hyperlink{class_handle}{s}});\}}
+
+\end{DoxyCode}
+\Hypertarget{class_flow_handle_aa4e5fb10c18057baa0835209ab4c6a7c}\label{class_flow_handle_aa4e5fb10c18057baa0835209ab4c6a7c} 
+\index{FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!FlowHandle$<$ T $>$@{FlowHandle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_handle}{class}} \mbox{\hyperlink{class_handle}{T}} $>$ \\
+\mbox{\hyperlink{class_handle}{void}} \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}$<$ \mbox{\hyperlink{class_handle}{T}} $>$\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the pointer to the target system of the flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to the target system of the flow \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_flow_ab1361d85c69c6c897d0409c8b8ae72fe}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00118\ \{\mbox{\hyperlink{class_handle}{Handle<T>::pImpl\_}}-\/>setTarget(\mbox{\hyperlink{class_handle}{s}});\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_flow_impl_8h}{Flow\+Impl.\+h}}\end{DoxyCompactItemize}

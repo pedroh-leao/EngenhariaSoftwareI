@@ -1,7 +1,7 @@
 <map id="Exponential" name="Exponential">
-<area shape="rect" id="Node000001" title="Class that defines a flow with an exponential equation." alt="" coords="31,725,202,891"/>
-<area shape="rect" id="Node000002" href="$class_flow_impl.html" title="Class that defines a flow, which is a connection between two systems." alt="" coords="5,331,228,677"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,692,119,726,114,726,114,692"/>
-<area shape="rect" id="Node000003" href="$class_flow.html" title="Interface class for flows." alt="" coords="5,5,228,283"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,298,119,331,114,331,114,298"/>
+<area shape="rect" id="Node000001" title="Class that defines a flow with an exponential equation." alt="" coords="31,565,202,731"/>
+<area shape="rect" id="Node000002" href="$class_flow_body.html" title="Class that defines a flow, which is a connection between two systems." alt="" coords="5,208,228,517"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,532,119,566,114,566,114,532"/>
+<area shape="rect" id="Node000003" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="63,5,170,160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,175,119,208,114,208,114,175"/>
 </map>

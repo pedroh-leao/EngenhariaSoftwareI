@@ -80,11 +80,6 @@ public:
     SystemHandle(const System& s);
 
     /**
-     * @brief Virtual class destructor
-    */
-    virtual ~SystemHandle();
-
-    /**
      * @brief Sets the system name
      * @param name system name
     */
@@ -114,6 +109,13 @@ public:
      * @return a reference to the copied system
     */
     System& operator=(const System& s);
+
+    /**
+     * @brief Defines how the '=' operator works for systems
+     * @param s system object that will be copied
+     * @return a reference to the copied system
+    */
+    SystemHandle& operator=(const SystemHandle& s);
 };
 
 #endif
